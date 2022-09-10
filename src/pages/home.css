@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x:hidden;
     /* background:#f3ebe4 */
 }
 .homeInner{
@@ -15,8 +16,9 @@
     width:100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
+    overflow-x:hidden;
     /* background-color: #f3ebe4; */
 }
 .section1{
