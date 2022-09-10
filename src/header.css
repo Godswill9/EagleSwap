@@ -1,0 +1,497 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Header{
+    width:100%;
+    height:4.6em;
+    display: flex;
+    align-items: center;
+    color:rgb(190, 182, 182);
+    background-color: rgba(3, 3, 3, 0.76);
+    position: fixed;
+    z-index: 5;
+    transition: .5s ease-in-out;
+    background-color: rgba(3, 3, 3, 0.877);
+}
+.compView{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a img{
+    margin-top:10px;
+    width:6em;
+    height:4em
+}
+.logo a .lowerClass h1{
+    color:orange;
+    font-size: 30px;
+}
+.logo a .lowerClass span img{
+    width:1.4em;
+    height:1.4em;
+}
+.logo a .lowerClass span {
+   color:rgb(236, 236, 236);
+   width:8em;
+   font-size: 15px;
+}
+.links{
+    display: flex;
+    padding:15px;
+    align-items: center;
+    justify-content: start;
+    font-size: 19px;
+    text-align: center;
+}
+.link_head{
+    position: relative;
+    display: block;
+    width:3.5em;
+    height:4em;
+    margin-left: 1em;
+    transition:1 ease-in-out;
+    text-align: center;
+}
+.links .dropDownHead{
+    position: absolute;
+    top:17%;
+    left:2%;
+    padding-top: 16px;
+    font-size: 14px;
+    transition: .1s ease-in;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: verdana;
+}
+.dropDownHead:hover{
+    color:orange
+}
+.link_head:hover >.dropDownBody{
+   display: block;
+}  
+.dropDownBody span{
+    transition: 0.5s ease;
+}
+.compView .link2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: .4em;
+}
+.compView .link2 .duo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:5px;
+}
+.compView .link2 .duo span{
+    padding:10px;
+    font-size: 14px;
+    font-family: verdana;
+    font-weight: bold;
+    cursor: pointer;
+}
+.compView .link2 .duo img{
+   width:2.3em;
+   height:2.3em;
+   border:2px solid white;
+   border-radius: 50%;
+}
+.compView .link2 .iconss i{
+font-size: 24px;
+padding:5px
+}
+.compView .link2 button{
+    padding:5px 25px 5px 25px;
+    font-size: 19px;
+    font-weight: bold;
+    margin:15px;
+    border-radius: 10px;
+    background-color: inherit;
+    color:white;
+    border: 3px solid orange;
+    cursor: pointer;
+}
+@media (max-width:1317px) {
+    .compView .link2 .duo span{
+        padding:10px;
+        font-size: 12px;
+    }
+    .compView .link2 .iconss i{
+    font-size: 19px;
+    padding:5px
+    }
+    .compView .link2 button{
+        padding:5px 25px 5px 25px;
+        font-size: 19px;
+        font-weight: bold;
+        margin:6px;
+        border-radius: 10px;
+        background-color: inherit;
+        color:white;
+        border: 3px solid orange;
+        cursor: pointer;
+    }
+    .compView .link2{
+        justify-content: start
+        /* margin-right: 6em; */
+    }
+}
+ 
+.Header .icon{
+    padding: 3px;
+    margin:3px;
+}
+.Header button i{
+    border-right:1px solid black;
+    margin-right: 20px;
+    padding: 14px;
+    color:black
+}
+.links .link_head{
+    padding:10px;
+}
+
+.dropDownBody{
+    width:18em;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(87, 73, 12);
+    top:74%;
+    left:-20%;
+    display: none;
+    font-size: 17px;
+    color:white;
+    border-radius: 15px;
+    border: 3px solid rgb(39, 33, 6);
+    box-shadow: 0 10px 20px yellow;
+}
+  .dropDownBody .inner{
+      margin:10px 0 7px 0;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .dropDownBody .inner .innerHeadd,
+  .dropDownBody .inner .innerHead{
+      width:93%;
+      /* background-color: blueviolet; */
+      border-radius: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3px;
+      height:2.7em;
+      text-align: start;
+  }
+  .dropDownBody .inner .innerHeadd i,
+  .dropDownBody .inner .innerHead i{ 
+      display: block;
+      padding:0 20px 0 0px;
+      font-size: 13px;
+  }
+  .dropDownBody .inner .innerHeadd h3,
+  .dropDownBody .inner .innerHead h3{
+      padding:4px 0px 0px 18px;
+     color:yellow;
+     display: block;
+     font-size: 19px;
+  }
+  .dropDownBody .inner .innerHeadd span,
+  .dropDownBody .inner .innerHead span{
+    font-size: 15px;
+    font-weight: 100;
+    color:rgb(212, 211, 211);
+    padding:0px 0px 0px 18px;
+    display: inline-block;
+    margin:0px
+  }
+  .dropDownBody .inner .subLinks span{
+      padding:0;
+      /* color:blue; */
+      padding:8px 0px 10px 18px;
+      /* background-color: #EEC373; */
+      margin:1px;
+      border-radius: 10px;
+      cursor: pointer;
+      height:2.2em;
+      text-align: start;
+  }
+  .dropDownBody .inner .subLinks span i{
+      padding:0 0 0 15px;
+      /* color:blue; */
+      font-size: 13px;
+      padding:10px
+  }
+  .dropDownBody .inner .subLinks{
+     display: flex;
+     flex-direction: column;
+     width:87%;
+  }
+  .dropDownBody .inner .subLinks span:hover,
+  .dropDownBody .inner .innerHead:hover{
+     background-color: #876445;
+     color:white
+  }
+  .dropDownBody .inner .innerHeadd:hover>.dropDownBody .inner .innerHeadd h3{
+    color:#876445
+  }
+
+.moreDetails{
+    position: relative;
+}
+
+.moreDetails .details{
+    position:absolute;
+    width:100%;
+    left:-100%;
+    top:0%;
+    background-color: white;
+    display: none;
+    transition: 1s ease;
+}
+.moreDetails:hover>.details{
+    display: block;
+}
+
+.mobileView{
+    display: none;
+}
+.mobileView .icon{
+   font-size: 22px;
+    margin-right: 2em;
+    cursor: pointer;
+}
+.mobileContent{
+    position: absolute;
+    top: 100%;
+    width:100%;
+    height: 0px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../public/images/eagle1-removebg-preview.png') rgba(0, 0, 0, 0.986);
+    background-size: 30em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobileContent .oneee{
+   width:100%;
+   overflow-y: auto;
+}
+.mobileContent .link2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(41, 41, 41, 0.918);
+    border-radius: 10px;
+    width:100%
+}
+.mobileContent .link2 .duo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:5px;
+}
+.mobileContent .link2 .duo span{
+    padding:10px;
+    font-size: 14px;
+    font-family: verdana;
+    font-weight: bold;
+    cursor: pointer;
+}
+.mobileContent .link2 .duo img{
+   width:2.3em;
+   height:2.3em;
+   border:2px solid white;
+   border-radius: 50%;
+}
+.mobileContent .link2 .iconss i{
+font-size: 24px;
+padding:5px
+}
+.mobileContent .link2 button{
+    padding:5px 25px 5px 25px;
+    font-size: 19px;
+    font-weight: bold;
+    margin:15px;
+    border-radius: 10px;
+    background-color: inherit;
+    color:white;
+    border: 3px solid orange;
+    cursor: pointer;
+}
+.mobileContent .cont{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    transition: .3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out;
+}
+.one p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    /* margin:1px 5px 0px px; */
+    cursor: pointer;
+    border-top: .1px solid rgba(255, 255, 255, 0.11);
+    transition: .3s ease-in-out;
+    border-radius: 3px;
+}
+.one p:hover{
+  /* background-color: rgba(156, 152, 152, 0.932);
+  background-color: yellow; */
+  color:yellow
+}
+.one:last-child{
+    border-bottom: .1px solid rgb(156, 155, 155);
+}
+.one:nth-child(1){
+    border-top:none
+}
+.one p i{
+    font-size: 16px;
+    font-weight: 100;
+}
+.one .drop{
+  display:flex;
+  flex-direction: column;
+  padding:0;
+  transition: .4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.one .drop .inner{
+    margin:0px 0 7px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.one .drop .inner .innerHead{
+    width:93%;
+    /* background-color: rgb(85, 83, 83); */
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height:2.7em;
+    justify-content: space-between;
+}
+.one .drop .inner .innerHead:hover{
+  background-color: rgba(247, 247, 108, 0.178);
+}
+
+.one .drop .inner .innerHead i{ 
+    display: block;
+    padding:0 20px 0 0px;
+    font-size: 13px;
+}
+.one .drop .inner .innerHead h3{
+    padding:4px 0px 0px 18px;
+   color:yellow;
+   display: block;
+   font-size: 19px;
+}
+.one .drop .inner .innerHead span{
+  font-size: 15px;
+  font-weight: 100;
+  color:rgb(212, 211, 211);
+  padding:0px 0px 0px 18px;
+  display: inline-block;
+  margin:0px
+}
+.one .drop .inner .subLinks span{
+    padding:0;
+    color:yellow;
+    padding:8px 0px 8px 18px;
+    /* background-color: rgb(201, 201, 201); */
+    margin:1px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 100;
+    transition: .4s ease-in-out;
+}
+.one .drop .inner .subLinks span i{
+    padding:0 0 0 15px;
+    color:yellow;
+    font-size: 13px;
+    font-weight: 100;
+    padding:10px
+}
+.one .drop .inner .subLinks{
+   display: flex;
+   flex-direction: column;
+   width:87%;
+   transition: .4s ease-in-out;
+}
+.one .drop .inner .subLinks span:hover{
+   background-color: yellow;
+   color:#876445
+}
+
+@media (max-width:1173px){
+    .compView{
+        display: none;
+    }
+    .mobileView{
+        display:flex;
+    }
+    .Header{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width:1173px) {
+    .mobileContent{
+        display: none;
+    }
+}
+@media (max-width:1111px) {
+    .links{
+        justify-content: flex-start;
+        width:35em;
+        margin-right: 1.5em;
+    }
+    .link_head{
+        margin-left: 1.4em;
+    }
+}
+@media (max-width:384px) {
+    .logo a .lowerClass h1{
+        font-size: 27px;
+    }
+}
