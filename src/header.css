@@ -204,7 +204,24 @@ padding:5px
     height:2.7em;
     text-align: start;
   }
+  .drop a{
+    text-decoration: none;
+    display: block;
+    width:93%;
+    /* background-color: blueviolet; */
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    height:2.7em;
+    text-align: start;
+  }
   .dropDownBody a i{
+    color:white
+  }
+  .drop a i{
     color:white
   }
   .dropDownBody .inner .innerHeadd,

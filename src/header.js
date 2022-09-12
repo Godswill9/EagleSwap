@@ -451,13 +451,14 @@ export default function Header() {
             </p>
             <div className="drop" ref={toggle1} style={{ display: namee }}>
               <div className="inner">
-                <div className="innerHead">
+              <a href="/Swap"><div className="innerHead">
                   <div className="oneInner">
                     <h3>Swap</h3>
                     <span className="headSpan">Trade any tokens </span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
                 <div className="innerHead">
