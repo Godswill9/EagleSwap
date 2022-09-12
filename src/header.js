@@ -138,31 +138,34 @@ export default function Header() {
             </div>
             <div className="dropDownBody">
               <div className="inner">
-                <div className="innerHead">
+               <a href="/Swap"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything </span>
+                    <h3>Swap</h3>
+                    <span className="headSpan">Trade any tokens </span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
-                <div className="innerHead">
+              <a href="/Liquidity"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Liquidity</h3>
+                    <span className="headSpan">Share the trading fees</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
-                <div className="innerHead">
+              <a href="#"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Perpetual</h3>
+                    <span className="headSpan">Trade with leverage</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -268,7 +271,7 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <a href="#"><span className="headSpan">Stake anything</span></a>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
@@ -277,7 +280,7 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <a href=""><span className="headSpan">Stake anything</span></a>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
@@ -286,7 +289,7 @@ export default function Header() {
                 <div className="innerHeadd">
                   <div className="oneInner">
                     <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <a href=""><span className="headSpan">Stake anything</span></a>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
@@ -450,8 +453,8 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything </span>
+                    <h3>Swap</h3>
+                    <span className="headSpan">Trade any tokens </span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
@@ -459,8 +462,8 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Liquidity</h3>
+                    <span className="headSpan">Share the trading fees</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
@@ -468,8 +471,8 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Perpetual</h3>
+                    <span className="headSpan">Trade with leverage</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>

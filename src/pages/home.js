@@ -226,6 +226,20 @@ export default function Home() {
     <a href='#'><span>See more</span></a>
 </div>
 </div>
+
+{/* announcement section */}
+<div className='announcement'>
+    <div className='innerr'>
+        {announcements.map((item, index)=>{
+         return(
+            <div className='announceIndiv'>
+             <a href='#'><img src={item}></img></a>
+            </div>
+         )
+        })}
+    </div>
+</div>
+
 <div className='SliderSection'>
     <div className='slide' ref={sliderIndiv}>
     {
@@ -305,10 +319,12 @@ export default function Home() {
         <h2>GamePad</h2>
         <div className='inner'>
             <img src='images/Stake BFG earn BFG.png'></img>
+            {/* <img src=''></img> */}
             <div className='more'>
                 <p>BabySwap GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
                         Farms, Pools, NFT, Marketplace, etc.
                 </p>
+                {/* <p></p> */}
                 <button>Learn more</button>
         </div>
     </div>
@@ -317,6 +333,7 @@ export default function Home() {
         <h2>Join Community</h2>
         <div className='inner'>
             <img src='images/earnAndChill.png'></img>
+            {/* <img src=''></img> */}
             <div className='more'>
                 <p>Join our vibrant community of game players and NFT enthusiasts and learn
                      all the latest tips and tricks.
@@ -571,4 +588,14 @@ var slider=[
     "images/Stake BFG earn BFG.png",
     "images/earnAndChill.png",
     "images/Stake BFG earn BFG.png"
+]
+var announcements=[
+    "images/perpetual.png",
+    "images/didOnline.png",
+    "images/perpetual.png",
+    "images/didOnline.png",
+    "images/perpetual.png",
+    "images/didOnline.png",
+    "images/perpetual.png",
+    "images/perpetual.png"
 ]
