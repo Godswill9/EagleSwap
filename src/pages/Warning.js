@@ -1,4 +1,5 @@
 import React from 'react'
+import './Trade.css'
 
 export default function Warning() {
   return (

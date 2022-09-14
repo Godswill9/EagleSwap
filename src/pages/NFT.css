@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 5;
+}
+
+.nft_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* edited */
+}
+
+.nft_cont .innerr {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.sectionOne img {
+  margin-top: 10em;
+  width: 100%;
+  height: 13em;
+  border-radius: 20px;
+  margin-bottom: 2.4em;
+}
+
+.sectionTwo .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.sectionTwo .first h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+  padding: 10px;
+}
+.sectionTwo .first h2 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+  padding: 10px;
+}
+
+.sectionTwo {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sectionTwo .second {
+  margin: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  width: 100%;
+  z-index: 0;
+}
+.sectionTwo .innerr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 1;
+  border-radius: 20px;
+}
+.sectionTwo .indiv {
+  width: 21em;
+  height: 13em;
+  margin: 30px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(226, 224, 224);
+  background-color: rgb(255, 254, 253);
+  box-shadow: 0 0 15px brown;
+  cursor: pointer;
+}
+.sectionTwo .innerr .img1 {
+  width: 18.5em;
+  height: 8em;
+  margin: 5px;
+  border: 1px solid white;
+  margin-left: 10px;
+  z-index: 1;
+  border-radius: 20px;
+}
+.sectionTwo .innerr .more {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+}
+.sectionTwo .innerr .more img {
+  border: 6px solid white;
+  width: 5.5em;
+  height: 5.5em;
+  bottom: 8%;
+  left: 3%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.sectionTwo .innerr .more .detail {
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.sectionTwo .innerr .more .detail h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+  margin-bottom: 10px;
+}
+.sectionTwo .innerr .more .detail h2 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+}
+
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionThree .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+.sectionThree .first h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionThree .first .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.sectionThree .first .filters button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.sectionThree .first .filters .dropdownn {
+  width: 12em;
+  height: 3em;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.sectionThree .first .filters .filt {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  width: 6em;
+  margin: 4px;
+  padding: 11px;
+}
+.sectionThree .first .filters .filt i {
+  padding-right: 10px;
+}
+.sectionThree .secondd {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionThree .secondd .content {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sectionThree .secondd button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+}
+.sectionThree .secondd .inner {
+  border: 0.4px solid brown;
+  width: 16em;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px brown;
+  cursor: pointer;
+}
+.sectionThree .secondd .inner img {
+  width: 95%;
+  margin: 10px;
+  height: 15em;
+  border-radius: 20px;
+}
+.sectionThree .secondd .inner .details {
+  display: flex;
+  align-items: flex-start;
+  width: 95%;
+  margin: 10px;
+  flex-direction: column;
+}
+.sectionThree .secondd .inner .details hr {
+  margin: 5px;
+  border: 0.01px solid brown;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.sectionThree .secondd .inner .more1 span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.sectionThree .secondd .inner .more1 h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+  padding: 5px;
+}
+.sectionThree .secondd .inner .more2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2px;
+}
+.sectionThree .secondd .inner .more2 span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.sectionThree .secondd .inner .more2 .moreInner h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionThree .secondd .inner .more2 .moreInner span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}/*# sourceMappingURL=NFT.css.map */

@@ -19,6 +19,7 @@ header{
     justify-content: center;
     background-color: brown;
     position: fixed;
+    z-index: 2;
     /* top:10px */
 }
 .notice .inner{
@@ -55,7 +56,9 @@ header{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+  position: relative;
+  /* background-color: black;
+  color:white */
 }
 .bodySec .buttons{
    /* border:1px solid black; */
@@ -66,6 +69,7 @@ header{
    border-bottom-left-radius: 30px;
    margin-bottom: 2em;
    background-color: rgb(216, 192, 192);
+   background-color: brown;
 }
 .bodySec .buttons button{
     padding:7px 15px 7px 15px;
@@ -79,7 +83,26 @@ header{
     font-weight: bold;
     font-size: 16px;
     font-family: verdana;
-    border:none
+    border:none;
+    /* color:brown;
+    background-color: rgb(216, 192, 192); */
+}
+.bodySec .buttons .btnLiquidity:hover{
+    color:brown;
+    background-color: rgb(236, 232, 232);
+}
+.bodySec .buttons .btnSwap:hover{
+    color:brown;
+    background-color: rgb(236, 232, 232);
+}
+.bodySec .hidingEagle{
+    /* border:.2px solid black; */
+    height: 23em;
+    width: 20em;
+    position: absolute;
+    left:19%;
+    top:40%;
+    opacity: 0.5;
 }
 .bodySec .swapSection{
     /* border:2px solid black; */
@@ -88,6 +111,7 @@ header{
     justify-content: space-around;
     flex-direction: column;
     width:30em;
+    z-index: 0;
     /* border-radius: 20px; */
 }
 .bodySec .swapSection .para1{
@@ -156,7 +180,7 @@ header{
     width:95%;
     margin-top:10px;
     padding:10px;
-    border-bottom:.4px solid black;
+    border-bottom:.4px solid rgba(54, 54, 54, 0.295);
     margin:20px;
     /* box-shadow: 0 0 10px brown; */
 }
@@ -268,7 +292,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(216, 232, 247);
+    background-color: rgb(59, 149, 233);
+}
+.mainSec .two .icon button:active{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .mainSec .two .icon i{
     font-size: 25px;

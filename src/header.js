@@ -124,7 +124,7 @@ export default function Header() {
     <div className="Header">
       <div className="logo">
         <a href="/">
-          <img src="images/eaagle2-removebg-preview.png"></img>
+          <img src="/images/eaagle2-removebg-preview.png"></img>
           <div className="lowerClass">
             <h1>EagleSwap</h1>
           </div>
@@ -148,7 +148,7 @@ export default function Header() {
                 </a>
               </div>
               <div className="inner">
-              <a href="/Liquidity"><div className="innerHead">
+              <a href="#"><div className="innerHead">
                   <div className="oneInner">
                     <h3>Liquidity</h3>
                     <span className="headSpan">Share the trading fees</span>
@@ -177,53 +177,64 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Farm</h3>
+                    <span className="headSpan">Stake Baby-LPs to earn</span>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
                 <div className="subLinks">
-                  <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn baby
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
-                  </span>
-                  <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
-                  </span>
+                <a href="/Farms">
+                    <span>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      Earn baby
+                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    </span>
+                </a>
+                <a href="/Farms">
+                    <span>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      Earn Alt
+                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    </span>
+                </a>
+                  
                 </div>
               </div>
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Pools</h3>
+                    <span className="headSpan">Stake tokens to earn</span>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
                 <div className="subLinks">
+                  <a href="/Pools">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                     Earn baby
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="/Pools">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
+                    Earn ALT
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
                 </div>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Vault</h3>
+                    <span className="headSpan">Stake non-BABY LPs to earn</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -233,32 +244,44 @@ export default function Header() {
           </div>
             <div className="dropDownBody">
               <div className="inner">
-                <div className="innerHead">
+                <a href="#">
+                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Lucky BABY</h3>
+                    <span className="headSpan">Be the lucky one</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Activities</h3>
+                    <span className="headSpan">Claim your rewards</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Playground</h3>
+                    <span className="headSpan">Play with BABY</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
+            </div>
+          </div>
+          <div className="link_head">
+            <div className="dropDownHead">
+              <a href="#"><span>Land</span></a>
+              {/* <span className='icon'><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
             </div>
           </div>
           <div className="link_head">
@@ -268,47 +291,55 @@ export default function Header() {
             </div>
             <div className="dropDownBody">
               <div className="inner">
-                <div className="innerHead">
+               <a href="/NFT"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <a href="#"><span className="headSpan">Stake anything</span></a>
+                    <h3>NFT Market</h3>
+                    <span className="headSpan">Trade the hottest & newest NFTs </span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
-                <div className="innerHead">
+               <a href="#"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <a href=""><span className="headSpan">Stake anything</span></a>
+                    <h3>My NFTs</h3>
+                    <span className="headSpan">Check & list your NFTs </span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <a href=""><span className="headSpan">Stake anything</span></a>
+                    <h3>NFT Stake</h3>
+                    <span className="headSpan">Stake NFT to earn</span>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
                 <div className="subLinks">
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn baby
+                    Stake BabySwap NFB
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
+                    Stake Binance NFB
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="#">
                   <span>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
+                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Stake NFT
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -415,7 +446,7 @@ export default function Header() {
         </div>
         <div className="link2">
           <div className="duo">
-            <img src="images/eaagle2-removebg-preview.png"></img>
+            <img src="/images/eaagle2-removebg-preview.png"></img>
             <span>Little text</span>
           </div>
           <div className="iconss">
@@ -493,25 +524,30 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3>Farm</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
                 <div className="subLinks">
-                  <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn baby
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
-                  </span>
-                  <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
-                  </span>
+                <a href="/Pools">
+                    <span>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      Earn baby
+                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    </span>
+                </a>
+                <a href="#">
+                    <span>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      Earn Alt
+                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    </span>
+                </a>
                 </div>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -519,20 +555,26 @@ export default function Header() {
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
+                </a>
                 <div className="subLinks">
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                     Earn baby
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                     Earn Alt
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
                 </div>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -540,6 +582,7 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -554,6 +597,7 @@ export default function Header() {
             </p>
             <div className="drop" ref={toggle3} style={{ display: namee3 }}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -561,8 +605,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -570,8 +616,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -579,6 +627,7 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -593,47 +642,57 @@ export default function Header() {
             </p>
             <div className="drop" ref={toggle4} style={{ display: namee4 }}>
               <div className="inner">
+                <a href="/NFT">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>NFT Market</h3>
+                    <span className="headSpan">Trade the hottest & newest NFTs</span>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
+              </div>
+              <div className="inner">
+                <a href="#">
+                    <div className="innerHead">
+                  <div className="oneInner">
+                    <h3>My NFTs</h3>
+                    <span className="headSpan">Check & list your NFTs</span>
+                  </div>
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </div>
+                </a>
               </div>
               <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
-                  </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div className="inner">
-                <div className="innerHead">
-                  <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>NFT Stake</h3>
+                    <span className="headSpan">Stake NFT to earn</span>
                   </div>
                   {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                 </div>
                 <div className="subLinks">
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn baby
+                   Stake BabySwap NFB
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="#">
                   <span>
                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
+                    Stake Binance NFB
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
+                  <a href="#">
                   <span>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    Earn Alt
+                    Stake NFT
                     {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                   </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -649,6 +708,7 @@ export default function Header() {
             </p>
             <div className="drop" ref={toggle5} style={{ display: namee5 }}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -656,8 +716,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -665,8 +727,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -674,6 +738,7 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -688,6 +753,7 @@ export default function Header() {
             </p>
             <div className="drop" style={{ display: namee6 }}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -695,8 +761,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -704,8 +772,10 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
@@ -713,6 +783,7 @@ export default function Header() {
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -727,36 +798,42 @@ export default function Header() {
             </p>
             <div className="drop" style={{ display: namee7 }}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className="link2">
           <div className="duo">
-            <img src="images/eaagle2-removebg-preview.png"></img>
-            <span>Little text</span>
+            <img src="/images/eaagle2-removebg-preview.png"></img>
+            <span>Little text</span> 
           </div>
           <div className="iconss">
             <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>

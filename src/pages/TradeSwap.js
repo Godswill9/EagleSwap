@@ -1,9 +1,17 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Header from '../header'
 import './Trade.css'
 import Warning from './Warning'
 
 export default function TradeSwap() {
+  const audio=new Audio()
+  audio.src='/images/money.wav'
+ const handlePlay=()=>{
+   audio.play()
+ }
+
+
   return (
     <div>
         <Warning/>
@@ -12,9 +20,10 @@ export default function TradeSwap() {
         </header>
         <div className='bodySec'>
             <div className='buttons'>
-                <button>Swap</button>
-                <button>Liquidity</button>
+                <button className='btnSwap'>Swap</button>
+                <button className='btnLiquidity'>Liquidity</button>
             </div>
+            <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
             <div className='swapSection'>
                 <p className='para1'>You can trade over <span>90%</span> of BEP 20 Tokens on BabySwap with better slippages,<br></br> 
                 and Smart Router will choose the <span>best route</span> for you.
@@ -50,7 +59,7 @@ export default function TradeSwap() {
                           </div>
                        </div>
                        <div className='icon'>
-                         <button><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                         <button onClick={handlePlay}><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
                        </div>
                        <div className='toInput'>
                        <span>To</span>

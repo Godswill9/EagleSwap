@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.poolsCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* edited */
+}
+
+.poolsCont .innerPool {
+  width: 90%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.poolsCont .innerPool img {
+  border: none;
+  margin-top: 10em;
+  width: 100%;
+  height: 13em;
+  border-radius: 20px;
+}
+
+.innerPool .sectionn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  width: 100%;
+  margin: 3px;
+  margin-top: 3em;
+}
+.innerPool .sectionn2 .headOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+}
+.innerPool .sectionn2 .headtwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  display: flex;
+}
+
+.headOne i {
+  font-size: 26px;
+  padding: 5px;
+}
+.headOne .switch {
+  border: none;
+  padding: 3px;
+  margin: 5px;
+}
+.headOne .switchTwo {
+  border: none;
+  margin: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: rgb(216, 192, 192);
+  background-color: brown;
+}
+.headOne .switchTwo button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+}
+.headOne .switchTwo button:hover {
+  background-color: rgb(228, 228, 228);
+  color: brown;
+}
+
+.headtwo .sortOne {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.headtwo span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.headtwo .dropdown {
+  border: 0.4px solid brown;
+  width: 10em;
+  height: 2.6em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(189, 127, 127);
+  color: white;
+  padding: 4px;
+}
+.headtwo .dropdown span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.headtwo input {
+  border: none;
+  border: 0.4px solid brown;
+  width: 17em;
+  height: 2.8em;
+  border-radius: 10px;
+  background-color: rgb(189, 127, 127);
+  color: white;
+  padding: 2px;
+}
+
+.sectionn3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  width: 90%;
+  margin: 3px;
+  margin-top: 0.5em;
+}
+
+.sectionn3 .switch {
+  border: none;
+  margin: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: rgb(216, 192, 192);
+  background-color: brown;
+}
+.sectionn3 button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+}
+.sectionn3 button:hover {
+  background-color: rgb(228, 228, 228);
+  color: brown;
+}
+
+.sectionn4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sectionn4 .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border: none;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.sectionn4 .indiv {
+  width: 23em;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px gray;
+  margin: 10px;
+}
+.sectionn4 .indiv .one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px 20px 5px 20px;
+}
+.sectionn4 .indiv .one img {
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+}
+.sectionn4 .indiv .one .oneInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sectionn4 .indiv .one .oneInner h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+  padding-bottom: 3px;
+}
+.sectionn4 .indiv .one .oneInner span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-weight: 700;
+  background-color: rgb(99, 99, 199);
+  padding: 7px;
+  border-radius: 20px;
+  color: white;
+}
+.sectionn4 .indiv .two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.sectionn4 .indiv .two span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.sectionn4 .indiv .two .more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.sectionn4 .indiv .two .more i {
+  font-size: 20px;
+  padding: 5px;
+  color: brown;
+}
+.sectionn4 .indiv .two .more h3 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .indiv .three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+.sectionn4 .indiv .three span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.sectionn4 .indiv .three i {
+  font-size: 20px;
+  padding: 5px;
+  color: brown;
+}
+.sectionn4 .indiv .three h3 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .indiv .four {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.sectionn4 .indiv .four h5 {
+  font-weight: bold;
+  font-size: 11px;
+  font-family: verdana;
+  color: brown;
+  color: rgb(167, 109, 109);
+}
+.sectionn4 .indiv .four .innerr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.sectionn4 .indiv .four .innerr h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .indiv .four .innerr button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 15px;
+  border: 0.4px solid brown;
+  background-color: inherit;
+  color: brown;
+}
+.sectionn4 .indiv .five {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin: 12px 2px 12px 2px;
+}
+.sectionn4 .indiv .five h5 {
+  font-weight: bold;
+  font-size: 11px;
+  font-family: verdana;
+  color: brown;
+  padding-bottom: 10px;
+}
+.sectionn4 .indiv .five button {
+  padding: 17px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sectionn4 .indiv .toggle {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  align-items: center;
+}
+.sectionn4 .indiv .toggle span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding-top: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 3px;
+  cursor: pointer;
+}
+.sectionn4 .indiv .toggle hr {
+  width: 90%;
+}
+.sectionn4 .indiv .six {
+  display: flex;
+  flex-direction: column;
+}
+.sectionn4 .indiv .six .sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 2px 7px 2px 7px;
+}
+.sectionn4 .indiv .six .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+}
+.sectionn4 .indiv .six .sec h5 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .indiv .six .links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  color: orange;
+  font-weight: 900;
+}
+
+.sectionn4 .innerLine {
+  border: 0.7px solid black;
+  width: 90%;
+  border-radius: 10px;
+  padding: 2px;
+  margin-bottom: 30px;
+}
+.sectionn4 .innerLine .indiv {
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+  border-radius: 3px;
+  border-bottom: 0.1px solid black;
+  cursor: pointer;
+}
+.sectionn4 .innerLine .indiv .mainn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+  height: 4.5em;
+}
+.sectionn4 .innerLine .indiv .mainn img {
+  width: 2.4em;
+  height: 2.4em;
+}
+.sectionn4 .innerLine .indiv .toggled {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.2px solid black;
+  margin: 4px;
+}
+.sectionn4 .innerLine .indiv .toggled .first {
+  border: 0.3px solid black;
+  padding: 5px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 6.5em;
+  border-radius: 20px;
+}
+.sectionn4 .innerLine .indiv .toggled .first h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .innerLine .indiv .toggled .first h5 {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+  padding: 7px;
+}
+.sectionn4 .innerLine .indiv .toggled .first .innerr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  margin: 5px;
+  width: 15em;
+  border-radius: 20px;
+}
+.sectionn4 .innerLine .indiv .toggled .first .innerr button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 15px;
+}
+.sectionn4 .innerLine .indiv .toggled .second {
+  border: 0.4px solid black;
+  display: flex;
+  height: 6.5em;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.sectionn4 .innerLine .indiv .toggled .second h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: verdana;
+  color: brown;
+}
+.sectionn4 .innerLine .indiv .toggled .second h5 {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+  padding: 7px;
+}
+.sectionn4 .innerLine .indiv .toggled .second .innerr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  margin: 5px;
+  width: 15em;
+  border-radius: 20px;
+}
+.sectionn4 .innerLine .indiv .toggled .second .innerr button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 15px;
+}
+.sectionn4 .innerLine .indiv .toggled .third {
+  border: 0.4px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+  width: 15em;
+  height: 6.5em;
+  margin: 10px;
+  border-radius: 20px;
+}
+.sectionn4 .innerLine .indiv .toggled .third h5 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+  color: brown;
+  padding: 5px;
+}
+.sectionn4 .innerLine .indiv .toggled .third button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+.sectionn4 .innerLine .indiv .toggled .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.sectionn4 .innerLine .indiv .toggled .links a {
+  color: brown;
+  padding: 2px;
+  font-size: 16px;
+}
+.sectionn4 .innerLine .indiv .mainn .two,
+.sectionn4 .innerLine .indiv .mainn .three,
+.sectionn4 .innerLine .indiv .mainn .four,
+.sectionn4 .innerLine .indiv .mainn .multiplier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionn4 .innerLine .indiv .mainn .more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionn4 .innerLine .indiv .mainn h3 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-weight: bold;
+  color: brown;
+  font-size: 17px;
+}
+.sectionn4 .innerLine .indiv .mainn h5 {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  color: rgb(175, 82, 82);
+  font-weight: 700;
+  font-size: 12px;
+}/*# sourceMappingURL=test.css.map */
