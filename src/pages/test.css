@@ -1138,8 +1138,8 @@
 .poolsCont .switchStaked .ball {
   position: absolute;
   left: 0%;
-  height: 1em;
-  width: 2.3em;
+  height: 1.3em;
+  width: 2.7em;
   top: 0;
   background-color: yellow;
   border-radius: 10px;
@@ -1539,11 +1539,20 @@
 }
 @media (max-width: 488px) {
   .poolsCont .innerPool .imgg {
-    width: 100%;
+    width: 92%;
   }
   .poolsCont .innerPool .imgg img {
     height: 4em;
-    width: 22em;
+    width: 19em;
+  }
+}
+@media (max-width: 348px) {
+  .poolsCont .innerPool .imgg {
+    width: 92%;
+  }
+  .poolsCont .innerPool .imgg img {
+    height: 4em;
+    width: 16em;
   }
 }
 .dropDown {
@@ -1593,4 +1602,7 @@
     padding: 10px;
     font-size: 14px;
   }
+}
+.poolsCont {
+  overflow-x: hidden;
 }/*# sourceMappingURL=test.css.map */
