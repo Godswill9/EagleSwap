@@ -541,20 +541,20 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Farm</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <span className="headSpan">Stake Baby-LPs to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 </a>
                 <div className="subLinks">
-                <a href="/Pools">
+                <a href="/Farms_earnBABY">
                     <span>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn baby
                       {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
-                <a href="#">
+                <a href="/Farms_earnALT">
                     <span>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn Alt
@@ -567,21 +567,21 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Pools</h3>
+                    <span className="headSpan">Stake tokens to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 </a>
                 <div className="subLinks">
-                  <a href="#">
+                  <a href="/Pools_earnBaby">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn baby
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
-                  <a href="#">
+                  <a href="/Pools_earnAlt">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn Alt
@@ -594,8 +594,8 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Vault</h3>
+                    <span className="headSpan">Stake non-BABY LPs to earn</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>

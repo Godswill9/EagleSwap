@@ -61,7 +61,7 @@ export default function FarmsEarnAlt(){
         "color":"brown",
         "backgroundColor": "rgb(236, 232, 232)"
       }
-      const [SwapButton, setSwapButton]=useState("true")
+      const [SwapButton, setSwapButton]=useState("false")
       const handleSwitch1=()=>{
         if(SwapButton==="true") return;
         setSwapButton("true")
