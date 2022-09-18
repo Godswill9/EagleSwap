@@ -772,10 +772,6 @@
   padding: 5px;
 }
 
-.liquidity {
-  display: none;
-}
-
 .mainSec .one .addLiq {
   padding: 7px 15px 7px 15px;
   border-top-left-radius: 30px;
@@ -859,7 +855,7 @@
 }
 
 .addLiquidity .two {
-  width: 85%;
+  width: 99%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1021,4 +1017,11 @@
   .addLiquidity .two {
     width: 16em;
   }
+}
+.liquidity {
+  width: 100%;
+}
+.liquidity .mainSec {
+  width: 100%;
+  margin: 0;
 }/*# sourceMappingURL=swap.css.map */

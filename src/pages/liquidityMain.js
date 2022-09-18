@@ -62,6 +62,7 @@ export default function LiquidityMain() {
 <Header/>
 </header>
 <div className='bodySec'>
+<div className='innerBodySec'>
     <div className='buttons'>
     {SwapButton==="true"? <button onClick={handleSwitch1} className='btnSwap' style={activeButton}>Swap</button>:
         <button onClick={handleSwitch1} className='btnSwap'>Swap</button>
@@ -406,6 +407,7 @@ export default function LiquidityMain() {
     </div>
     <button>Unlock Wallet</button>
   </div> */}
+    </div>
     </div>
     </div>
   )

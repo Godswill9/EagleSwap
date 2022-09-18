@@ -52,6 +52,7 @@ export default function AddLiquidity() {
 <Header/>
 </header>
 <div className='bodySec'>
+<div className='innerBodySec'>
 <div className='buttons' style={{"visibility":"hidden"}}>
     </div>
          <div className='addLiquidity' style={{"display":"flex"}}>
@@ -306,6 +307,7 @@ export default function AddLiquidity() {
       
 </div>
 </div>
+    </div>
     </div>
     </div>
   )

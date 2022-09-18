@@ -16,7 +16,7 @@ export default function SwapMain() {
 
  const[selectedSwap2, setSelectedSwap2]=useState({
     img:"images/ETH.png",
-    name:"ETH"
+    name:"ETH" 
  })
   useEffect(()=>{
     // console.log(selectedSwap)
@@ -98,6 +98,7 @@ setSelectedSwap2(selectedSwap)
 <Header/>
 </header>
         <div className='bodySec'>
+        <div className='innerBodySec'>
 <div className='buttons'>
 {SwapButton==="true"? <button onClick={handleSwitch1} className='btnSwap' style={activeButton}>Swap</button>:
     <button onClick={handleSwitch1} className='btnSwap'>Swap</button>
@@ -408,6 +409,7 @@ and Smart Router will choose the <span>best route</span> for you.
       
 </div>
 </div>
+    </div>
     </div>
     </div>
   )

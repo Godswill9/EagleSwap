@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
+import Marquee from 'react-fast-marquee'
 import Header from '../header'
 import "./home.css"
 
@@ -230,13 +231,20 @@ export default function Home() {
 {/* announcement section */}
 <div className='announcement'>
     <div className='innerr'>
-        {announcements.map((item, index)=>{
-         return(
+        <Marquee speed={200} pauseOnHover>
             <div className='announceIndiv'>
-             <a href='#'><img src={item}></img></a>
+             <a href='#'><img src="images/perpetual.png"></img></a>
             </div>
-         )
-        })}
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/didOnline.png"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/perpetual.png"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/didOnline.png"></img></a>
+            </div>
+        </Marquee>
     </div>
 </div>
 

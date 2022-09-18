@@ -526,7 +526,7 @@
     overflow:hidden;
     box-shadow: 0 0 10px brown;
     border-radius: 10px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border: .2px solid brown;
 }
 .announcement .innerr .announceIndiv img{
@@ -534,15 +534,8 @@
     width:20em;
     height:10em;
     margin:2px;
-    border-radius: 5px;
-    animation: scrollText 20s alternate infinite;
-    transition: all 1s ease; 
+    border-radius: 5px
 }
-@keyframes scrollText {
-    from   { transform: translateX(0%); }
-    to { transform: translateX(-400%); }
-  }
-
 
 /* slider section */
 .SliderSection{
@@ -1906,3 +1899,5 @@
         margin:3px
     }
 }
+
+/* .announcement */

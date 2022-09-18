@@ -724,9 +724,7 @@ $brown:.4px solid brown;
 }
 
 // more liquidity stylings
-.liquidity{
-    display: none
-}
+
 .mainSec{
     .one{
         .addLiq{
@@ -792,7 +790,7 @@ $brown:.4px solid brown;
 }
 
 .addLiquidity .two{
-    width: 85%;
+    width: 99%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -940,4 +938,14 @@ $brown:.4px solid brown;
         .addLiquidity .two{
            width:16em
         }
+}
+
+.liquidity{
+    // border: .5px solid yellow;
+    width:100%;
+    .mainSec{
+    //    border: .5px solid yellow;
+       width:100%;
+       margin: 0;
+    }
 }
