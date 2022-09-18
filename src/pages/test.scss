@@ -168,10 +168,6 @@ $brown:.4px solid brown;
         button{
             @include button
         }
-        button:hover{
-            background-color: rgb(228, 228, 228);
-            color:brown
-        }
     }
 }
 .headtwo{
@@ -202,7 +198,7 @@ $brown:.4px solid brown;
     input{
         border: none;
         border: $brown;
-        width:17em;
+        width:15em;
         height: 2.8em;
         border-radius: 10px;
         background-color: rgb(189, 127, 127);
@@ -232,10 +228,6 @@ $brown:.4px solid brown;
     }
     button{
        @include button()
-    }
-    button:hover{
-        background-color: rgb(228, 228, 228);
-        color:brown
     }
 }
 .sectionn4{
@@ -437,7 +429,7 @@ cursor: pointer;}
                         padding:3px;
                         // border:.2px solid black;
                         margin:5px;
-                        width:15em;
+                        width:10em;
                         border-radius: 20px
                     }
                     .innerr{
@@ -464,7 +456,7 @@ cursor: pointer;}
                             padding:3px;
                             // border:.2px solid black;
                             margin:5px;
-                            width:15em;
+                            width:10em;
                             border-radius: 20px
                         }
                         .innerr{
@@ -480,15 +472,17 @@ cursor: pointer;}
                     flex-direction: column;
                     padding:15px;
                     justify-content: space-between;
-                    width:15em;
+                    // width:12em;
                     height: 6.5em;
                     margin:10px;
                     border-radius: 20px;
                        h5{@include midHeader(); padding: 5px}
                        button{
                         @include button();
-                        padding:15px;
+                        padding:10px;
                         border-radius: 10px;
+                        width:10em
+                        // font-size:17px
                     }     
                 }
                 .links{
@@ -496,10 +490,13 @@ cursor: pointer;}
                     flex-direction: column;
                     align-items: flex-start;
                     @include spanNormal();
+                    width:9em;
+                    border:.5px solid black;
                     a{
                         color:brown;
                         padding:2px;
-                        font-size: 16px;
+                        font-size: 12px;
+                        
                     }
                 }
             }
@@ -534,4 +531,830 @@ cursor: pointer;}
             }
         }
     }
+}
+
+
+// pools Section
+.poolsRealCont{
+    // border:.4px solid black;
+    margin-bottom:5px;
+    width:100%;
+    @include flex-column();
+    align-items:center;
+    justify-content: center;
+}
+.poolsBoxContInner{
+    // border:.4px solid black;
+    display: flex;
+    width:90%;
+    flex-wrap: wrap;
+     .indiv{
+        border:.5px solid black;
+        @include flex-column();
+        width:23em;
+        border-radius: 20px;
+        margin:15px;
+        .onee{
+            @include flex-row();
+            border-bottom:.2px solid black;
+            .pair{
+                h3{@include spanNormal();
+                padding:5px;
+            font-size:16px}
+                span{@include spanNormal();
+                padding:5px;
+            font-size:13px}
+            }
+            img{
+                width: 3em;
+                height:3em;
+                // border:.4px solid black
+            }
+            background-color: rgb(144, 144, 187);
+            // padding:10px 3px 10px 3px;
+            padding:15px 4px 25px 4px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .two{
+            @include flex-row();
+            padding:10px;
+            padding:15px 4px 25px 4px;
+            h3{@include spanNormal()}
+            border-bottom:.2px solid black;
+            span{@include spanNormal();
+                
+               i{
+                font-size:17px
+               }
+            }
+        }
+        .three{
+            display: flex;
+            flex-direction:column;
+            h4{@include span1()}
+            padding:15px 4px 25px 4px;
+            border-bottom:.2px solid black;
+            .pair{
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                .innerrr{
+                    @include flex-column();
+
+                  h4{@include spanNormal()};
+                  span{@include spanNormal();
+                font-size:10px}
+                }
+                button{@include button();
+                padding:10px;
+            border-radius:20px}
+            }
+            // border:2px solid black
+        }
+        .four{
+            @include flex-column();
+            align-items:flex-start;
+            justify-content:space-between;
+            border-bottom:.2px solid black;
+            span{@include spanNormal()}
+            padding:15px 4px 25px 1px;
+        }
+        .fivee{
+            @include flex-column();
+            align-items:flex-start;
+            justify-content:space-between;
+            border-bottom:.2px solid black;
+            span{@include spanNormal()}
+            button{@include button();
+            width:90%;
+        margin:6px; border-radius: 10px;
+    padding:15px}
+        }
+        .six{
+            @include flex-row();
+            align-items:center;
+            justify-content:space-between;
+            padding:10px;
+            border-bottom:.2px solid black;
+            padding:15px 4px 25px 4px;
+            span{@include spanNormal();
+            i{
+                font-size:14px;
+            }
+        }
+        }
+        .sevenn{
+            @include flex-row();
+            align-items:flex-start;
+            padding:15px 4px 25px 4px;
+            justify-content:space-between;
+            span{@include spanNormal()}
+            .det{
+                @include flex-column();
+                span{
+                    @include spanNormal();
+                    a{
+                        text-decoration:none;
+                        @include spanNormal()
+                    }
+                }
+            }
+        }
+     }
+}
+
+
+
+.poolsLineContainer{
+    border:.4px solid black;
+    display:flex;
+    width:95%;
+    flex-direction: column;
+    border-radius: 20px;
+    .indiv{
+      display: flex;
+      border-bottom:.7px solid black;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      width:100%;
+      padding:5px;
+      cursor: pointer;
+      .first{
+        display: flex;
+        justify-content: space-between;
+        padding:3px;
+        align-items: center;
+        width:100%;
+      }
+      .onee{
+        // border:2px solid black;
+        margin:2px;;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:14em;
+        img{width:3em;
+        height: 3em;
+    // border: .5px solid black;
+    margin:3px;
+    border-radius: 50%;
+}
+    .pair{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        h3{@include span1()}
+        span{@include spanNormal();
+            font-weight:bold;
+            color:brown
+        }
+      }
+      .two{
+        margin: 4px;
+        // border:2px solid black;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:8em;
+        span{@include span1()}
+        h3{@include spanNormal();
+            font-weight: bold;
+            // i{font-size: 13px;}
+        }
+      }
+      .sevenn{
+        // border:2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:14em;
+        margin:3px;
+        span{@include span1();}
+         .det{
+            span{
+                @include spanNormal()
+            }
+            a{
+                // font-size: 17px;
+                @include span1();
+                font-size: 13px;
+                    font-weight: bold;
+                    color:brown;
+                    display: block;
+            }
+         }
+      }
+      .six{
+        .detailsDrop{
+            margin:3px;
+            // border:.4px solid black;
+            width:8.6em;
+            span{@include spanNormal();
+              font-weight: bold;
+              padding:10px;
+              color:brown
+            }
+        }
+      }
+      .dropDown{
+        // border: .3px solid black;
+        margin:3px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: .2px solid black;
+        .four{
+            span{@include spanNormal()}
+        }
+        .three{
+            display: flex;
+            flex-direction: column;
+            border:.2px solid black;
+            width:14em;
+            align-items: flex-start;
+            border-radius: 10px;
+            h4{@include span1()}
+            .pair{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+                // border:.4px solid black;
+                width:100%;
+                .innerrr{
+                    display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+             h4{@include spanNormal();
+            padding:5px;
+              font-size: 18px}
+             span{@include span1()}
+                }
+                button{@include button();
+                    margin:5px;
+                    border-radius: 10px;
+                    padding:15px
+                  }
+            }
+        }
+      }
+      .fivee{
+        display: flex;
+        flex-direction: column;
+        border:.2px solid black;
+        width:14em;
+        align-items: flex-start;
+        padding:5px;
+        border-radius: 10px;
+        margin-right:3px;
+        span{@include span1()}
+        button{@include button();
+          margin:5px;
+          border-radius: 10px;
+          padding:15px
+        }
+      }
+      .four{
+        // border:.4px solid black;
+        width:15em
+      }
+    }
+}
+
+.poolsCont{
+    .switchStaked{
+        // border:.4px solid black;
+        // margin: 1px 1px 1px 8px;
+        position: relative;
+        margin-top: 10px;
+        background-color: rgb(59, 10, 10);
+        border-radius: 15px;
+        cursor:pointer;
+        .ball{
+            position: absolute;
+            left:0%;
+            // border:5px solid yellow;
+            height: 1em;
+            width:2.3em;
+            top:0;
+            background-color: yellow;
+            border-radius:10px;
+            transition: .5s ease-in-out;
+            cursor:pointer;
+        }
+    }
+    .switchStaked input{
+        width:5em;
+        height:1em;
+        appearance: none;
+        cursor:pointer;
+    }
+    
+    .switchStaked input:checked + .ball{
+       transform: translateX(2em);
+    }
+}
+.stk{
+    @include spanNormal();
+    padding-left: 1px;
+    margin: none;
+    font-weight: 800;
+    font-size: 11px;
+}
+.switchTwo{
+    margin:1px 1px 1px 20px
+}
+
+.headtwo{
+    .dropdown{
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        height:2.6em;
+        margin:3px;
+        background-color: brown;
+        transition: 1s ease-in-out;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        .first{
+            @include spanNormal();
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            padding:10px;
+            font-weight: 400;
+        }
+        .more{
+            position: absolute;
+            width:100%;
+            top:100%;
+            left:0%;
+            background-color: rgb(186, 186, 240);
+            // height:0px;
+            overflow: hidden;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transition: .4s ease-in-out;
+        }
+       .more div{
+        @include spanNormal();
+         padding:10px;
+         border-bottom: .1px solid black;
+         width:100%;
+        //  font-weight: 600;
+       }
+       .more div:hover{
+        background-color: rgb(34, 34, 92);
+       }
+    }
+    // .dropdown:hover > .more{
+    //     height: 10.4em;
+    // }
+}
+.innerPool .sectionn2{
+    // border:.4px solid black;
+    height: 6em;
+    
+}
+.headOne .buttonss{
+    button{
+        width:2em;
+        height:2em;
+        margin: 3px;
+        border:none;
+        border-radius:3px;
+        cursor:pointer;
+        // background-color: rgb(71, 19, 19);
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+        background-color: brown;
+        i{
+            font-size: 13px;
+            font-weight: bold;
+            color:yellow;
+            
+        }
+    }
+}
+.innerPool .sectionn2{
+    align-items: center;
+}
+@media (max-width:953px) {
+    .innerPool .sectionn2{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    .innerPool .sectionn2 .headOne{
+       width:24em;
+    //    border:.4px solid black;
+       .switchStaked{
+        // margin:0;
+        //     padding: 0;
+        input{
+            margin:0;
+            padding: 0;
+        }
+    }
+    }
+}
+
+.innerPool .sectionn2 .headtwo{
+    // border: .4px solid black;
+}
+@media (max-width:480px) {
+    .innerPool .sectionn2 .headOne{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding:0;
+        .switchStaked{
+            // margin:0;
+            //     padding: 0;
+            input{
+                margin:0;
+                padding: 0;
+            }
+        }
+    }
+    .innerPool .sectionn2 .headtwo{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        height:9em;
+        padding:0;
+        .sortOne{
+            margin: 0;
+            .dropDown{
+                margin: 0;
+            }
+        }
+    }
+    .resBreak{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height:6em;
+        justify-content: space-between;
+    }
+}
+.switchStaked{
+    // margin:0;
+    //     padding: 0;
+    input{
+        margin:0;
+        padding: 0;
+    }
+}
+.innerPool .sectionn2 {
+    .headOne, .headtwo{
+        border-bottom:.3px solid rgb(59, 12, 12)
+    }
+}
+
+.innerLine .toggled{
+    width:100%;
+    @include flex-column();
+    align-items: flex-start;
+    .resHead{
+        width:100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+    //    .first{
+
+    //    }
+    //    .second{
+
+    //    }
+    //    .third{
+
+    //    }
+    //    .third{
+
+    //    }
+    } 
+   
+    .resExtra{
+        display: flex;
+        // border:.5px solid black;
+       justify-content: space-between;
+       width:100%;
+        .two{
+            @include spanNormal();
+            @include flex-column();
+            color:brown;
+            h5{
+                font-weight: bold;
+                
+            }
+        }
+        .four{
+            @include spanNormal();
+            @include flex-column();
+            color:brown;
+            h5{
+                font-weight: bold;
+                
+            }
+        }
+        .multiplier{
+            @include spanNormal();
+            @include flex-column();
+            color:brown;
+            .more{
+                @include flex-row();
+                justify-content: space-between;
+            }
+            h5{
+                font-weight: bold;
+                
+            }
+        }
+    }
+}
+
+@media (max-width:1132px) {
+    .resHead{
+        .third{
+              button{
+                @include spanNormal();
+                font-size: 10px;
+                font-weight: 100px;
+              }
+        }
+    }
+}
+@media (max-width:456px){
+    .toggled .resHead{
+        width:100%;
+       display: flex;
+       flex-direction: column;
+       justify-content:flex-start;
+       align-items:flex-start;
+    }
+}
+
+
+@media (max-width:786px) {
+    .resHead{
+        border-bottom: .4px solid black;
+        padding: 4px;
+    }
+   .sectionn4 .innerLine .indiv{
+        .mainn{
+            .one{
+                // border:.4px solid black;
+                width:11em;
+                h3{
+                    font-size: 13px;
+                }
+            }
+            .detalss{
+                // width:9em;
+                // border:.4px solid black;
+                h3{
+                    font-size: 12px;
+                }
+            }
+            .two,
+            .four,
+            .multiplier{
+                display: none;
+            }
+            h3,
+            .three{
+                h3{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:786px) {
+    .resExtra{
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+@media (max-width:504px) {
+    .sectionn4 .innerLine .indiv{
+        .mainn{
+            .one{
+                // border:.4px solid black;
+                width:9.6em;
+                display: flex;
+                justify-content: flex-start;
+                img{
+                    width:1.4em;
+                    height: 1.4em;
+                }
+                h3{
+                    font-size: 13px;
+                }
+            }
+            .detalss{
+                // width:9em;
+                // border:.4px solid black;
+                h3{
+                    font-size: 12px;
+                }
+            }
+            .two,
+            .four,
+            .multiplier{
+                display: none;
+            }
+            h3,
+            .three{
+                // border:.3px solid black;
+                h3{
+                    font-size: 12px;
+                    i{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:389px) {
+    .sectionn4 .innerLine .indiv{
+        .mainn{
+            .one{
+                // border:.4px solid black;
+                width:6em;
+                display: flex;
+                justify-content: flex-start;
+                img{
+                    width:1.4em;
+                    height: 1.4em;
+                }
+                h3{
+                    font-size: 11px;
+                }
+            }
+            .detalss{
+                // width:9em;
+                // border:.4px solid black;
+                h3{
+                    font-size: 12px;
+                    text-align: right;
+                }
+            }
+            .two,
+            .four,
+            .multiplier{
+                display: none;
+            }
+            h3,
+            .three{
+                // border:.3px solid black;
+                width:7em;
+                h3{
+                    font-size: 12px;
+                }
+                i{
+                    visibility: hidden;;
+                    // display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:352px) {
+    .sectionn4 .innerLine .indiv{
+        .mainn{
+             .indiv{
+                width:95%
+             };
+            .one{
+                // border:.4px solid black;
+                width:6em;
+                display: flex;
+                justify-content: flex-start;
+                img{
+                    width:1.4em;
+                    height: 1.4em;
+                }
+                h3{
+                    font-size: 11px;
+                }
+            }
+            .detalss{
+                width:4em;
+                // border:.4px solid black;
+                h3{
+                    font-size: 11px;
+                }
+            }
+            .two,
+            .four,
+            .multiplier{
+                display: none;
+            }
+            h3,
+            .three{
+                // border:.3px solid black;
+                width:7em;
+                h3{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:820px) {
+    .poolsCont .innerPool .imgg{
+        img{
+            height:9em
+        }
+    }
+}
+@media (max-width:636px) {
+    .poolsCont .innerPool .imgg{
+        img{
+            height:7em
+        }
+    }
+}
+@media (max-width:488px) {
+    .poolsCont .innerPool .imgg{
+        width:100%;
+        img{
+            height:4em;
+            width:22em;
+        }
+    }
+}
+.dropDown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ .poolsLineContainer .indiv .dropDown{
+    .ddone,
+    .ddextra{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.poolsLineContainer .indiv .dropDown{
+    .ddextra{display: none;}
+}
+
+@media (max-width:604px) {
+    .poolsLineContainer .indiv .dropDown{
+        h3{
+            font-size: 14px;
+        }
+        .ddextra{display: flex;
+            .sevenn,
+            .twos{
+                display:flex
+            }
+        }
+    }
+    .poolsLineContainer .indiv {
+        .sevenn,
+        .twos{
+            display:none
+        }
+    }
+    
+}
+
+@media (max-width:778px) {
+    .poolsLineContainer .indiv .dropDown{
+    .ddone{
+        .four{
+            span{
+                font-size:12px
+            }
+        }
+        .three,
+        .fivee{
+          width:10em;
+          button{
+            padding:10px;
+            font-size: 14px;
+          }
+        }
+    }
+}
 }

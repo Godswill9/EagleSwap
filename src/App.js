@@ -1,10 +1,13 @@
 import Home from "./pages/home";
-import {BrowserRouter, Routes, Route, useParams} from "react-router-dom"
-// import TradeLiquidity from "./pages/TradeLiquidity";
-import TradeSwap from "./pages/TradeSwap";
+import {BrowserRouter, Routes, Route, useParams, HashRouter} from "react-router-dom"
 import NFT_Market from "./pages/NFT_Market";
-import Farms from "./pages/farms";
-import Pools from "./pages/pools";
+import SwapMain from "./pages/swapMain";
+import LiquidityMain from "./pages/liquidityMain";
+import AddLiquidity from "./pages/addLiquidity";
+import PoolsEarnBaby from "./pages/poolsEarnBaby";
+import PoolsEarnAlt from "./pages/poolsAlt";
+import FarmsEarnBABY from "./pages/farmsEarnBABY";
+import FarmsEarnAlt from "./pages/farmsEarnALT";
 
 
 
@@ -15,10 +18,13 @@ function App() {
       <BrowserRouter>
       <Routes>
             <Route path={`/`} element={<Home/>}/>
-            {/* <Route path={`/Liquidity`} element={<TradeLiquidity/>}/> */}
-            <Route path={`/Swap`} element={<TradeSwap/>}/>
-            <Route path={`/Farms`} element={<Farms/>}/>
-            <Route path={`/Pools`} element={<Pools/>}/>
+            <Route path={`/Farms_earnBABY`} element={<FarmsEarnBABY/>}/>
+            <Route path={`/Farms_earnALT`} element={<FarmsEarnAlt/>}/>
+            <Route path={`/Pools_earnBaby`} element={<PoolsEarnBaby/>}/>
+            <Route path={`/Pools_earnAlt`} element={<PoolsEarnAlt/>}/>
+            <Route path='/Swap' element={<SwapMain/>}></Route>
+          <Route path='/liquidity' element={ <LiquidityMain/>}></Route>
+          <Route path='/liquidity_add' element={ <AddLiquidity/>}></Route>
             {/* <Route path={`/Farms/:Alt`} element={<FarmsAlt/>}/> */}
             {/* <Route path={`/Pools/:Baby`} element={<Pools/>}/>
             <Route path={`/Pools/:Alt`} element={<PoolsAlt/>}/> */}

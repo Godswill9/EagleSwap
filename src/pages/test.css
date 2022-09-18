@@ -87,10 +87,6 @@
   font-family: verdana;
   border: none;
 }
-.headOne .switchTwo button:hover {
-  background-color: rgb(228, 228, 228);
-  color: brown;
-}
 
 .headtwo .sortOne {
   display: flex;
@@ -128,7 +124,7 @@
 .headtwo input {
   border: none;
   border: 0.4px solid brown;
-  width: 17em;
+  width: 15em;
   height: 2.8em;
   border-radius: 10px;
   background-color: rgb(189, 127, 127);
@@ -169,10 +165,6 @@
   font-size: 16px;
   font-family: verdana;
   border: none;
-}
-.sectionn3 button:hover {
-  background-color: rgb(228, 228, 228);
-  color: brown;
 }
 
 .sectionn4 {
@@ -479,7 +471,7 @@
   justify-content: space-between;
   padding: 3px;
   margin: 5px;
-  width: 15em;
+  width: 10em;
   border-radius: 20px;
 }
 .sectionn4 .innerLine .indiv .toggled .first .innerr button {
@@ -525,7 +517,7 @@
   justify-content: space-between;
   padding: 3px;
   margin: 5px;
-  width: 15em;
+  width: 10em;
   border-radius: 20px;
 }
 .sectionn4 .innerLine .indiv .toggled .second .innerr button {
@@ -549,7 +541,6 @@
   flex-direction: column;
   padding: 15px;
   justify-content: space-between;
-  width: 15em;
   height: 6.5em;
   margin: 10px;
   border-radius: 20px;
@@ -574,8 +565,9 @@
   font-size: 16px;
   font-family: verdana;
   border: none;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
+  width: 10em;
 }
 .sectionn4 .innerLine .indiv .toggled .links {
   display: flex;
@@ -587,11 +579,13 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
+  width: 9em;
+  border: 0.5px solid black;
 }
 .sectionn4 .innerLine .indiv .toggled .links a {
   color: brown;
   padding: 2px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .sectionn4 .innerLine .indiv .mainn .two,
 .sectionn4 .innerLine .indiv .mainn .three,
@@ -628,4 +622,975 @@
   color: rgb(175, 82, 82);
   font-weight: 700;
   font-size: 12px;
+}
+
+.poolsRealCont {
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.poolsBoxContInner {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.poolsBoxContInner .indiv {
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 23em;
+  border-radius: 20px;
+  margin: 15px;
+}
+.poolsBoxContInner .indiv .onee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 0.2px solid black;
+  background-color: rgb(144, 144, 187);
+  padding: 15px 4px 25px 4px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.poolsBoxContInner .indiv .onee .pair h3 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px;
+  font-size: 16px;
+}
+.poolsBoxContInner .indiv .onee .pair span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px;
+  font-size: 13px;
+}
+.poolsBoxContInner .indiv .onee img {
+  width: 3em;
+  height: 3em;
+}
+.poolsBoxContInner .indiv .two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+  padding: 15px 4px 25px 4px;
+  border-bottom: 0.2px solid black;
+}
+.poolsBoxContInner .indiv .two h3 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .two span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .two span i {
+  font-size: 17px;
+}
+.poolsBoxContInner .indiv .three {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 4px 25px 4px;
+  border-bottom: 0.2px solid black;
+}
+.poolsBoxContInner .indiv .three h4 {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .three .pair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.poolsBoxContInner .indiv .three .pair .innerrr {
+  display: flex;
+  flex-direction: column;
+}
+.poolsBoxContInner .indiv .three .pair .innerrr h4 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .three .pair .innerrr span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-size: 10px;
+}
+.poolsBoxContInner .indiv .three .pair button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+.poolsBoxContInner .indiv .four {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 0.2px solid black;
+  padding: 15px 4px 25px 1px;
+}
+.poolsBoxContInner .indiv .four span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .fivee {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 0.2px solid black;
+}
+.poolsBoxContInner .indiv .fivee span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .fivee button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  width: 90%;
+  margin: 6px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.poolsBoxContInner .indiv .six {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 0.2px solid black;
+  padding: 15px 4px 25px 4px;
+}
+.poolsBoxContInner .indiv .six span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .six span i {
+  font-size: 14px;
+}
+.poolsBoxContInner .indiv .sevenn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 4px 25px 4px;
+  justify-content: space-between;
+}
+.poolsBoxContInner .indiv .sevenn span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .sevenn .det {
+  display: flex;
+  flex-direction: column;
+}
+.poolsBoxContInner .indiv .sevenn .det span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsBoxContInner .indiv .sevenn .det span a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+
+.poolsLineContainer {
+  border: 0.4px solid black;
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.poolsLineContainer .indiv {
+  display: flex;
+  border-bottom: 0.7px solid black;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+.poolsLineContainer .indiv .first {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  align-items: center;
+  width: 100%;
+}
+.poolsLineContainer .indiv .onee {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14em;
+}
+.poolsLineContainer .indiv .onee img {
+  width: 3em;
+  height: 3em;
+  margin: 3px;
+  border-radius: 50%;
+}
+.poolsLineContainer .indiv .onee .pair {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.poolsLineContainer .indiv .onee h3 {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .onee span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-weight: bold;
+  color: brown;
+}
+.poolsLineContainer .indiv .two {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 8em;
+}
+.poolsLineContainer .indiv .two span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .two h3 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-weight: bold;
+}
+.poolsLineContainer .indiv .sevenn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 14em;
+  margin: 3px;
+}
+.poolsLineContainer .indiv .sevenn span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .sevenn .det span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .sevenn .det a {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-size: 13px;
+  font-weight: bold;
+  color: brown;
+  display: block;
+}
+.poolsLineContainer .indiv .six .detailsDrop {
+  margin: 3px;
+  width: 8.6em;
+}
+.poolsLineContainer .indiv .six .detailsDrop span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  font-weight: bold;
+  padding: 10px;
+  color: brown;
+}
+.poolsLineContainer .indiv .dropDown {
+  margin: 3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.2px solid black;
+}
+.poolsLineContainer .indiv .dropDown .four span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .dropDown .three {
+  display: flex;
+  flex-direction: column;
+  border: 0.2px solid black;
+  width: 14em;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+.poolsLineContainer .indiv .dropDown .three h4 {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .dropDown .three .pair {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.poolsLineContainer .indiv .dropDown .three .pair .innerrr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.poolsLineContainer .indiv .dropDown .three .pair .innerrr h4 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px;
+  font-size: 18px;
+}
+.poolsLineContainer .indiv .dropDown .three .pair .innerrr span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .dropDown .three .pair button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.poolsLineContainer .indiv .fivee {
+  display: flex;
+  flex-direction: column;
+  border: 0.2px solid black;
+  width: 14em;
+  align-items: flex-start;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 3px;
+}
+.poolsLineContainer .indiv .fivee span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+}
+.poolsLineContainer .indiv .fivee button {
+  padding: 7px 15px 7px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: verdana;
+  border: none;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.poolsLineContainer .indiv .four {
+  width: 15em;
+}
+
+.poolsCont .switchStaked {
+  position: relative;
+  margin-top: 10px;
+  background-color: rgb(59, 10, 10);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.poolsCont .switchStaked .ball {
+  position: absolute;
+  left: 0%;
+  height: 1em;
+  width: 2.3em;
+  top: 0;
+  background-color: yellow;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.poolsCont .switchStaked input {
+  width: 5em;
+  height: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.poolsCont .switchStaked input:checked + .ball {
+  transform: translateX(2em);
+}
+
+.stk {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding-left: 1px;
+  margin: none;
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.switchTwo {
+  margin: 1px 1px 1px 20px;
+}
+
+.headtwo .dropdown {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 2.6em;
+  margin: 3px;
+  background-color: brown;
+  transition: 1s ease-in-out;
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.headtwo .dropdown .first {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: 400;
+}
+.headtwo .dropdown .more {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  background-color: rgb(186, 186, 240);
+  overflow: hidden;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+.headtwo .dropdown .more div {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  padding: 10px;
+  border-bottom: 0.1px solid black;
+  width: 100%;
+}
+.headtwo .dropdown .more div:hover {
+  background-color: rgb(34, 34, 92);
+}
+
+.innerPool .sectionn2 {
+  height: 6em;
+}
+
+.headOne .buttonss button {
+  width: 2em;
+  height: 2em;
+  margin: 3px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: brown;
+}
+.headOne .buttonss button i {
+  font-size: 13px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.innerPool .sectionn2 {
+  align-items: center;
+}
+
+@media (max-width: 953px) {
+  .innerPool .sectionn2 {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+  .innerPool .sectionn2 .headOne {
+    width: 24em;
+  }
+  .innerPool .sectionn2 .headOne .switchStaked input {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .innerPool .sectionn2 .headOne {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .innerPool .sectionn2 .headOne .switchStaked input {
+    margin: 0;
+    padding: 0;
+  }
+  .innerPool .sectionn2 .headtwo {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    height: 9em;
+    padding: 0;
+  }
+  .innerPool .sectionn2 .headtwo .sortOne {
+    margin: 0;
+  }
+  .innerPool .sectionn2 .headtwo .sortOne .dropDown {
+    margin: 0;
+  }
+  .resBreak {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 6em;
+    justify-content: space-between;
+  }
+}
+.switchStaked input {
+  margin: 0;
+  padding: 0;
+}
+
+.innerPool .sectionn2 .headOne, .innerPool .sectionn2 .headtwo {
+  border-bottom: 0.3px solid rgb(59, 12, 12);
+}
+
+.innerLine .toggled {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.innerLine .toggled .resHead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.innerLine .toggled .resExtra {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.innerLine .toggled .resExtra .two {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  color: brown;
+}
+.innerLine .toggled .resExtra .two h5 {
+  font-weight: bold;
+}
+.innerLine .toggled .resExtra .four {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  color: brown;
+}
+.innerLine .toggled .resExtra .four h5 {
+  font-weight: bold;
+}
+.innerLine .toggled .resExtra .multiplier {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: verdana;
+  padding: 5px 3px 4px 5px;
+  font-weight: 100;
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  color: brown;
+}
+.innerLine .toggled .resExtra .multiplier .more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.innerLine .toggled .resExtra .multiplier h5 {
+  font-weight: bold;
+}
+
+@media (max-width: 1132px) {
+  .resHead .third button {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: verdana;
+    padding: 5px 3px 4px 5px;
+    font-weight: 100;
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: 100px;
+  }
+}
+@media (max-width: 456px) {
+  .toggled .resHead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 786px) {
+  .resHead {
+    border-bottom: 0.4px solid black;
+    padding: 4px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one {
+    width: 11em;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one h3 {
+    font-size: 13px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .detalss h3 {
+    font-size: 12px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .two,
+.sectionn4 .innerLine .indiv .mainn .four,
+.sectionn4 .innerLine .indiv .mainn .multiplier {
+    display: none;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 h3,
+.sectionn4 .innerLine .indiv .mainn .three h3 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 786px) {
+  .resExtra {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 504px) {
+  .sectionn4 .innerLine .indiv .mainn .one {
+    width: 9.6em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one img {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one h3 {
+    font-size: 13px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .detalss h3 {
+    font-size: 12px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .two,
+.sectionn4 .innerLine .indiv .mainn .four,
+.sectionn4 .innerLine .indiv .mainn .multiplier {
+    display: none;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 h3,
+.sectionn4 .innerLine .indiv .mainn .three h3 {
+    font-size: 12px;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 h3 i,
+.sectionn4 .innerLine .indiv .mainn .three h3 i {
+    font-size: 12px;
+  }
+}
+@media (max-width: 389px) {
+  .sectionn4 .innerLine .indiv .mainn .one {
+    width: 6em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one img {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one h3 {
+    font-size: 11px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .detalss h3 {
+    font-size: 12px;
+    text-align: right;
+  }
+  .sectionn4 .innerLine .indiv .mainn .two,
+.sectionn4 .innerLine .indiv .mainn .four,
+.sectionn4 .innerLine .indiv .mainn .multiplier {
+    display: none;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3,
+.sectionn4 .innerLine .indiv .mainn .three {
+    width: 7em;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 h3,
+.sectionn4 .innerLine .indiv .mainn .three h3 {
+    font-size: 12px;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 i,
+.sectionn4 .innerLine .indiv .mainn .three i {
+    visibility: hidden;
+  }
+}
+@media (max-width: 352px) {
+  .sectionn4 .innerLine .indiv .mainn .indiv {
+    width: 95%;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one {
+    width: 6em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one img {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  .sectionn4 .innerLine .indiv .mainn .one h3 {
+    font-size: 11px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .detalss {
+    width: 4em;
+  }
+  .sectionn4 .innerLine .indiv .mainn .detalss h3 {
+    font-size: 11px;
+  }
+  .sectionn4 .innerLine .indiv .mainn .two,
+.sectionn4 .innerLine .indiv .mainn .four,
+.sectionn4 .innerLine .indiv .mainn .multiplier {
+    display: none;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3,
+.sectionn4 .innerLine .indiv .mainn .three {
+    width: 7em;
+  }
+  .sectionn4 .innerLine .indiv .mainn h3 h3,
+.sectionn4 .innerLine .indiv .mainn .three h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 820px) {
+  .poolsCont .innerPool .imgg img {
+    height: 9em;
+  }
+}
+@media (max-width: 636px) {
+  .poolsCont .innerPool .imgg img {
+    height: 7em;
+  }
+}
+@media (max-width: 488px) {
+  .poolsCont .innerPool .imgg {
+    width: 100%;
+  }
+  .poolsCont .innerPool .imgg img {
+    height: 4em;
+    width: 22em;
+  }
+}
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.poolsLineContainer .indiv .dropDown .ddone,
+.poolsLineContainer .indiv .dropDown .ddextra {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poolsLineContainer .indiv .dropDown .ddextra {
+  display: none;
+}
+
+@media (max-width: 604px) {
+  .poolsLineContainer .indiv .dropDown h3 {
+    font-size: 14px;
+  }
+  .poolsLineContainer .indiv .dropDown .ddextra {
+    display: flex;
+  }
+  .poolsLineContainer .indiv .dropDown .ddextra .sevenn,
+.poolsLineContainer .indiv .dropDown .ddextra .twos {
+    display: flex;
+  }
+  .poolsLineContainer .indiv .sevenn,
+.poolsLineContainer .indiv .twos {
+    display: none;
+  }
+}
+@media (max-width: 778px) {
+  .poolsLineContainer .indiv .dropDown .ddone .four span {
+    font-size: 12px;
+  }
+  .poolsLineContainer .indiv .dropDown .ddone .three,
+.poolsLineContainer .indiv .dropDown .ddone .fivee {
+    width: 10em;
+  }
+  .poolsLineContainer .indiv .dropDown .ddone .three button,
+.poolsLineContainer .indiv .dropDown .ddone .fivee button {
+    padding: 10px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=test.css.map */

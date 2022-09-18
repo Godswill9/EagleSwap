@@ -460,7 +460,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='secB'>
-                <img src="images/eagle5-removebg-preview.png"></img>
+                <img style={{"width":"2em", "height":"2em"}} src="/images/metaMask.png"></img>
                 <button>Buy</button>
             </div>
             </div>
@@ -515,9 +515,10 @@ export default function Home() {
     <div className='third'>
         <h1>Community</h1>
         <div className='icons'>
-            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            <i class="bi bi-telegram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-discord"></i>
+            <i class="bi bi-twitter"></i>
         </div>
     </div>
 </div>

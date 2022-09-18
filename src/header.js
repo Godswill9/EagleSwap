@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./header.css";
+// import "./pages/swap.css"
+// import './pages/Trade.css'
 
 export default function Header() {
   const toggle1 = useRef();
@@ -15,6 +17,8 @@ export default function Header() {
   const [namee6, setName6] = useState("none");
   const [namee7, setName7] = useState("none");
   const [navBar, setnavBar] = useState("0px");
+  const [ConnectWallet, setConnectWallet]=useState("none")
+  const [wrapper, setWrapper]= useState("none")
 
   const handleNav = () => {
     if (navBar === "0px") {
@@ -30,6 +34,15 @@ export default function Header() {
       setnavBar("0px");
     }
   };
+
+  const handleConnectWallet=()=>{
+    setConnectWallet("flex")
+    setWrapper("flex")
+ }
+ const closePopup=()=>{
+  setWrapper("none")
+  setConnectWallet("none")
+}
 
   const click1 = () => {
     if (namee === "none") {
@@ -143,17 +156,17 @@ export default function Header() {
                     <h3>Swap</h3>
                     <span className="headSpan">Trade any tokens </span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
               <div className="inner">
-              <a href="#"><div className="innerHead">
+              <a href="/liquidity"><div className="innerHead">
                   <div className="oneInner">
                     <h3>Liquidity</h3>
                     <span className="headSpan">Share the trading fees</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -163,7 +176,7 @@ export default function Header() {
                     <h3>Perpetual</h3>
                     <span className="headSpan">Trade with leverage</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -180,21 +193,21 @@ export default function Header() {
                     <h3>Farm</h3>
                     <span className="headSpan">Stake Baby-LPs to earn</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
-                <a href="/Farms">
+                <a href="/Farms_earnBABY">
                     <span>
-                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn baby
-                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                      {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
-                <a href="/Farms">
+                <a href="/Farms_earnALT">
                     <span>
-                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn Alt
-                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                      {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
                   
@@ -206,21 +219,21 @@ export default function Header() {
                     <h3>Pools</h3>
                     <span className="headSpan">Stake tokens to earn</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
-                  <a href="/Pools">
+                  <a href="/Pools_earnBaby">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn baby
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
-                  <a href="/Pools">
+                  <a href="/Pools_earnAlt">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn ALT
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                 </div>
@@ -232,7 +245,7 @@ export default function Header() {
                     <h3>Vault</h3>
                     <span className="headSpan">Stake non-BABY LPs to earn</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -250,7 +263,7 @@ export default function Header() {
                     <h3>Lucky BABY</h3>
                     <span className="headSpan">Be the lucky one</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -261,7 +274,7 @@ export default function Header() {
                     <h3>Activities</h3>
                     <span className="headSpan">Claim your rewards</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -272,7 +285,7 @@ export default function Header() {
                     <h3>Playground</h3>
                     <span className="headSpan">Play with BABY</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -281,13 +294,13 @@ export default function Header() {
           <div className="link_head">
             <div className="dropDownHead">
               <a href="#"><span>Land</span></a>
-              {/* <span className='icon'><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
+              {/* <span className='icon'><i style={{"fontSize":"17px"}} class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
             </div>
           </div>
           <div className="link_head">
             <div className="dropDownHead">
               <span>NFT</span>
-              {/* <span className='icon'><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
+              {/* <span className='icon'><i style={{"fontSize":"17px"}} class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
             </div>
             <div className="dropDownBody">
               <div className="inner">
@@ -296,7 +309,7 @@ export default function Header() {
                     <h3>NFT Market</h3>
                     <span className="headSpan">Trade the hottest & newest NFTs </span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -306,7 +319,7 @@ export default function Header() {
                     <h3>My NFTs</h3>
                     <span className="headSpan">Check & list your NFTs </span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -316,28 +329,28 @@ export default function Header() {
                     <h3>NFT Stake</h3>
                     <span className="headSpan">Stake NFT to earn</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake BabySwap NFB
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake Binance NFB
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake NFT
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                 </div>
@@ -355,7 +368,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -364,7 +377,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -373,7 +386,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
             </div>
@@ -389,7 +402,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -398,7 +411,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -407,7 +420,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
             </div>
@@ -422,7 +435,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -430,7 +443,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
               <div className="inner">
@@ -438,7 +451,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
               </div>
             </div>
@@ -447,26 +460,25 @@ export default function Header() {
         <div className="link2">
           <div className="duo">
             <img src="/images/eaagle2-removebg-preview.png"></img>
-            <span>Little text</span>
+            <span>$0.037</span>
           </div>
           <div className="iconss">
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
+            <i style={{"fontSize":"17px"}} class="bi bi-gear"></i>
+            <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
+            {/* <i style={{"fontSize":"17px"}} style={{"fontSize":"17px"}} class="fa fa-arrow-circle-right icon" aria-hidden="true"></i> */}
           </div>
-          <button>Click</button>
+          <button onClick={handleConnectWallet}>Connect</button>
         </div>
-      </div>
+      </div> 
       <div className="mobileView">
         {navBar === "32em" ? (
           <i
-            class="fa fa-times icon"
+            style={{"fontSize":"17px"}} class="fa fa-times icon"
             aria-hidden="true"
             onClick={handleNav}
           ></i>
         ) : (
-          <i class="fa fa-bars icon" aria-hidden="true" onClick={handleNav}></i>
+          <i style={{"fontSize":"17px"}} class="fa fa-bars icon" aria-hidden="true" onClick={handleNav}></i>
         )}
       </div>
       <div className="mobileContent" style={{ height: navBar }}>
@@ -475,9 +487,9 @@ export default function Header() {
             <p onClick={click1}>
               Trade
               {namee === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" ref={toggle1} style={{ display: namee }}>
@@ -487,27 +499,30 @@ export default function Header() {
                     <h3>Swap</h3>
                     <span className="headSpan">Trade any tokens </span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
               <div className="inner">
-                <div className="innerHead">
+              <a href="/Liquidity"><div className="innerHead">
                   <div className="oneInner">
                     <h3>Liquidity</h3>
                     <span className="headSpan">Share the trading fees</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Perpetual</h3>
                     <span className="headSpan">Trade with leverage</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -515,33 +530,35 @@ export default function Header() {
             <p onClick={click2}>
               Earn
               {namee2 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" ref={toggle2} style={{ display: namee2 }}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Farm</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
+                </a>
                 <div className="subLinks">
                 <a href="/Pools">
                     <span>
-                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn baby
-                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                      {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
                 <a href="#">
                     <span>
-                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn Alt
-                      {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                      {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
                 </div>
@@ -553,22 +570,22 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 </a>
                 <div className="subLinks">
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn baby
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn Alt
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                 </div>
@@ -580,7 +597,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -590,9 +607,9 @@ export default function Header() {
             <p onClick={click3}>
               Fun
               {namee3 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" ref={toggle3} style={{ display: namee3 }}>
@@ -603,7 +620,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -614,7 +631,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -625,7 +642,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -635,9 +652,9 @@ export default function Header() {
             <p onClick={click4}>
               NFT
               {namee4 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" ref={toggle4} style={{ display: namee4 }}>
@@ -648,7 +665,7 @@ export default function Header() {
                     <h3>NFT Market</h3>
                     <span className="headSpan">Trade the hottest & newest NFTs</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -659,7 +676,7 @@ export default function Header() {
                     <h3>My NFTs</h3>
                     <span className="headSpan">Check & list your NFTs</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -669,28 +686,28 @@ export default function Header() {
                     <h3>NFT Stake</h3>
                     <span className="headSpan">Stake NFT to earn</span>
                   </div>
-                  {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                  {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                    Stake BabySwap NFB
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
                   <span>
-                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                     <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake Binance NFB
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
                   <span>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake NFT
-                    {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
+                    {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                 </div>
@@ -701,9 +718,9 @@ export default function Header() {
             <p onClick={click5}>
               Gamepad
               {namee5 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" ref={toggle5} style={{ display: namee5 }}>
@@ -714,7 +731,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -725,7 +742,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -736,7 +753,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -746,9 +763,9 @@ export default function Header() {
             <p onClick={click6}>
               Membership
               {namee6 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" style={{ display: namee6 }}>
@@ -759,7 +776,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -770,7 +787,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -781,7 +798,7 @@ export default function Header() {
                     <h3>swap</h3>
                     <span className="headSpan">Stake anything</span>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -791,9 +808,9 @@ export default function Header() {
             <p onClick={click7}>
               More
               {namee7 === "none" ? (
-                <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
               ) : (
-                <i class="fa fa-arrow-up icon" aria-hidden="true"></i>
+                <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
             <div className="drop" style={{ display: namee7 }}>
@@ -803,7 +820,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -813,7 +830,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -823,7 +840,7 @@ export default function Header() {
                   <div className="oneInner">
                     <h3>swap</h3>
                   </div>
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
                 </a>
               </div>
@@ -833,17 +850,64 @@ export default function Header() {
         <div className="link2">
           <div className="duo">
             <img src="/images/eaagle2-removebg-preview.png"></img>
-            <span>Little text</span> 
+            <span>$0.037</span> 
           </div>
           <div className="iconss">
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-right icon" aria-hidden="true"></i>
+            <i style={{"fontSize":"17px"}} class="bi bi-gear"></i>
+            <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
           </div>
-          <button>Click</button>
+          <button onClick={handleConnectWallet}>Connect</button>
         </div>
       </div>
+
+      <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
+      <div className='connectWallet' style={{"display":ConnectWallet}}>
+<div className='first'>
+       <span  style={{"color":"brown"}}>Connect to a wallet</span>
+       <i onClick={closePopup} class="bi bi-x"></i>
+</div>
+<div className='indivWallets'>
+   {wallets.map((item, i)=>{
+     return(
+      <a href={item.link}>
+      <div className='indiv'>
+        <span >{item.name}</span>
+        <img src={item.img}></img>
+      </div>
+    </a>
+     )
+   })}
+</div>
+</div>
     </div>
   );
 }
+
+
+var wallets=[
+  {
+    img:"images/metaMask.png",
+    name:"Metamask",
+    link:"#"
+  },
+  {
+    img:"images/metaMask.png",
+    name:"Metamask",
+    link:"#"
+  },
+  {
+    img:"images/metaMask.png",
+    name:"Metamask",
+    link:"#"
+  },
+  {
+    img:"images/metaMask.png",
+    name:"Metamask",
+    link:"#"
+  },
+  {
+    img:"images/metaMask.png",
+    name:"Metamask",
+    link:"#"
+  },
+]

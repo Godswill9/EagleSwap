@@ -87,14 +87,14 @@ header{
     /* color:brown;
     background-color: rgb(216, 192, 192); */
 }
-.bodySec .buttons .btnLiquidity:hover{
+/* .bodySec .buttons .btnLiquidity:hover{
     color:brown;
     background-color: rgb(236, 232, 232);
-}
-.bodySec .buttons .btnSwap:hover{
+} */
+/* .bodySec .buttons .btnSwap:hover{
     color:brown;
     background-color: rgb(236, 232, 232);
-}
+} */
 .bodySec .hidingEagle{
     /* border:.2px solid black; */
     height: 23em;
@@ -216,6 +216,17 @@ header{
      width:3.4em;
      font-size: 23px;
 }
+.mainSec .one .icons i{
+    padding:7px;
+    border-radius: 20%;
+    font-weight: 100;
+     /* background-color: rgba(0, 0, 0, 0.295); */
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.mainSec .one .icons i:hover{
+    background-color: rgba(0, 0, 0, 0.295);
+}
 .mainSec .two{
     width: 85%;
     display: flex;
@@ -266,14 +277,36 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* background-color:rgba(0, 0, 0, 0.295); */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease-in;
 }
+ .fromInput .more .heyy,
+.mainSec .two .more .heyy{ 
+    background-color:rgba(0, 0, 0, 0.329);
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:rgba(0, 0, 0, 0.295); */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.fromInput .more .heyy:hover,
+.mainSec .two .more .heyy:hover{
+    background-color:rgba(0, 0, 0, 0.212);
+}
+.fromInput .more .heyy img,
 .mainSec .two .more div img{
     /* border:.2px solid black; */
-    width:2.2em;
-    height:2.2em;
+    width:1.6em;
+    height:1.6em;
     border-radius: 50%;;
     margin:10px
 }
+.fromInput .more .heyy i,
 .mainSec .two .more div i{
     font-size: 23px;
     padding:5px
@@ -364,7 +397,7 @@ header{
     width:100%;
     font-weight: 700;
     font-family: verdana;
-    font-size: 10px;
+    font-size: 11px;
     padding:5px
 }
 .mainSec .two .more div img{

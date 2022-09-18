@@ -6,7 +6,7 @@ import "./test.css"
 import Warning from './Warning'
 
 
-export default function PoolsEarnAlt(){
+export default function PoolsEarnBaby(){
     const navigate=useNavigate()
     const [displayMode, setDisplay]=useState("flex")
     const [displayMode2, setDisplay2]=useState("none")
@@ -79,11 +79,11 @@ export default function PoolsEarnAlt(){
            <Header/>
         </header>
         <div className='poolsCont'>
-        <div className="innerPool"> 
+        <div className="innerPool">
         <div className='imgg'>
         <img src="/images/NewPool_Banner.png"></img>
             </div>
-            <div className="sectionn2">
+        <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>
             <div className='buttonss'>
@@ -305,7 +305,39 @@ export default function PoolsEarnAlt(){
 
 var poolsArray=[
     {
-        img:"/images/BTC.png",
+        img:"/images/BNB.png",
+        smallHeader:"Automatic restaking",
+        largeHeader:"Auto BABY",
+        profit:"0.000",
+        APY:"20",
+        available:"0"
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"Automatic restaking",
+        largeHeader:"Auto BABY",
+        profit:"0.000",
+        APY:"20",
+        available:"0"
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"Automatic restaking",
+        largeHeader:"Auto BABY",
+        profit:"0.000",
+        APY:"20",
+        available:"0"
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"Automatic restaking",
+        largeHeader:"Auto BABY",
+        profit:"0.000",
+        APY:"20",
+        available:"0"
+    },
+    {
+        img:"/images/BNB.png",
         smallHeader:"Automatic restaking",
         largeHeader:"Auto BABY",
         profit:"0.000",
