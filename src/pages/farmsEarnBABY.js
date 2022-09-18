@@ -84,7 +84,7 @@ export default function FarmsEarnBABY(){
         <div className="innerPool">
             <div className='imgg'>
             <img src="/images/Farm.png"></img>
-            </div>
+            </div> 
         <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>

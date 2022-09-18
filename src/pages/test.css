@@ -375,6 +375,7 @@
 .sectionn4 .indiv .six {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .sectionn4 .indiv .six .sec {
   display: flex;
@@ -405,6 +406,7 @@
   font-family: verdana;
   color: orange;
   font-weight: 900;
+  font-size: 13px;
 }
 
 .sectionn4 .innerLine {
@@ -1139,7 +1141,7 @@
   position: absolute;
   left: 0%;
   height: 1.3em;
-  width: 2.7em;
+  width: 2.5em;
   top: 0;
   background-color: yellow;
   border-radius: 10px;
@@ -1149,10 +1151,11 @@
 .poolsCont .switchStaked input {
   width: 5em;
   height: 1em;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .poolsCont .switchStaked input:checked + .ball {
   transform: translateX(2em);
@@ -1605,4 +1608,15 @@
 }
 .poolsCont {
   overflow-x: hidden;
+}
+
+@media (max-width: 425px) {
+  .sectionn4 .indiv {
+    width: 21em;
+  }
+}
+@media (max-width: 384px) {
+  .sectionn4 .indiv {
+    width: 17.7em;
+  }
 }/*# sourceMappingURL=test.css.map */
