@@ -93,7 +93,7 @@ setSelectedSwap2(selectedSwap)
 
   return (
     <div>
-          <Warning/>
+          {/* <Warning/> */}
 <header>
 <Header/>
 </header>
@@ -109,13 +109,14 @@ setSelectedSwap2(selectedSwap)
 </div>
 <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
 <div className='swapSection'>
-<p className='para1'>You can trade over <span>90%</span> of BEP 20 Tokens on BabySwap with better slippages,<br></br> 
+
+<p className='para1'>You can trade over <span>90%</span> of BRC 20 Tokens on BabySwap with better slippages,<br></br> 
 and Smart Router will choose the <span>best route</span> for you.
 </p>
 <div className='box'>
 <div className='first'>
     <h3>Trade Mining Reward:</h3>
-    <h3>0.0000 BABY</h3>
+    <h3>0.0000 EAGLE</h3>
 </div>
 <button>Withdraw</button>
 </div> 

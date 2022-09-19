@@ -74,7 +74,7 @@ export default function PoolsEarnAlt(){
      
     return( 
     <div>
-         <Warning/>
+         {/* <Warning/> */}
         <header>
            <Header/>
         </header>
@@ -131,8 +131,8 @@ export default function PoolsEarnAlt(){
             </div>
             <div className='sectionn3'>
                 <div className='switch'>
-                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn Baby</button>:<button onClick={handleSwitch1}>Earn Baby</button>}
-               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn ALT</button>:<button onClick={handleSwitch2}>Earn ALT</button>}
+                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn EAGLE</button>:<button onClick={handleSwitch1}>Earn EAGLE</button>}
+               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn Other Token</button>:<button onClick={handleSwitch2}>Earn Other Token</button>}
                 </div> 
             </div> 
             <div className='poolsRealCont'>
@@ -160,11 +160,11 @@ export default function PoolsEarnAlt(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                        <button>Get BABY</button>
+                        <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="fivee">
@@ -179,14 +179,14 @@ export default function PoolsEarnAlt(){
                     <div className="sevenn" style={{"display":"flex"}}>
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#"><span>View Contract <i class="bi bi-box-arrow-up-right"></i></span></a>
                         </div>
                     </div>:
                     <div className="sevenn" style={{"display":"none"}}>
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#"><span>View Contract <i class="bi bi-box-arrow-up-right"></i></span></a>
                         </div>
                     </div>
@@ -226,7 +226,7 @@ export default function PoolsEarnAlt(){
                     <div className="sevenn">
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#">View Contract <i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ export default function PoolsEarnAlt(){
                     {answer === index?<div className="dropDown" style={{"display":"flex"}}>
                         <div className='ddone'>
                         <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="three">
@@ -250,7 +250,7 @@ export default function PoolsEarnAlt(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                            <button>Get BABY</button>
+                            <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="fivee">
@@ -266,7 +266,7 @@ export default function PoolsEarnAlt(){
                     <div className="sevenn">
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#">View Contract <i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -274,7 +274,7 @@ export default function PoolsEarnAlt(){
                     </div>:
                     <div className="dropDown" style={{"display":"none"}}>
                     <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="three">
@@ -284,7 +284,7 @@ export default function PoolsEarnAlt(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                            <button>Get BABY</button>
+                            <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="fivee">
@@ -307,9 +307,9 @@ var poolsArray=[
     {
         img:"/images/BTC.png",
         smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
+        largeHeader:"Auto EAGLE",
         profit:"0.000",
-        APY:"20",
+        APY:"0",
         available:"0"
     },
 ]

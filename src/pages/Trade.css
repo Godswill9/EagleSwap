@@ -3,11 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    background-color: #100720;
+}
 a{
     text-decoration: none;
 }
 header{
     top:72px;
+    top:0;
     position: fixed;
 }
 .notice{
@@ -114,6 +118,7 @@ header{
     color:brown;
     background-color: rgb(236, 232, 232);
 } */
+
 .bodySec .hidingEagle{
     /* border:.2px solid black; */
     height: 23em;

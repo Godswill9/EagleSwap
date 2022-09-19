@@ -40,7 +40,7 @@
 }
 .logo a .lowerClass h1{
     color:orange;
-    font-size: 30px;
+    font-size: 24px;
 }
 .logo a .lowerClass span img{
     width:1.4em;
@@ -342,7 +342,7 @@ padding:5px
     background-color: rgba(0, 0, 0, 0.918);
     transition: .3s ease-in-out;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     overflow-x: hidden;
     overflow-y: auto;
     justify-content: space-between;

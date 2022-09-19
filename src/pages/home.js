@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import Marquee from 'react-fast-marquee'
 import Header from '../header'
 import "./home.css"
+import "./swap.css"
 
 export default function Home() {
     const gainers= useRef()
@@ -94,11 +95,11 @@ export default function Home() {
 <div className='section1'>
     <div className='sectionInner'>
     <div className='secA'>
-<h1>An Eagle MetaFi on BNB Chain <br></br>
+<h1>An <span>Eagle Protocol</span> on brise Chain <br></br>
     that Goes Beyond AMM, NFT, and GamePad.
 </h1>
-<div className="box">
-    <div className='boxInner'>
+{/* <div className="box">
+    <div className='boxInner'> 
         <span>Total Value Locked (TVL)</span>
         <span className='bold'>7851</span>
     </div>
@@ -106,7 +107,7 @@ export default function Home() {
         <span>vBABY Holders</span>
         <span className='bold'>7851</span>
     </div>
-</div>
+</div> */}
 </div>
 <div className='secB'>
 {/* <img src='images/eagle1-removebg-preview.png'></img> */}
@@ -114,7 +115,26 @@ export default function Home() {
 </div>
     </div>
 </div>
-<div className='section2'>
+{/* announcement section */}
+<div className='announcement'>
+    <div className='innerr'>
+        <Marquee speed={150} pauseOnHover gradient={false}>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/perpetual.png"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/didOnline.png"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/perpetual.png"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="images/didOnline.png"></img></a>
+            </div>
+        </Marquee>
+    </div>
+</div>
+{/* <div className='section2'>
 <div className='iconDivs'>
 <img src="images/BNB.png"></img>
 <div className="name_Value">
@@ -158,7 +178,7 @@ export default function Home() {
 <div className='linkk'>
     <a href='#'><span></span>All market <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 </div>
-</div>
+</div> */}
 <div className='section3'>
 <div className="one">
 <h1>Trending</h1>
@@ -228,25 +248,7 @@ export default function Home() {
 </div>
 </div> 
 
-{/* announcement section */}
-<div className='announcement'>
-    <div className='innerr'>
-        <Marquee speed={150} pauseOnHover gradient={false}>
-            <div className='announceIndiv'>
-             <a href='#'><img src="images/perpetual.png"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="images/didOnline.png"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="images/perpetual.png"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="images/didOnline.png"></img></a>
-            </div>
-        </Marquee>
-    </div>
-</div>
+
 
 <div className='SliderSection'>
     <div className='slide' ref={sliderIndiv}>
@@ -274,48 +276,48 @@ export default function Home() {
     <div className='indivv'>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4>Earn Baby</h4>
-            <span>BABY-USDT LP</span>
+            <h4>Earn EAGLE</h4>
+            <span>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span>APR</span>
-            <h4>56.65%+3.86%</h4>
+            <h4>% + %</h4>
         </div>
         <button>Stake</button>
     </div>
     <div className='indivv'>
         <img src='images/BTC.png'></img>
         <div className='two'>
-            <h4>Earn Baby</h4>
-            <span>BABY-USDT LP</span>
+            <h4>Earn EAGLE</h4>
+            <span>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span>APR</span>
-            <h4>56.65%+3.86%</h4>
+            <h4>% + %</h4>
         </div>
         <button>Stake</button>
     </div>
     <div className='indivv'>
         <img src='images/ETH.png'></img>
         <div className='two'>
-            <h4>Earn Baby</h4>
-            <span>BABY-USDT LP</span>
+            <h4>Earn EAGLE</h4>
+            <span>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span>APR</span>
-            <h4>56.65%+3.86%</h4>
+            <h4>% + %</h4>
         </div>
         <button>Stake</button>
     </div>
     <div className='indivv'>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4>Earn Baby</h4>
-            <span>BABY-USDT LP</span>
+            <h4>Earn EAGLE</h4>
+            <span>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span>APR</span>
-            <h4>56.65%+3.86%</h4>
+            <h4>% + %</h4>
         </div>
         <button>Stake</button>
     </div>
@@ -329,7 +331,7 @@ export default function Home() {
             <img src='images/Stake BFG earn BFG.png'></img>
             {/* <img src=''></img> */}
             <div className='more'>
-                <p>BabySwap GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
+                <p>Eagle Protocol GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
                         Farms, Pools, NFT, Marketplace, etc.
                 </p>
                 {/* <p></p> */}
@@ -359,63 +361,63 @@ export default function Home() {
 </div>
 <div className='Discover'>
     <div className='one'>
-        <h1>Discover</h1>
+        <h1>NFT Market</h1>
         <span>View all</span>
     </div>
     <div className='two'>
       <div className='inner'>
       <img src='images/earnAndChill.png'></img>
         <div className='more1'>
-            <span>Baby wonderland</span>
-            <h2>Tiger</h2>
+            <span>Eagle NFT</span>
+            <h2>Eagle 01</h2>
         </div>
         <div className='more2'>
             <span>Price</span>
             <div className='moreInner'>
-                <h2>1 BNB</h2>
-                <span>=$145</span>
+                <h2>BRISE</h2>
+                <span>=$</span>
             </div>
         </div>
       </div>
       <div className='inner'>
       <img src='images/Stake BFG earn BFG.png'></img>
         <div className='more1'>
-            <span>Baby wonderland</span>
-            <h2>Tiger</h2>
+            <span>Eagle NFT</span>
+            <h2>EAGLE 02</h2>
         </div>
         <div className='more2'>
             <span>Price</span>
             <div className='moreInner'>
-                <h2>1 BNB</h2>
-                <span>=$145</span>
+                <h2>BRISE</h2>
+                <span>=$</span>
             </div>
         </div>
       </div>
       <div className='inner'>
       <img src='images/earnAndChill.png'></img>
         <div className='more1'>
-            <span>Baby wonderland</span>
-            <h2>Tiger</h2>
+            <span>Eagle NFT</span>
+            <h2>EAGLE 03</h2>
         </div>
         <div className='more2'>
             <span>Price</span>
             <div className='moreInner'>
-                <h2>1 BNB</h2>
-                <span>=$145</span>
+                <h2>BRISE</h2>
+                <span>=$</span>
             </div>
         </div>
       </div>
       <div className='inner'>
       <img src='images/Stake BFG earn BFG.png'></img>
         <div className='more1'>
-            <span>Baby wonderland</span>
-            <h2>Tiger</h2>
+            <span>Eagle NFT</span>
+            <h2>Eagle 04</h2>
         </div>
         <div className='more2'>
             <span>Price</span>
             <div className='moreInner'>
-                <h2>1 BNB</h2>
-                <span>=$145</span>
+                <h2>BRISE</h2>
+                <span>=$</span>
             </div>
         </div>
       </div>
@@ -428,32 +430,32 @@ export default function Home() {
         <div className='indiv'>
             <img src='images/eagle5-removebg-preview.png'></img>
             <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <p>The more you swap, the more you earn. Get free EAGLE as reward for almost every trade</p>
         </div>
         <div className='indiv'>
             <img src='images/eagle5-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <h3>Stake to Earn</h3>
+            <p>Multiply your EAGLE with multiple choices. Stake in Pools, Farms, and Vaults to earn bountiful rewards with competitive APRs.</p>
         </div>
         <div className='indiv'>
             <img src='images/eagle3-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <h3>Task to Earn</h3>
+            <p>Pick up your good luck. Win huge rewards by accomplishing simple tasks.</p>
         </div>
         <div className='indiv'>
             <img src='images/eagle3-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <h3>Smart Router</h3>
+            <p>Trade instantly by one click. Trade over 90% of BEP 20 Tokens with better slippages and lower fees.</p>
         </div>
         <div className='indiv'>
             <img src='images/eagle6-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <h3>NFT Market</h3>
+            <p>Meet with your NFT crush. Go crazy shopping for the hottest & newest NFTs with advanced shopping experience.</p>
         </div>
         <div className='indiv'>
             <img src='images/eagle6-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free BABY as reward for almost every trade</p>
+            <h3>One-Stop Metaverse</h3>
+            <p>Originate from DeFi, and go beyond MetaFi. A one-stop platform to meet all your needs from AMM, NFT, and GamePad, to Metaverse.</p>
         </div>
     </div>
 </div>
@@ -463,7 +465,7 @@ export default function Home() {
             <div className='secA'>
                 <img src='images/eagle5-removebg-preview.png'></img>
                 <div className='more'>
-                    <span>BABY</span>
+                    <span>EAGLE</span>
                     <h2>$0.47</h2>
                 </div>
             </div>
@@ -475,19 +477,19 @@ export default function Home() {
             <div className='two'>
             <div className='indivvv'>
                 <span>Max supply</span>
-                <h5>1,000,000,000</h5>
+                {/* <h5>1,000,000,000</h5> */}
             </div>
             <div className='indivvv'>
                 <span>Circulating Supply</span>
-                <h5>278,302,620</h5>
+                {/* <h5>278,302,620</h5> */}
             </div>
             <div className='indivvv'>
                 <span>Total burned</span>
-                <h5>16,836,525</h5>
+                {/* <h5>16,836,525</h5> */}
             </div>
             <div className='indivvv'>
                 <span>Market cap</span>
-                <h5>13,201,670</h5>
+                {/* <h5>13,201,670</h5> */}
             </div>
             </div>
     </div>
@@ -504,19 +506,19 @@ export default function Home() {
         <div className='product'>
             <h3>product</h3>
             <div className='productSec'>
-            <a href="#"><span>Contact</span></a>
-                <a href=""><span>Brand</span></a>
-                <a href=""><span>Docs</span></a>
-                <a href=""><span>Blog</span></a>
+            <a href="#"><span>Exchange</span></a>
+                <a href=""><span>Farms</span></a>
+                <a href=""><span>Pools</span></a>
+                <a href=""><span>Club</span></a>
             </div>
         </div>
         <div className='services'>
             <h3>services</h3>
             <div className='servicesSec'>
-            <a href="#"><span>Contact</span></a>
-                <a href=""><span>Brand</span></a>
-                <a href=""><span>Docs</span></a>
-                <a href=""><span>Blog</span></a>
+            <a href="#"><span>Eagle Token</span></a>
+                <a href=""><span>Apply for NFT Market</span></a>
+                <a href=""><span>Apply for Pre-Launch support</span></a>
+                {/* <a href=""><span>Blog</span></a> */}
             </div>
         </div>
     </div>

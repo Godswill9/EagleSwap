@@ -76,7 +76,7 @@ export default function FarmsEarnAlt(){
 
     return( 
     <div>
-         <Warning/>
+         {/* <Warning/> */}
         <header>
            <Header/>
         </header>
@@ -133,8 +133,8 @@ export default function FarmsEarnAlt(){
             </div>
             <div className='sectionn3'>
                 <div className='switch'>
-                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn Baby</button>:<button onClick={handleSwitch1}>Earn Baby</button>}
-               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn ALT</button>:<button onClick={handleSwitch2}>Earn ALT</button>}
+                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn EAGLE</button>:<button onClick={handleSwitch1}>Earn EAGLE</button>}
+               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn Other tokens</button>:<button onClick={handleSwitch2}>Earn Other tokens</button>}
                 </div> 
             </div>
             
@@ -160,7 +160,7 @@ export default function FarmsEarnAlt(){
                         </div>
                         <div className='three'>
                             <span>Earn:</span>
-                            <h3>BABY + Fees</h3>
+                            <h3>EAGLE + Fees</h3>
                         </div>
                         <div className='four'>
                             <h5>AVAILABLE</h5>
@@ -170,14 +170,14 @@ export default function FarmsEarnAlt(){
                             </div>
                         </div>
                         <div className='four'>
-                            <h5>BABY EARNED</h5>
+                            <h5>EAGLE EARNED</h5>
                             <div className="innerr">
                                 <h2>0</h2>
                                 <button>Harvest</button>
                             </div>
                         </div>
                         <div className='five'>
-                            <h5>BNB-USDT LP STAKED</h5>
+                            <h5>BRISE-USDT LP STAKED</h5>
                             <button>Unlock Wallet</button>
                         </div>
                         <div className="toggle">
@@ -191,7 +191,7 @@ export default function FarmsEarnAlt(){
                                 <h5>${item.liquidity}</h5>
                             </div>
                             <div className='links'>
-                                <a href="#">Get BNB-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                                 <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                             </div>
                         </div>:
@@ -201,7 +201,7 @@ export default function FarmsEarnAlt(){
                             <h5>${item.liquidity}</h5>
                         </div>
                         <div className='links'>
-                            <a href="#">Get BNB-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                             <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>}
@@ -270,7 +270,7 @@ export default function FarmsEarnAlt(){
                             </div>
                         </div>
                         <div className='second'>
-                            <h5>BABY EARNED</h5>
+                            <h5>EAGLE EARNED</h5>
                             <div className="innerr">
                                 <h2>0</h2>
                                 <button>Harvest</button>
@@ -281,7 +281,7 @@ export default function FarmsEarnAlt(){
                             <button>Unlock Wallet</button>
                         </div>
                         <div className='links'>
-                                <a href="#">Get BNB-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                                 <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -331,7 +331,7 @@ export default function FarmsEarnAlt(){
                             <button>Unlock Wallet</button>
                         </div>
                         <div className='links'>
-                                <a href="#">Get BNB-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                                 <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                             </div>
                         </div>}
@@ -350,9 +350,9 @@ export default function FarmsEarnAlt(){
 var farmsArr=[
     {
         img:"/images/BNB.png",
-        coin:"BNB-USDT",
-        APR:"12.88%+2.54%",
+        coin:"BRISE-USDT",
+        APR:"%",
         ups:"50x",
-        liquidity:"4,849,900"
+        liquidity:"0"
     },
 ]

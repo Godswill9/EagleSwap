@@ -74,8 +74,8 @@ export default function PoolsEarnBaby(){
      
     return( 
     <div>
-         <Warning/>
-        <header>
+         {/* <Warning/> */}
+        <header>   
            <Header/>
         </header>
         <div className='poolsCont'>
@@ -131,8 +131,8 @@ export default function PoolsEarnBaby(){
             </div>
             <div className='sectionn3'>
                 <div className='switch'>
-                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn Baby</button>:<button onClick={handleSwitch1}>Earn Baby</button>}
-               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn ALT</button>:<button onClick={handleSwitch2}>Earn ALT</button>}
+                {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn EAGLE</button>:<button onClick={handleSwitch1}>Earn EAGLE</button>}
+               {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn Other tokens</button>:<button onClick={handleSwitch2}>Earn Other tokens</button>}
                 </div> 
             </div> 
             <div className='poolsRealCont'>
@@ -160,11 +160,11 @@ export default function PoolsEarnBaby(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                        <button>Get BABY</button>
+                        <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="fivee">
@@ -179,14 +179,14 @@ export default function PoolsEarnBaby(){
                     <div className="sevenn" style={{"display":"flex"}}>
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#"><span>View Contract <i class="bi bi-box-arrow-up-right"></i></span></a>
                         </div>
                     </div>:
                     <div className="sevenn" style={{"display":"none"}}>
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#"><span>View Contract <i class="bi bi-box-arrow-up-right"></i></span></a>
                         </div>
                     </div>
@@ -307,41 +307,18 @@ var poolsArray=[
     {
         img:"/images/BNB.png",
         smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
+        largeHeader:"Auto EAGLE",
         profit:"0.000",
-        APY:"20",
+        APY:"0",
         available:"0"
     },
     {
         img:"/images/BNB.png",
-        smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
+        smallHeader:"Manual",
+        largeHeader:"Earn EAGLE",
         profit:"0.000",
-        APY:"20",
+        APY:"0",
         available:"0"
     },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
-        profit:"0.000",
-        APY:"20",
-        available:"0"
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
-        profit:"0.000",
-        APY:"20",
-        available:"0"
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"Automatic restaking",
-        largeHeader:"Auto BABY",
-        profit:"0.000",
-        APY:"20",
-        available:"0"
-    },
+   
 ]

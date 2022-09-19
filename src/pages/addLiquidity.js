@@ -47,7 +47,7 @@ export default function AddLiquidity() {
 
   return (
     <div>
-        <Warning/>
+        {/* <Warning/> */}
 <header>
 <Header/>
 </header>
@@ -237,7 +237,7 @@ export default function AddLiquidity() {
                 <img src={item.img}></img>
                 <span>{item.name} <span className='small'>{item.smallTitle}</span></span>
               </div>
-              )
+              ) 
             })}
           </div>
        </div>

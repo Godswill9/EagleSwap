@@ -55,13 +55,19 @@
 .section1 h1{
     padding:10px 3px 3px 3px;
     margin-bottom:15px;
-    font-size:22px;
+    font-size:30px;
     font-family: verdana;
     /* color:#FFC23C; */
-    text-shadow:0 0 13px #FFC23C;
-    color:white
+    text-shadow:0 0 2px #FFC23C;
+    color:white;
+    /* border:.4px solid white */
     /* text- */
     /* color:#876445; */
+}
+.section1 .secA h1 span{
+    color:orange;
+    font-size: 36px;
+    /* font-family: monospace */
 }
 .section1 .box{
     border: .2px solid #FFD23C;

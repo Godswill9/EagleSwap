@@ -57,7 +57,7 @@ export default function LiquidityMain() {
 
   return (
     <div>
-        <Warning/>
+        {/* <Warning/> */}
 <header>
 <Header/>
 </header>
