@@ -260,7 +260,7 @@
   display: none;
   position: -webkit-sticky;
   position: sticky;
-  top: 10%;
+  top: 0%;
   left: 0%;
   right: 0%;
   bottom: 0%;
@@ -849,9 +849,11 @@
   text-align: start;
   display: block;
   font-size: 13px;
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
 }
 .mainSec .moreFooter span a {
-  color: brown;
+  color: #FFC23C;
 }
 
 .addLiquidity .two {
@@ -870,8 +872,11 @@
   align-items: center;
   margin: 16px;
   border-radius: 30px;
-  box-shadow: 0 0 10px brown;
   display: none;
+  overflow-x: hidden;
+  box-shadow: 0 3px 1px #916BBF;
+  border: 0.2px solid #916BBF;
+  background-color: #1C0C5B;
 }
 .addLiquidity .one {
   /* border:2px solid black; */
@@ -1024,4 +1029,51 @@
 .liquidity .mainSec {
   width: 100%;
   margin: 0;
+}
+
+.liquidity .mainSec .twoo .first span {
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
+}
+.liquidity .mainSec .twoo .first .moreFooter span {
+  text-shadow: 0 0 13px #FFC23C;
+  color: white;
+}
+
+.addLiquidity .one i {
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
+}
+.addLiquidity .one span {
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
+}
+.addLiquidity .two .plus {
+  text-shadow: 0 0 13px #FFC23C;
+  color: white;
+}
+.addLiquidity .two .fromInput span {
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
+  font-family: verdana;
+  font-weight: bold;
+}
+.addLiquidity .two .fromInput .valuee span {
+  text-shadow: 0 0 13px #FFC23C;
+  color: white;
+}
+.addLiquidity button {
+  background-color: #eaee02;
+  color: whitesmoke;
+}
+
+.pricesPoolShare span {
+  color: #fbff00;
+}
+.pricesPoolShare .vals .indivvv span {
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.253);
+  margin: 2px;
+  border-radius: 5px;
 }/*# sourceMappingURL=swap.css.map */

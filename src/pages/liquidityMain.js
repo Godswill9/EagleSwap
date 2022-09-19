@@ -8,9 +8,9 @@ import { useNavigate } from 'react-router-dom'
 
 export default function LiquidityMain() {
     const navigate=useNavigate()
-    const activeButton={ 
-        "color":"brown",
-        "backgroundColor": "rgb(236, 232, 232)"
+    const activeButton={
+      "color":"#1C0C5B",
+      "backgroundColor": "#ffcc24"
     }
   const [SwapButton, setSwapButton]=useState("false")
   const [LiqSetting, setLiqSetting]=useState("none")

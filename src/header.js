@@ -659,7 +659,7 @@ export default function Header() {
             </p>
             <div className="drop" ref={toggle4} style={{ display: namee4 }}>
               <div className="inner">
-                <a href="/NFT">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>NFT Market</h3>

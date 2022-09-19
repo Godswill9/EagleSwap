@@ -17,7 +17,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: brown;
+    background-color: #fbff00;
     position: fixed;
     z-index: 2;
     /* top:10px */
@@ -56,9 +56,10 @@ header{
   align-items: center;
   justify-content: center;
   /* flex-direction: column; */
-  /* position: relative; */
+  position: relative;
   width:100%;
-  overflow-x: hidden;
+  overflow-x:hidden;
+  background-color: #100720;
   /* background-color: black;
   color:white */
 }
@@ -82,8 +83,11 @@ header{
    border-bottom-right-radius: 30px;
    border-bottom-left-radius: 30px;
    margin-bottom: 2em;
-   background-color: rgb(216, 192, 192);
-   background-color: brown;
+   color: rgb(216, 192, 192);
+   background-color: inherit;
+   box-shadow: 0 3px 1px #916BBF;
+   border: .2px solid #916BBF;
+   background-color: #1C0C5B;
 }
 .bodySec .buttons button{
     padding:7px 15px 7px 15px;
@@ -92,8 +96,9 @@ header{
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: brown;
+    background-color: #1C0C5B;
+    /* background-color: #3317a1; */
+    /* background-color: #ffcc24; */
     font-weight: bold;
     font-size: 16px;
     font-family: verdana;
@@ -131,7 +136,7 @@ header{
 .bodySec .swapSection .para1{
     /* border:.4px solid black; */
     margin: 2px;
-    color:brown;
+    color:#ffcc24;
     font-family: sans-serif;
     font-size: 13px;
     padding:4px
@@ -183,7 +188,9 @@ header{
      align-items: center;
      margin:16px;
      border-radius: 30px;
-     box-shadow: 0 0 10px brown;
+     box-shadow: 0 3px 1px #916BBF;
+     border: .2px solid #916BBF;
+     background-color: #1C0C5B;
 }
 .mainSec .one{
     /* border:2px solid black; */
@@ -207,13 +214,17 @@ header{
 }
 .mainSec .one .exchange h3{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     font-family: verdana;
-    color:brown;
+    font-weight: bold;
+    text-shadow:0 0 1px #e0f4ff;
+      color:#FFC23C;
     padding:0px 3px 7px 5px;
 }
 .mainSec .one .exchange span{
-    color:brown;
+    font-weight: bold;
+  text-shadow:0 0 .4px #faf7f0;
+    color:rgb(114, 53, 255);
     font-size: 12px;
     font-weight: 100;
     font-family: verdana;
@@ -257,17 +268,19 @@ header{
     padding:10px;
     margin:5px;
     width: 100%;;
-    background-color: rgba(165, 42, 42, 0.582);
+    background-color: #82739742;
     border-radius: 10px;
 }
 .mainSec .two .toInput span,
 .mainSec .two .fromInput span{
-    font-size: 12px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 800;
     font-family: verdana;
     padding:5px 3px 4px 5px;
-    font-weight: 100;
+    /* font-weight: 100; */
     font-family: verdana;
+    text-shadow:0 0 1px #FFC23C;
+      color:white;
 }
 .mainSec .two .more{
     display:  flex;
@@ -354,6 +367,8 @@ header{
     align-items: flex-start;
     width:100%;
     justify-content: space-between;
+    /* text-shadow:0 0 13px #FFC23C; */
+      color:rgb(168, 168, 168);
 }
 .mainSec .two .summary .first,
 .mainSec .two .summary .second{
@@ -376,6 +391,8 @@ header{
 }
 .mainSec .two .summary .first .valuee .amt{
     color:brown;
+    text-shadow:0 0 4px #FFC23C;
+    color:#FFC23C;
     font-weight: bold;
 }
 .mainSec .two button{
@@ -389,9 +406,24 @@ header{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     cursor: pointer;
-    background-color: rgb(214, 161, 62);
+    background-color: rgb(45, 8, 255);
     border:none;
     color:white;
+}
+ .liquidity .mainSec .one button{
+    padding: 15px;
+    /* width:%; */
+    /* margin:20px; */
+    font-weight: bold;
+    font-family: verdana;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    cursor: pointer;
+    background-color: #FFC23C;
+    border:none;
+    color:whitesmoke;
 }
 
 @media (max-width:456px) {
@@ -461,3 +493,4 @@ header{
         padding:3px
     }
 }
+

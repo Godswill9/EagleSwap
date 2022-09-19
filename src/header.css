@@ -347,7 +347,7 @@ padding:5px
     overflow-y: auto;
     justify-content: space-between;
     align-items: center;
-    background: url('../public/images/eagle1-removebg-preview.png') rgba(0, 0, 0, 0.986);
+    /* background: url('../public/images/eagle1-removebg-preview.png') rgba(0, 0, 0, 0.986); */
     background-size: 30em;
     background-repeat: no-repeat;
     background-position: center;

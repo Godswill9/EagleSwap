@@ -7,7 +7,7 @@ $black:2px solid black;
 $brown:.4px solid brown;
 
 @mixin iconsNormal {
-    font-size: 26px;
+    font-size: 26px; 
     padding:5px
 }
 @mixin iconsSmall {
@@ -87,7 +87,7 @@ $brown:.4px solid brown;
 };
 
 
-.popupSection{
+.popupSection{ 
     position: absolute;
     width:100%;
     height:100%;
@@ -293,7 +293,7 @@ $brown:.4px solid brown;
     display: none;
 
     position: sticky;
-    top:10%;
+    top:0%;
     left: 0%;
     right:0%;
     bottom:0%;
@@ -782,8 +782,10 @@ $brown:.4px solid brown;
             text-align: start;
             display: block;
             font-size: 13px;
+            text-shadow:0 0 1px #FFC23C;
+             color:white;
             a{
-                color:brown
+                color:#FFC23C
             }
         }
     }
@@ -806,8 +808,12 @@ $brown:.4px solid brown;
      align-items: center;
      margin:16px;
      border-radius: 30px;
-     box-shadow: 0 0 10px brown;
+    //  box-shadow: 0 0 10px brown;
      display: none;
+     overflow-x:hidden;
+     box-shadow: 0 3px 1px #916BBF;
+     border: .2px solid #916BBF;
+     background-color: #1C0C5B;
      .one{
          /* border:2px solid black; */
     display: flex;
@@ -947,5 +953,71 @@ $brown:.4px solid brown;
     //    border: .5px solid yellow;
        width:100%;
        margin: 0;
+    }
+}
+
+.liquidity .mainSec .twoo{
+    .first{
+        span{
+            text-shadow:0 0 1px #FFC23C;
+            color:white;
+        }
+        .moreFooter{
+            span{
+                text-shadow:0 0 13px #FFC23C;
+                color:white;
+            }
+        }
+    }
+}
+
+.addLiquidity{
+    .one{
+        i{
+            text-shadow:0 0 1px #FFC23C;
+            color:white;
+        }
+        span{
+            text-shadow:0 0 1px #FFC23C;
+            color:white;
+        }
+    }
+    .two{
+        .plus{
+            text-shadow:0 0 13px #FFC23C;
+            color:white;
+        }
+        .fromInput{
+            span{
+                text-shadow:0 0 1px #FFC23C;
+                color:white;
+                font-family: verdana;
+                font-weight: bold;
+            }
+            .valuee span{
+                text-shadow:0 0 13px #FFC23C;
+                color:white;
+            }
+        }
+    }
+    button{
+        background-color: #eaee02;
+        color:whitesmoke
+    }
+}
+.pricesPoolShare{
+    span{
+       color: #fbff00;
+    }
+    .vals{
+        .indivvv{
+            span{
+                text-shadow:0 0 1px #FFC23C;
+                color:white;
+                background-color: rgba(0, 0, 0, 0.253);
+                margin: 2px;
+                border-radius: 5px;
+            }
+        }
     }
 }

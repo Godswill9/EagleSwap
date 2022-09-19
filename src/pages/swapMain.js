@@ -24,8 +24,8 @@ export default function SwapMain() {
 
     const navigate=useNavigate()
     const activeButton={
-      "color":"brown",
-      "backgroundColor": "rgb(236, 232, 232)"
+      "color":"#1C0C5B",
+      "backgroundColor": "#ffcc24"
     }
     const [SwapButton, setSwapButton]=useState("true")
   

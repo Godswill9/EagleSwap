@@ -94,7 +94,7 @@ export default function Home() {
 <div className='section1'>
     <div className='sectionInner'>
     <div className='secA'>
-<h1>A Baby MetaFi on BNB Chain <br></br>
+<h1>An Eagle MetaFi on BNB Chain <br></br>
     that Goes Beyond AMM, NFT, and GamePad.
 </h1>
 <div className="box">
@@ -187,7 +187,7 @@ export default function Home() {
     </div>
 </div>
 <div className='topTradingVolume'>
-<div className='head'>Top Gainers</div>
+<div className='head'>Top Traders</div>
 <div className='values' ref={traders}>
         { section3Obj2.map((item, i)=>{
             let val=100
@@ -208,7 +208,7 @@ export default function Home() {
     </div>
 </div>
 <div className='promoted'>
-<div className='head'>Top Gainers</div>
+<div className='head'>Top Promoted</div>
     <div className='values'>
     <div className='value_indiv'>
     <img src='images/BNB.png'></img>
@@ -226,12 +226,12 @@ export default function Home() {
 <div className='seemore'>
     <a href='#'><span>See more</span></a>
 </div>
-</div>
+</div> 
 
 {/* announcement section */}
 <div className='announcement'>
     <div className='innerr'>
-        <Marquee speed={200} pauseOnHover>
+        <Marquee speed={150} pauseOnHover gradient={false}>
             <div className='announceIndiv'>
              <a href='#'><img src="images/perpetual.png"></img></a>
             </div>
@@ -269,7 +269,7 @@ export default function Home() {
 </div>
 {/* earn baby token in pools*/}
 <div className='section_farms'>
-<h2>Earn BABY & Tokens in Farms and Pools</h2>
+<h2>Earn EAGLE & Tokens in Farms and Pools</h2>
 <div className='cont'>
     <div className='indivv'>
         <img src='images/BNB.png'></img>
@@ -495,38 +495,38 @@ export default function Home() {
         <div className='about'>
             <h3>About</h3>
             <div className='aboutSec'>
-                <span>Contact</span>
-                <span>Brand</span>
-                <span>Docs</span>
-                <span>Blog</span>
+                <a href="#"><span>Contact</span></a>
+                <a href=""><span>Brand</span></a>
+                <a href=""><span>Docs</span></a>
+                <a href=""><span>Blog</span></a>
             </div>
         </div>
         <div className='product'>
             <h3>product</h3>
             <div className='productSec'>
-                <span>Contact</span>
-                <span>Brand</span>
-                <span>Docs</span>
-                <span>Blog</span>
+            <a href="#"><span>Contact</span></a>
+                <a href=""><span>Brand</span></a>
+                <a href=""><span>Docs</span></a>
+                <a href=""><span>Blog</span></a>
             </div>
         </div>
         <div className='services'>
             <h3>services</h3>
             <div className='servicesSec'>
-                <span>Contact</span>
-                <span>Brand</span>
-                <span>Docs</span>
-                <span>Blog</span>
+            <a href="#"><span>Contact</span></a>
+                <a href=""><span>Brand</span></a>
+                <a href=""><span>Docs</span></a>
+                <a href=""><span>Blog</span></a>
             </div>
         </div>
     </div>
     <div className='third'>
         <h1>Community</h1>
         <div className='icons'>
-            <i class="bi bi-telegram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-discord"></i>
-            <i class="bi bi-twitter"></i>
+            <a href='#'><i class="bi bi-telegram"></i></a>
+            <a href='#'><i class="bi bi-facebook"></i></a>
+            <a href='#'><i class="bi bi-discord"></i></a>
+            <a href='#'><i class="bi bi-twitter"></i></a>
         </div>
     </div>
 </div>

@@ -32,8 +32,8 @@ export default function FarmsEarnBABY(){
     }
      
     const buttonStyle={
-        "backgroundColor":"rgb(71, 19, 19)",
-        "boxShadow":"0 0 10px rgba(0, 0, 0, 0.562)"
+        "backgroundColor":"#0b0524",
+        "boxShadow":" 0 3px 1px #916BBF"
     }
     const handleView=()=>{
         if(displayMode==="flex") return;
@@ -58,8 +58,8 @@ export default function FarmsEarnBABY(){
     }
 
     const activeButton={
-        "color":"brown",
-        "backgroundColor": "rgb(236, 232, 232)"
+        "color":"#916BBF",
+        "backgroundColor": "#3c1bc4"
       }
       const [SwapButton, setSwapButton]=useState("true")
       const handleSwitch1=()=>{
@@ -83,8 +83,8 @@ export default function FarmsEarnBABY(){
         <div className='poolsCont'>
         <div className="innerPool">
             <div className='imgg'>
-            <img src="/images/Farm.png"></img>
-            </div> 
+               <img src="/images/Farm.png"></img>
+            </div>
         <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>
