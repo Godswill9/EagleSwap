@@ -271,6 +271,7 @@
   background-color: #100720;
   display: none;
   margin: auto;
+  color: white;
 }
 .swapChooseTokenPopup .inner {
   width: 100%;
@@ -413,6 +414,7 @@
   font-size: 15px;
   font-weight: bold;
   margin: 4px;
+  color: white;
 }
 .swapChooseTokenPopup .tokenName .first i {
   font-size: 16px;
@@ -452,6 +454,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
+  color: white;
 }
 .swapChooseTokenPopup .tokenName .allTokens .indiv span .small {
   font-size: 10px;
@@ -1095,8 +1098,9 @@
   color: white;
 }
 .addLiquidity button {
-  background-color: #eaee02;
-  color: whitesmoke;
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
 }
 
 .pricesPoolShare span {

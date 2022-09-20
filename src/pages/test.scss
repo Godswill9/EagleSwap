@@ -292,7 +292,7 @@ $brown:.4px solid brown;
       }
       .two{
         span{ @include spanNormal();
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
         }
@@ -316,7 +316,7 @@ $brown:.4px solid brown;
             text-shadow:0 0 10px #FFC23C;
             color:white;
             font-weight: bold;}
-            i{@include iconsSmall(); text-shadow:0 0 13px #FFC23C;
+            i{@include iconsSmall(); text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: bold;
             font-size: 13px}
@@ -349,13 +349,16 @@ $brown:.4px solid brown;
         h5{@include smallHeader(); padding-bottom:10px}
         button{
             padding: 17px;
-            background-color: #d8db03;
+            background-color: #eef11a;
+            background-color: rgb(126, 105, 248);
+            border:none;
             color:white;
+            // color:white;
             border:none;
             border-radius: 10px;
             cursor: pointer;
             // text-shadow:0 0 2px #CFE8A9;
-            color:rgb(124, 124, 124);
+            // color:rgb(17, 17, 17);
             font-size: 17px;
             font-weight: bold
             
@@ -528,6 +531,9 @@ cursor: pointer;}
             cursor: pointer;
             // text-shadow:0 0 2px #CFE8A9;
             color:rgb(124, 124, 124);
+            background-color: rgb(126, 105, 248);
+            border:none;
+            color:white;
             font-size: 17px;
             font-weight: bold
                         // font-size:17px
@@ -610,14 +616,14 @@ cursor: pointer;}
             .pair{
                 h3{@include spanNormal();
                 padding:5px;
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
             font-size:16px}
                 span{@include spanNormal();
                 padding:5px;
             font-size:13px;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;}
             }
@@ -638,17 +644,17 @@ cursor: pointer;}
             padding:15px 4px 25px 4px;
             h3{@include spanNormal()}
             border-bottom:.2px solid #916BBF;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
     font-size: 19px
     i{
-        text-shadow:0 0 13px #FFC23C;
+        text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
     }
             span{@include spanNormal();
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
                i{
@@ -681,7 +687,10 @@ cursor: pointer;}
                 padding:10px;
             border-radius:20px;
             background-color: #FBFF00;
-            color: #babdb7
+            color: #babdb7;
+            background-color: rgb(126, 105, 248);
+            border:none;
+            color:white;
         }
             }
             // border:2px solid black
@@ -693,7 +702,7 @@ cursor: pointer;}
             border-bottom:.2px solid #916BBF;
             span{@include spanNormal()}
             padding:15px 4px 25px 1px;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
 
@@ -713,7 +722,10 @@ cursor: pointer;}
         margin:6px; border-radius: 10px;
     padding:15px;
     background-color: #FBFF00;
-    color: #babdb7
+    color: #babdb7;
+    background-color: rgb(126, 105, 248);
+    border:none;
+    color:white;
 }
         }
         .six{
@@ -725,11 +737,11 @@ cursor: pointer;}
             padding:15px 4px 25px 4px;
             cursor: pointer;
             span{@include spanNormal();
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
             i{
                 font-size:14px;
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
             }
         }
@@ -740,7 +752,7 @@ cursor: pointer;}
             padding:15px 4px 25px 4px;
             justify-content:space-between;
             span{@include spanNormal();
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: 800
             }
@@ -753,8 +765,7 @@ cursor: pointer;}
                 a{
                     text-decoration:none;
                     @include spanNormal();
-                    text-shadow:0 0 13px #FFC23C;
-                color:white;
+                    color:orange
                 }
             }
         }
@@ -808,12 +819,12 @@ cursor: pointer;}
         align-items: flex-start;
     }
         h3{@include span1();
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:#FBFF00;
             font-weight: bold;}
         span{@include spanNormal();
             font-weight:bold;
-            text-shadow:0 0 5px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;
         }
@@ -826,13 +837,13 @@ cursor: pointer;}
         align-items: flex-start;
         width:8em;
         span{@include span1();
-            text-shadow:0 0 5px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:#FBFF00;
             font-weight: bold;
         }
         h3{@include spanNormal();
             font-weight: bold;
-            text-shadow:0 0 5px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;
             // i{font-size: 13px;}
@@ -847,14 +858,14 @@ cursor: pointer;}
         margin:3px;
         span{@include span1();
             color: #99ac7e;
-            text-shadow:0 0 5px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:#FBFF00;
             font-weight: bold;
         }
          .det{
             span{
                 @include spanNormal();
-                text-shadow:0 0 5px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;
             }
@@ -890,7 +901,7 @@ cursor: pointer;}
         border-top: .2px solid #916BBF;
         .four{
             span{@include spanNormal();
-                text-shadow:0 0 5px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: 700;}
         }
@@ -902,7 +913,7 @@ cursor: pointer;}
             align-items: flex-start;
             border-radius: 10px; 
             h4{@include span1();
-                text-shadow:0 0 5px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: bold;}
             .pair{
@@ -919,11 +930,11 @@ cursor: pointer;}
              h4{@include spanNormal();
             padding:5px;
               font-size: 18px;
-              text-shadow:0 0 5px #FFC23C;
+              text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;}
              span{@include span1();
-                text-shadow:0 0 5px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: bold;}
                 }
@@ -933,6 +944,9 @@ cursor: pointer;}
                     padding:15px;
                     background-color: #FBFF00;
                     color: #99ac7e;
+                    background-color: rgb(126, 105, 248);
+                    border:none;
+                    color:white;
                   }
             }
         }
@@ -947,7 +961,7 @@ cursor: pointer;}
         border-radius: 10px;
         margin:10px;
         span{@include span1();
-            text-shadow:0 0 5px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
             color:white;
             font-weight: bold;}
         button{@include button();
@@ -956,6 +970,9 @@ cursor: pointer;}
           padding:15px;
           background-color: #FBFF00;
                     color: #99ac7e;
+                    background-color: rgb(126, 105, 248);
+                    border:none;
+                    color:white;
         }
       }
       .four{
@@ -1195,7 +1212,7 @@ cursor: pointer;}
             @include spanNormal();
             @include flex-column();
             color:brown;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
               color:white;
             h5{
                 font-weight: bold;
@@ -1206,7 +1223,7 @@ cursor: pointer;}
             @include spanNormal();
             @include flex-column();
             color:brown;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
     color:white;
             h5{
                 font-weight: bold;
@@ -1217,7 +1234,7 @@ cursor: pointer;}
             @include spanNormal();
             @include flex-column();
             color:brown;
-            text-shadow:0 0 13px #FFC23C;
+            text-shadow:0 0 1px #FFC23C;
     color:white;
             .more{
                 @include flex-row();
@@ -1595,7 +1612,7 @@ cursor: pointer;}
                     .three,
                     .four,
                     .multiplier{
-                        h5{text-shadow:0 0 13px #FFC23C;
+                        h5{text-shadow:0 0 1px #FFC23C;
                             color:#FBFF00}
                     }
                     .detalss{
@@ -1620,7 +1637,7 @@ cursor: pointer;}
     .indiv{
         .three{
             h4{
-                text-shadow:0 0 13px #FFC23C;
+                text-shadow:0 0 1px #FFC23C;
                 color:white;
                 font-weight: bold;
             }

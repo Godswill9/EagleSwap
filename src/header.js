@@ -139,7 +139,7 @@ export default function Header() {
     <div className="Header">
       <div className="logo">
         <a href="/">
-          <img src="/images/eaagle2-removebg-preview.png"></img>
+          <img src="/images/mainLogo.jpg"></img>
           <div className="lowerClass">
             <h1>Eagle Protocol</h1>
           </div>

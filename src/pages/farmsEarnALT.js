@@ -5,7 +5,7 @@ import Header from '../header'
 // import FarmsAlt from './farmsAlt'
 import "./test.css"
 import Warning from './Warning' 
-
+ 
 
 export default function FarmsEarnAlt(){
 
@@ -320,7 +320,7 @@ export default function FarmsEarnAlt(){
                             </div>
                         </div>
                         <div className='second'>
-                            <h5>BABY EARNED</h5>
+                            <h5>EAGLE EARNED</h5>
                             <div className="innerr">
                                 <h2>0</h2>
                                 <button>Harvest</button>

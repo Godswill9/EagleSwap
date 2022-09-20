@@ -124,7 +124,7 @@ export default function PoolsEarnBaby(){
             </div>
             <div className='sortOne'>
             <span>Search</span>
-             <input type="search" placeholder="Search Farms"></input>
+             <input type="search" placeholder="Search Pools"></input>
             </div>
             </div>
             </div>
@@ -226,7 +226,7 @@ export default function PoolsEarnBaby(){
                     <div className="sevenn">
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
+                            <span>0 EAGLE</span>
                             <a href="#">View Contract <i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ export default function PoolsEarnBaby(){
                     {answer === index?<div className="dropDown" style={{"display":"flex"}}>
                         <div className='ddone'>
                         <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="three">
@@ -250,7 +250,7 @@ export default function PoolsEarnBaby(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                            <button>Get BABY</button>
+                            <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="fivee">
@@ -266,15 +266,15 @@ export default function PoolsEarnBaby(){
                     <div className="sevenn">
                         <span>Total Staked</span>
                         <div className="det">
-                            <span>34,915,941.2427 BABY</span>
-                            <a href="#">View Contract <i class="bi bi-box-arrow-up-right"></i></a>
+                            <span>0 EAGLE</span>
+                            <a href="#" >View Contract <i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
                         </div>    
                     </div>:
                     <div className="dropDown" style={{"display":"none"}}>
                     <div className="four">
-                        <span>Recent BABY profit</span>
+                        <span>Recent EAGLE profit</span>
                         <span>0.1% unstaking fee if withdrawn within 72h</span>
                     </div>
                     <div className="three">
@@ -284,7 +284,7 @@ export default function PoolsEarnBaby(){
                                 <h4>{item.available}</h4>
                             <span>~ $0</span>
                             </div>
-                            <button>Get BABY</button>
+                            <button>Get EAGLE</button>
                         </div>
                     </div>
                     <div className="fivee">

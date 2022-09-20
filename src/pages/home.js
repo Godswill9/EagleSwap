@@ -108,8 +108,7 @@ export default function Home() {
 <div className='section1'>
     <div className='sectionInner'>
     <div className='secA'>
-<h1>An <span>Eagle Protocol</span> on brise Chain <br></br>
-    that Goes Beyond AMM, NFT, and GamePad.
+<h1>An <span>Eagle Protocol</span> on <span className='brise'>brise Chain</span> that Goes Beyond AMM, NFT, and GamePad.
 </h1>
 {/* <div className="box">
     <div className='boxInner'> 
@@ -124,25 +123,34 @@ export default function Home() {
 </div>
 <div className='secB'>
 {/* <img src='images/eagle1-removebg-preview.png'></img> */}
-<img src='images/eagle5-removebg-preview.png'></img>
+<img src='/images/mainLogo-removebg-preview.png'></img>
 </div>
     </div>
 </div>
 {/* announcement section */}
 <div className='announcement'>
     <div className='innerr'>
-        <Marquee speed={150} pauseOnHover gradient={false}>
+        <Marquee speed={100} gradient={false}>
             <div className='announceIndiv'>
-             <a href='#'><img src="images/perpetual.png"></img></a>
+             <a href='#'><img src="/images/bigert.jpg"></img></a>
             </div>
             <div className='announceIndiv'>
-             <a href='#'><img src="images/didOnline.png"></img></a>
+             <a href='#'><img src="/images/brise.jpg"></img></a>
             </div>
             <div className='announceIndiv'>
-             <a href='#'><img src="images/perpetual.png"></img></a>
+             <a href='#'><img src="/images/bitgert2.jpg"></img></a>
             </div>
             <div className='announceIndiv'>
-             <a href='#'><img src="images/didOnline.png"></img></a>
+             <a href='#'><img src="/images/bitgert3.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert4.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert5.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert6.jpg"></img></a>
             </div>
         </Marquee>
     </div>
@@ -341,7 +349,7 @@ export default function Home() {
     <div className='each'>
         <h2>GamePad</h2>
         <div className='inner'>
-            <img src='images/Stake BFG earn BFG.png'></img>
+            <img src='/images/bitgert3.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
                 <p>Eagle Protocol GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
@@ -355,7 +363,7 @@ export default function Home() {
     <div className='each'>
         <h2>Join Community</h2>
         <div className='inner'>
-            <img src='images/earnAndChill.png'></img>
+            <img src='/images/bitgert4.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
                 <p>Join our vibrant community of game players and NFT enthusiasts and learn
@@ -379,7 +387,7 @@ export default function Home() {
     </div>
     <div className='two'>
       <div className='inner'>
-      <img src='images/earnAndChill.png'></img>
+      <img src='/images/nft.jpg'></img>
         <div className='more1'>
             <span>Eagle NFT</span>
             <h2>Eagle 01</h2>
@@ -393,7 +401,7 @@ export default function Home() {
         </div>
       </div>
       <div className='inner'>
-      <img src='images/Stake BFG earn BFG.png'></img>
+      <img src='/images/nft2.jpg'></img>
         <div className='more1'>
             <span>Eagle NFT</span>
             <h2>EAGLE 02</h2>
@@ -407,7 +415,7 @@ export default function Home() {
         </div>
       </div>
       <div className='inner'>
-      <img src='images/earnAndChill.png'></img>
+      <img src='/images/nft3.jpg'></img>
         <div className='more1'>
             <span>Eagle NFT</span>
             <h2>EAGLE 03</h2>
@@ -421,7 +429,7 @@ export default function Home() {
         </div>
       </div>
       <div className='inner'>
-      <img src='images/Stake BFG earn BFG.png'></img>
+      <img src='/images/nft4.jpg'></img>
         <div className='more1'>
             <span>Eagle NFT</span>
             <h2>Eagle 04</h2>
@@ -671,13 +679,13 @@ var section3Obj2=[
 ]
 
 var slider=[
-    "images/Stake BFG earn BFG.png",
-    "images/earnAndChill.png",
-    "images/Stake BFG earn BFG.png",
-    "images/earnAndChill.png",
-    "images/Stake BFG earn BFG.png",
-    "images/earnAndChill.png",
-    "images/Stake BFG earn BFG.png"
+    "/images/bitgert7.jpg",
+    "/images/bitgert6.jpg",
+    "/images/bigert.jpg",
+    "/images/bitgert8.jpg",
+    "/images/brise.jpg",
+    "/images/bitgert5.jpg",
+    "/images/marketting.jpg"
 ]
 var announcements=[
     "images/perpetual.png",

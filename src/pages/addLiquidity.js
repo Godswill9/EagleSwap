@@ -94,11 +94,11 @@ export default function AddLiquidity() {
       <div className='vals'>
          <div className='indivvv'>
             <span>0.0382171</span>
-            <span>USDT per BABY</span>
+            <span>USDT per EAGLE</span>
          </div>
          <div className='indivvv'>
             <span>26.1663</span>
-            <span>BABY per USDT</span>
+            <span>EAGLE per USDT</span>
          </div>
          <div className='indivvv'>
             <span>2.65%</span>

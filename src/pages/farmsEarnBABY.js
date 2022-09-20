@@ -270,7 +270,7 @@ export default function FarmsEarnBABY(){
                             </div>
                         </div>
                         <div className='second'>
-                            <h5>BABY EARNED</h5>
+                            <h5>EAGLE EARNED</h5>
                             <div className="innerr">
                                 <h2>0</h2>
                                 <button>Harvest</button>

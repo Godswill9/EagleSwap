@@ -412,6 +412,7 @@ header{
     border-bottom-left-radius: 15px;
     cursor: pointer;
     background-color: rgb(45, 8, 255);
+    background-color: rgb(126, 105, 248);
     border:none;
     color:white;
 }

@@ -248,7 +248,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -292,7 +292,7 @@
 .sectionn4 .indiv .three i {
   font-size: 20px;
   padding: 5px;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
   font-size: 13px;
@@ -368,12 +368,13 @@
 }
 .sectionn4 .indiv .five button {
   padding: 17px;
-  background-color: #d8db03;
+  background-color: #eef11a;
+  background-color: rgb(126, 105, 248);
+  border: none;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  color: rgb(124, 124, 124);
   font-size: 17px;
   font-weight: bold;
 }
@@ -618,6 +619,9 @@
   border-radius: 10px;
   cursor: pointer;
   color: rgb(124, 124, 124);
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
   font-size: 17px;
   font-weight: bold;
 }
@@ -719,7 +723,7 @@
   font-weight: 100;
   font-family: verdana;
   padding: 5px;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
   font-size: 16px;
@@ -733,7 +737,7 @@
   font-family: verdana;
   padding: 5px;
   font-size: 13px;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -749,11 +753,11 @@
   padding: 10px;
   padding: 15px 4px 25px 4px;
   border-bottom: 0.2px solid #916BBF;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
   font-size: 19px i;
-  font-size-text-shadow: 0 0 13px #FFC23C;
+  font-size-text-shadow: 0 0 1px #FFC23C;
   font-size-color: white;
   font-size-font-weight: bold;
 }
@@ -772,7 +776,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -837,6 +841,9 @@
   border-radius: 20px;
   background-color: #FBFF00;
   color: #babdb7;
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
 }
 .poolsBoxContInner .indiv .four {
   display: flex;
@@ -845,7 +852,7 @@
   justify-content: space-between;
   border-bottom: 0.2px solid #916BBF;
   padding: 15px 4px 25px 1px;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -894,6 +901,9 @@
   padding: 15px;
   background-color: #FBFF00;
   color: #babdb7;
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
 }
 .poolsBoxContInner .indiv .six {
   display: flex;
@@ -913,12 +923,12 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
 }
 .poolsBoxContInner .indiv .six span i {
   font-size: 14px;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
 }
 .poolsBoxContInner .indiv .sevenn {
@@ -937,7 +947,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: 800;
 }
@@ -962,8 +972,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
-  color: white;
+  color: orange;
 }
 
 .poolsLineContainer {
@@ -1019,7 +1028,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: #FBFF00;
   font-weight: bold;
 }
@@ -1031,7 +1040,7 @@
   font-weight: 100;
   font-family: verdana;
   font-weight: bold;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1049,7 +1058,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: #FBFF00;
   font-weight: bold;
 }
@@ -1061,7 +1070,7 @@
   font-weight: 100;
   font-family: verdana;
   font-weight: bold;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1080,7 +1089,7 @@
   font-weight: 100;
   font-family: verdana;
   color: #99ac7e;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: #FBFF00;
   font-weight: bold;
 }
@@ -1091,7 +1100,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1137,7 +1146,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: 700;
 }
@@ -1156,7 +1165,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1181,7 +1190,7 @@
   font-family: verdana;
   padding: 5px;
   font-size: 18px;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1192,7 +1201,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1214,6 +1223,9 @@
   padding: 15px;
   background-color: #FBFF00;
   color: #99ac7e;
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
 }
 .poolsLineContainer .indiv .fivee {
   display: flex;
@@ -1232,7 +1244,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
-  text-shadow: 0 0 5px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }
@@ -1254,6 +1266,9 @@
   padding: 15px;
   background-color: #FBFF00;
   color: #99ac7e;
+  background-color: rgb(126, 105, 248);
+  border: none;
+  color: white;
 }
 .poolsLineContainer .indiv .four {
   width: 15em;
@@ -1467,7 +1482,7 @@
   display: flex;
   flex-direction: column;
   color: brown;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
 }
 .innerLine .toggled .resExtra .two h5 {
@@ -1483,7 +1498,7 @@
   display: flex;
   flex-direction: column;
   color: brown;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
 }
 .innerLine .toggled .resExtra .four h5 {
@@ -1499,7 +1514,7 @@
   display: flex;
   flex-direction: column;
   color: brown;
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
 }
 .innerLine .toggled .resExtra .multiplier .more {
@@ -1802,7 +1817,7 @@
 .poolsCont .sectionn4 .inner .indiv .mainn .three h5,
 .poolsCont .sectionn4 .inner .indiv .mainn .four h5,
 .poolsCont .sectionn4 .inner .indiv .mainn .multiplier h5 {
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: #FBFF00;
 }
 .poolsCont .sectionn4 .innerLine .indiv .mainn .detalss h3,
@@ -1817,7 +1832,7 @@
 }
 
 .poolsRealCont .poolsBoxContInner .indiv .three h4 {
-  text-shadow: 0 0 13px #FFC23C;
+  text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
 }

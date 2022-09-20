@@ -124,7 +124,7 @@ export default function PoolsEarnAlt(){
             </div>
             <div className='sortOne'>
             <span>Search</span>
-             <input type="search" placeholder="Search Farms"></input>
+             <input type="search" placeholder="Search Pools"></input>
             </div>
             </div>
             </div>

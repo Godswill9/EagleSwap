@@ -11,7 +11,7 @@ $brown:.4px solid brown;
     position: absolute;
     margin: auto;
 }
-
+ 
 @mixin iconsNormal {
     font-size: 26px; 
     padding:5px
@@ -319,6 +319,7 @@ $brown:.4px solid brown;
     display: none;
     // bottom:0%;
     margin: auto;
+    color:white;
     // height:em;
     .inner{
      width:100%;
@@ -440,6 +441,7 @@ $brown:.4px solid brown;
                        font-size: 15px;
                        font-weight: bold;
                        margin:4px;
+                       color:white;
                 }
                 i{
                     font-size: 16px;
@@ -477,6 +479,7 @@ $brown:.4px solid brown;
                         padding:5px;
                         margin-left: 15px;
                         @include spanNormal();
+                        color:white;
                         .small{
                             font-size:10px;
                             margin-left: 4px;
@@ -1057,8 +1060,9 @@ $brown:.4px solid brown;
         }
     }
     button{
-        background-color: #eaee02;
-        color:whitesmoke
+        background-color: rgb(126, 105, 248);
+    border:none;
+    color:white;
     }
 }
 .pricesPoolShare{

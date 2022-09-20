@@ -40,7 +40,7 @@ export default function SwapMain() {
     const [ChooseToken, setChooseToken]=useState("none")
     const [ChooseToken2, setChooseToken2]=useState("none")
     const [wrapper, setWrapper]= useState("none")
-  
+   
     const handleSwitch1=()=>{
        if(SwapButton==="true") return;
        setSwapButton("true")
@@ -110,7 +110,7 @@ setSelectedSwap2(selectedSwap)
 <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
 <div className='swapSection'>
 
-<p className='para1'>You can trade over <span>90%</span> of BRC 20 Tokens on BabySwap with better slippages,<br></br> 
+<p className='para1'>You can trade over <span>90%</span> of BRC 20 Tokens on EAGLE Protocol with better slippages,<br></br> 
 and Smart Router will choose the <span>best route</span> for you.
 </p>
 <div className='box'>
@@ -165,7 +165,7 @@ and Smart Router will choose the <span>best route</span> for you.
         <div className='first'>
         <div>Price</div>
         <div className='valuee'>
-            <div><span className='amt'>0.0447824 USDT</span> per BABY</div>
+            <div><span className='amt'>0.0447824 USDT</span> per EAGLE</div>
             <i style={{"fontSize":"14px"}} class="bi bi-arrow-left-right"></i>
         </div>
         </div>
@@ -247,19 +247,19 @@ and Smart Router will choose the <span>best route</span> for you.
     <div className='common'>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BABY</span>
+            <span>BTC</span>
          </div>
          <div className='indiv'>
             <img src="images/ETH.png"></img>
-            <span>BABY</span>
+            <span>ETH</span>
          </div>
          <div className='indiv'>
             <img src="images/BNB.png"></img>
-            <span>BABY</span>
+            <span>EAGLE</span>
          </div>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BABY</span>
+            <span>EAGLE</span>
          </div>
        </div>
        </div>
@@ -305,19 +305,19 @@ and Smart Router will choose the <span>best route</span> for you.
     <div className='common'>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BABY</span>
+            <span>BTC</span>
          </div>
          <div className='indiv'>
             <img src="images/ETH.png"></img>
-            <span>BABY</span>
+            <span>ETH</span>
          </div>
          <div className='indiv'>
             <img src="images/BNB.png"></img>
-            <span>BABY</span>
+            <span>EAGLE</span>
          </div>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BABY</span>
+            <span>EAGLE</span>
          </div>
        </div>
        </div>

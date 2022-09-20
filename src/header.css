@@ -6,7 +6,7 @@
 .all{
     position:fixed;
     /* border:2px solid red; */
-    height:20em;
+    height:3em;
     width:100%;
     z-index: 5;
 }
@@ -66,7 +66,7 @@
 }
 .logo a img{
     margin-top:10px;
-    width:6em;
+    width:4em;
     height:4em
 }
 .logo a .lowerClass h1{
@@ -449,7 +449,7 @@ padding:5px
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:10px;
+    padding:15px;
     /* margin:1px 5px 0px px; */
     cursor: pointer;
     border-top: .1px solid rgba(255, 255, 255, 0.11);
