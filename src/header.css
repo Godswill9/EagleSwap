@@ -71,7 +71,8 @@
 }
 .logo a .lowerClass h1{
     color:orange;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: verdana;
 }
 .logo a .lowerClass span img{
     width:1.4em;

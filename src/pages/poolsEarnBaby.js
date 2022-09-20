@@ -33,7 +33,7 @@ export default function PoolsEarnBaby(){
       const handleSwitch1=()=>{
         if(SwapButton==="true") return;
         setSwapButton("true")
-        navigate("/Pools_earnBaby")
+        navigate("/Pools_earnEAGLE")
      }
      const handleSwitch2=()=>{
        if(SwapButton==="false") return;

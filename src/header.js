@@ -193,12 +193,12 @@ export default function Header() {
                 <div className="innerHeadd">
                   <div className="oneInner">
                     <h3>Farm</h3>
-                    <span className="headSpan">Stake Baby-LPs to earn</span>
+                    <span className="headSpan">Stake EAGLE-LPs to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
-                <a href="/Farms_earnBABY">
+                <a href="/Farms_earnEAGLE">
                     <span>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn EAGLE
@@ -224,7 +224,7 @@ export default function Header() {
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
-                  <a href="/Pools_earnBaby">
+                  <a href="/Pools_earnEAGLE">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn EAGLE
@@ -245,7 +245,7 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Vault</h3>
-                    <span className="headSpan">Stake non-BABY LPs to earn</span>
+                    <span className="headSpan">Stake non-EAGLE LPs to earn</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -337,7 +337,7 @@ export default function Header() {
                   <a href="#">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
-                    Stake BabySwap NFB
+                    Stake EAGLE Protocol
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
@@ -543,13 +543,13 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Farm</h3>
-                    <span className="headSpan">Stake Baby-LPs to earn</span>
+                    <span className="headSpan">Stake EAGLE-LPs to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 </a>
                 <div className="subLinks">
-                <a href="/Farms_earnBABY">
+                <a href="/Farms_earnEAGLE">
                     <span>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn EAGLE
@@ -576,7 +576,7 @@ export default function Header() {
                 </div>
                 </a>
                 <div className="subLinks">
-                  <a href="/Pools_earnBaby">
+                  <a href="/Pools_earnEAGLE">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn EAGLE

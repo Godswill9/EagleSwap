@@ -18,9 +18,9 @@ function App() {
       <BrowserRouter>
       <Routes>
             <Route path={`/`} element={<Home/>}/>
-            <Route path={`/Farms_earnBABY`} element={<FarmsEarnBABY/>}/>
+            <Route path={`/Farms_earnEAGLE`} element={<FarmsEarnBABY/>}/>
             <Route path={`/Farms_earnALT`} element={<FarmsEarnAlt/>}/>
-            <Route path={`/Pools_earnBaby`} element={<PoolsEarnBaby/>}/>
+            <Route path={`/Pools_earnEAGLE`} element={<PoolsEarnBaby/>}/>
             <Route path={`/Pools_earnAlt`} element={<PoolsEarnAlt/>}/>
             <Route path='/Swap' element={<SwapMain/>}></Route>
           <Route path='/liquidity' element={ <LiquidityMain/>}></Route>

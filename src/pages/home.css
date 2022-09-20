@@ -70,6 +70,7 @@
 .section1 .secA h1 span{
     color:rgb(218, 204, 12);
     font-size: 36px;
+   color: orange
     /* font-family: monospace */
 }
 .section1 .secA h1 .brise{

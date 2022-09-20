@@ -65,7 +65,7 @@ export default function FarmsEarnAlt(){
       const handleSwitch1=()=>{
         if(SwapButton==="true") return;
         setSwapButton("true")
-        navigate("/Farms_earnBABY")
+        navigate("/Farms_earnEAGLE")
      }
      const handleSwitch2=()=>{
        if(SwapButton==="false") return;
