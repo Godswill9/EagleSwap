@@ -175,11 +175,11 @@ and Smart Router will choose the <span>best route</span> for you.
         </div>
     </div>
     <button onClick={handleConnectWallet}>Unlock Wallet</button>
+</div> 
 </div>
 </div>
-</div>
-
-<div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
+    </div>
+    <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
 
 {/* settingsPopup */}
 <div className='swapPopupSettings' style={{"display":swapSetting}}>
@@ -410,7 +410,6 @@ and Smart Router will choose the <span>best route</span> for you.
       
 </div>
 </div>
-    </div>
     </div>
     </div>
   )

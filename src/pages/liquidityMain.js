@@ -105,7 +105,112 @@ export default function LiquidityMain() {
 
 
 
-            <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
+   {/* LIQUIDITY POPUPS */}
+   {/* <div className='liquidityPopupSettings' style={{"display":"none"}}>
+   <div className='first'>
+       <span>Settings</span>
+       <i class="bi bi-x"></i>
+    </div>
+    <div className='second'>
+      <div className='innerSecond'>
+      <span>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
+      <div className='val'>
+        <div className='percentages'>
+          <span>0.1%</span>
+          <span>0.5%</span>
+          <span>1%</span>
+        </div>
+        <div className='inputSec'>
+          <input type="number" placeholder='5%'></input>
+          <i class="bi bi-percent"></i>
+        </div>
+      </div>
+      <p className='notice1'>
+        Your transaction may be frontrun
+      </p>
+      <div className='transDeadline'>
+        <span>Transaction Deadline <i class="bi bi-question-circle"></i></span>
+        <div className='time'>
+          <input type="number" placeholder='3'></input>
+          <span>Minutes</span>
+        </div>
+        <p className='notice1'>
+          Enter a valid deadline
+        </p>
+      </div>
+      </div>
+    </div>
+</div>
+<div className='liquidityRecentPopup'>
+<div className='first'>
+       <span>Recent transactions</span>
+       <i class="bi bi-x"></i>
+    </div>
+    <div className='detailss'>
+      <p className='err'>Please connect your wallet to view your recent 
+      transactions</p>
+      <button>Close</button>
+    </div>
+</div> */}
+
+
+
+{/* new LiquidityPage adding liquiduty */}
+  {/* <div className='addLiquidity' style={{"display":"none"}}>
+     <div className='one'>
+       <i class="bi bi-arrow-left-short"></i>
+       <span>AddLiquidity <i class="bi bi-question-circle"></i></span>
+     </div>
+     <div className='two'>
+     <div className='fromInput'>
+      <span>Input</span>
+      <div className='more'>
+        <input type="number" placeholder='0.0'></input>
+        <div>
+        <div className='valuee'>
+            <img src="images/BNB.png"></img>
+            <span>BNB</span>
+          </div>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+      <span className='plus'>+</span>
+      <div className='fromInput'>
+      <span>Input</span>
+      <div className='more'>
+        <input type="number" placeholder='0.0'></input>
+        <div>
+        <div className='valuee'>
+            <img src="images/ETH.png"></img>
+            <span>BNB</span>
+          </div>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+     </div>
+    <div className='pricesPoolShare'>
+      <span>PRICES AND POOL SHARE</span>
+      <div className='vals'>
+         <div className='indivvv'>
+            <span>0.0382171</span>
+            <span>USDT per BABY</span>
+         </div>
+         <div className='indivvv'>
+            <span>26.1663</span>
+            <span>BABY per USDT</span>
+         </div>
+         <div className='indivvv'>
+            <span>2.65%</span>
+            <span>Share of Pool</span>
+         </div>
+      </div>
+    </div>
+    <button>Unlock Wallet</button>
+  </div> */}
+    </div>
+    <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
             <div className='swapPopupSettings' style={{"display":LiqSetting}}>
     <div className='first'>
        <span>Settings</span>
@@ -303,111 +408,6 @@ export default function LiquidityMain() {
 </div>
 
 
-   {/* LIQUIDITY POPUPS */}
-   <div className='liquidityPopupSettings' style={{"display":"none"}}>
-   <div className='first'>
-       <span>Settings</span>
-       <i class="bi bi-x"></i>
-    </div>
-    <div className='second'>
-      <div className='innerSecond'>
-      <span>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
-      <div className='val'>
-        <div className='percentages'>
-          <span>0.1%</span>
-          <span>0.5%</span>
-          <span>1%</span>
-        </div>
-        <div className='inputSec'>
-          <input type="number" placeholder='5%'></input>
-          <i class="bi bi-percent"></i>
-        </div>
-      </div>
-      <p className='notice1'>
-        Your transaction may be frontrun
-      </p>
-      <div className='transDeadline'>
-        <span>Transaction Deadline <i class="bi bi-question-circle"></i></span>
-        <div className='time'>
-          <input type="number" placeholder='3'></input>
-          <span>Minutes</span>
-        </div>
-        <p className='notice1'>
-          Enter a valid deadline
-        </p>
-      </div>
-      </div>
-    </div>
-</div>
-<div className='liquidityRecentPopup'>
-<div className='first'>
-       <span>Recent transactions</span>
-       <i class="bi bi-x"></i>
-    </div>
-    <div className='detailss'>
-      <p className='err'>Please connect your wallet to view your recent 
-      transactions</p>
-      <button>Close</button>
-    </div>
-</div>
-
-
-
-{/* new LiquidityPage adding liquiduty */}
-  {/* <div className='addLiquidity' style={{"display":"none"}}>
-     <div className='one'>
-       <i class="bi bi-arrow-left-short"></i>
-       <span>AddLiquidity <i class="bi bi-question-circle"></i></span>
-     </div>
-     <div className='two'>
-     <div className='fromInput'>
-      <span>Input</span>
-      <div className='more'>
-        <input type="number" placeholder='0.0'></input>
-        <div>
-        <div className='valuee'>
-            <img src="images/BNB.png"></img>
-            <span>BNB</span>
-          </div>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-      <span className='plus'>+</span>
-      <div className='fromInput'>
-      <span>Input</span>
-      <div className='more'>
-        <input type="number" placeholder='0.0'></input>
-        <div>
-        <div className='valuee'>
-            <img src="images/ETH.png"></img>
-            <span>BNB</span>
-          </div>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-     </div>
-    <div className='pricesPoolShare'>
-      <span>PRICES AND POOL SHARE</span>
-      <div className='vals'>
-         <div className='indivvv'>
-            <span>0.0382171</span>
-            <span>USDT per BABY</span>
-         </div>
-         <div className='indivvv'>
-            <span>26.1663</span>
-            <span>BABY per USDT</span>
-         </div>
-         <div className='indivvv'>
-            <span>2.65%</span>
-            <span>Share of Pool</span>
-         </div>
-      </div>
-    </div>
-    <button>Unlock Wallet</button>
-  </div> */}
-    </div>
     </div>
     </div>
   )

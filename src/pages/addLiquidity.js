@@ -109,7 +109,8 @@ export default function AddLiquidity() {
     <button onClick={handleConnectWallet}>Unlock Wallet</button>
   </div>
 
-  {/* popups */}
+    </div>
+    
   <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
   <div className='swapChooseTokenPopup' style={{"display":ChooseToken}}>
   <div className='inner'>
@@ -307,7 +308,6 @@ export default function AddLiquidity() {
       
 </div>
 </div>
-    </div>
     </div>
     </div>
   )

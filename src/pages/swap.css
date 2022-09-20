@@ -12,17 +12,12 @@
 }
 
 .swapPopupSettings {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   margin-bottom: 5px;
   border-radius: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 10%;
+  position: absolute;
   margin: auto;
-  background-color: aliceblue;
+  background-color: #100720;
   display: none;
 }
 .swapPopupSettings .first {
@@ -39,6 +34,8 @@
   border-bottom: 0.1px solid black;
   margin: 2px;
   margin-bottom: 1em;
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
 }
 .swapPopupSettings .first span {
   font-size: 16px;
@@ -63,6 +60,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-shadow: 0 0 1px rgb(255, 255, 255) C;
+  color: white;
 }
 .swapPopupSettings .second .innerSecond {
   width: 90%;
@@ -101,6 +100,8 @@
   border-radius: 10px;
   font-size: 15px;
   font-weight: bold;
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0.178);
 }
 .swapPopupSettings .second .inputSec input {
   height: 3.4em;
@@ -130,7 +131,7 @@
   font-weight: 100;
   font-family: verdana;
   color: red;
-  font-weight: bold;
+  font-weight: 500;
 }
 .swapPopupSettings .transDeadline {
   margin-top: 1.2em;
@@ -164,23 +165,19 @@
 }
 
 .swapRecentPopup {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   margin-bottom: 5px;
   border-radius: 20px;
   margin: 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 45%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 40%;
+  width: 85%;
+  align-items: center;
+  position: absolute;
   margin: auto;
-  background-color: aliceblue;
   display: none;
+  background-color: #100720;
 }
 .swapRecentPopup .first {
   font-size: 14px;
@@ -196,11 +193,16 @@
   border-bottom: 0.1px solid black;
   margin: 2px;
   margin-bottom: 1em;
+  width: 100%;
+  text-shadow: 0 0 1px #ffffff;
+  color: white;
 }
 .swapRecentPopup .first span {
   font-size: 16px;
   font-weight: bold;
   padding: 13px;
+  text-shadow: 0 0 1px #ffffff;
+  color: white;
 }
 .swapRecentPopup .first i {
   font-size: 23px;
@@ -219,6 +221,9 @@
   justify-content: center;
   flex-direction: column;
   margin: 7px;
+  width: 100%;
+  text-shadow: 0 0 1px #ffffff;
+  color: white;
 }
 .swapRecentPopup .detailss .err {
   font-size: 14px;
@@ -230,7 +235,8 @@
   font-size: 13px;
   font-weight: bold;
   padding: 7px;
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 .swapRecentPopup .detailss button {
   padding: 7px 15px 7px 15px;
@@ -248,22 +254,22 @@
   padding: 5px;
 }
 
+@media (min-width: 864px) {
+  .swapRecentPopup {
+    width: 60%;
+  }
+}
 .swapChooseTokenPopup {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   margin-bottom: 5px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  position: absolute;
+  background-color: #100720;
   display: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
   margin: auto;
 }
 .swapChooseTokenPopup .inner {
@@ -276,6 +282,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  color: whitesmoke;
 }
 .swapChooseTokenPopup .first span {
   display: flex;
@@ -295,7 +302,7 @@
   margin: 4px;
 }
 .swapChooseTokenPopup .first i {
-  font-size: 23px;
+  font-size: 19px;
   padding: 7px;
   font-weight: bold;
   border-radius: 20%;
@@ -309,13 +316,14 @@
 .swapChooseTokenPopup input {
   height: 3em;
   width: 80%;
-  font-size: 17px;
+  font-size: 14px;
   font-family: verdana;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   margin: 4px;
   margin-left: 10px;
-  border: 0.4px solid brown;
+  background-color: #1C0C5B;
+  border: none;
 }
 .swapChooseTokenPopup .commonBases .first {
   display: flex;
@@ -452,6 +460,19 @@
   color: rgb(70, 69, 69);
 }
 
+@media (max-width: 356px) {
+  .swapChooseTokenPopup .commonBases .common {
+    width: 17em;
+  }
+  .swapChooseTokenPopup .commonBases .common .indiv {
+    width: 6em;
+    margin: 2px;
+  }
+  .swapChooseTokenPopup .commonBases .common .indiv img {
+    width: 1.7em;
+    height: 1.7em;
+  }
+}
 .connectWallet {
   display: flex;
   flex-direction: column;
@@ -460,14 +481,9 @@
   border-radius: 20px;
   padding: 2px;
   padding-bottom: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 10%;
+  position: absolute;
   margin: auto;
-  background-color: aliceblue;
+  background-color: #100720;
   display: none;
 }
 .connectWallet .first {
@@ -477,6 +493,9 @@
   flex-direction: row;
   border-bottom: 0.1px solid black;
   margin-bottom: 15px;
+  font-family: verdana;
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
 }
 .connectWallet .first span {
   display: flex;
@@ -516,7 +535,9 @@
   flex-wrap: wrap;
 }
 .connectWallet .indivWallets a {
-  color: brown;
+  font-family: verdana;
+  text-shadow: 0 0 1px #FFC23C;
+  color: white;
 }
 .connectWallet .indivWallets .indiv {
   border: 0.4px solid brown;
@@ -525,10 +546,11 @@
   justify-content: space-between;
   margin: 3px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.205);
+  background-color: #1C0C5B;
   padding: 6px;
   cursor: pointer;
   width: 11em;
+  border: none;
 }
 .connectWallet .indivWallets .indiv img {
   width: 2.5em;
@@ -552,6 +574,17 @@
   color: rgb(70, 69, 69);
 }
 
+@media (max-width: 375px) {
+  .connectWallet .indivWallets {
+    width: 19em;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .connectWallet .indivWallets .indiv {
+    width: 80%;
+    margin-left: 30px;
+  }
+}
 .liquidityPopupSettings {
   border: 1px solid black;
   margin-bottom: 5px;
@@ -643,7 +676,6 @@
   border: none;
   color: white;
   margin-left: 10px;
-  border: 0.4px solid brown;
 }
 .liquidityPopupSettings .second .inputSec i {
   font-size: 14px;

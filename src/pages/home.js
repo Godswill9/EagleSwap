@@ -87,6 +87,19 @@ export default function Home() {
         }
     }, 2000)
       },[traders])
+
+      //newlyAdded
+      const [ConnectWallet, setConnectWallet]=useState("none")
+      const [wrapper, setWrapper]= useState("none")
+      const closePopup=()=>{
+        setWrapper("none")
+        setConnectWallet("none")
+    }
+
+    const handleConnectWallet=()=>{
+       setConnectWallet("flex")
+       setWrapper("flex")
+    }
   return (
 <div>
 <Header/>
@@ -531,6 +544,72 @@ export default function Home() {
             <a href='#'><i class="bi bi-twitter"></i></a>
         </div>
     </div>
+</div>
+</div>
+
+<div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
+{/* unlockWallet */}
+<div className='connectWallet' style={{"display":ConnectWallet}}>
+<div className='first'>
+       <span>Connect to a wallet</span>
+       <i onClick={closePopup} class="bi bi-x"></i>
+</div>
+<div className='indivWallets'>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+    <a href='#'>
+      <div className='indiv'>
+        <span>Metamask</span>
+        <img src=""></img>
+      </div>
+    </a>
+      
 </div>
 </div>
 </div>

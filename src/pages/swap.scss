@@ -6,6 +6,12 @@
 $black:2px solid black;
 $brown:.4px solid brown;
 
+@mixin popup {
+    background-color: #100720;
+    position: absolute;
+    margin: auto;
+}
+
 @mixin iconsNormal {
     font-size: 26px; 
     padding:5px
@@ -95,22 +101,24 @@ $brown:.4px solid brown;
     // border:2px solid black
 }
 .swapPopupSettings{
-    border:1px solid black;
+    border:1px solid rgb(255, 255, 255);
     margin-bottom: 5px;
     border-radius: 20px;
-    position: sticky;
-    top:0%;
-    left: 0%;
-    right:0%;
-    bottom:10%;
+    position: absolute;
+    // top:0%;
+    // left: 0%;
+    // right:0%;
+    // bottom:10%;
     margin: auto;
-  background-color: aliceblue;
+    background-color: #100720;
     display: none;
     .first {@include spanNormal();
      @include flex-row();
      border-bottom:.1px solid black;
      margin:2px;
      margin-bottom: 1em;
+     text-shadow:0 0 1px #FFC23C;
+      color:white;
        span{
         font-size: 16px;
         font-weight: bold;
@@ -136,6 +144,8 @@ $brown:.4px solid brown;
         align-items: center;
         justify-content: center;
         width:100%;
+        text-shadow:0 0 1px rgb(255, 255, 255)C;
+      color:white;
         .innerSecond{
             width:90%;
             // border:$black
@@ -162,6 +172,8 @@ $brown:.4px solid brown;
                 border-radius: 10px;
                 font-size: 15px;
                 font-weight: bold;
+                margin: 2px;
+                background-color: rgba(0, 0, 0, 0.178);
              }
            }
         }
@@ -187,7 +199,7 @@ $brown:.4px solid brown;
     .notice1{
         @include spanNormal();
         color:red;
-        font-weight: bold;
+        font-weight: 500;
     }
     .transDeadline{
         margin-top: 1.2em;
@@ -211,38 +223,40 @@ $brown:.4px solid brown;
             border:none;
             color:white;
             margin-left: 10px;
-            margin:4px;
+            margin:4px; 
             // border:$brown
         }
     }
 }
 
 .swapRecentPopup{
-    border:1px solid black;
+    border:1px solid rgb(255, 255, 255);
     margin-bottom: 5px;
     border-radius: 20px;
     margin:2px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width:45%;
-    position: sticky;
-    top:0%;
-    left: 0%;
-    right:0%;
-    bottom:40%;
+    width:85%;
+    align-items: center;
+    position: absolute;
     margin: auto;
-  background-color: aliceblue;
     display: none;
+    background-color: #100720;
     .first {@include spanNormal();
         @include flex-row();
         border-bottom:.1px solid black;
         margin:2px;
         margin-bottom: 1em;
+        width:100%;
+        text-shadow:0 0 1px #ffffff;
+      color:white;
           span{
            font-size: 16px;
            font-weight: bold;
-           padding:13px
+           padding:13px;
+           text-shadow:0 0 1px #ffffff;
+      color:white;
           }
           i{
            font-size: 23px;
@@ -263,12 +277,17 @@ $brown:.4px solid brown;
             justify-content: center;
             flex-direction: column;
             margin:7px;
+            width:100%;
+            text-shadow:0 0 1px #ffffff;
+      color:white;
             .err{
             @include spanNormal();
             font-size: 13px;
             font-weight: bold;
             padding:7px;
-            width:80%
+            width:100%;
+            text-align:  center;
+            
             }
             button{
                 @include button();
@@ -278,36 +297,37 @@ $brown:.4px solid brown;
         }
 }
 
+@media (min-width:864px) {
+    .swapRecentPopup{
+        width:60%
+    }
+}
+
+
 .swapChooseTokenPopup{
-    border:1px solid black;
+    border:1px solid rgb(255, 255, 255);
     margin-bottom: 5px;
     border-radius: 20px;
     @include flex-column();
     align-items: center;
     justify-content: center;
-    // position: absolute;
+    position: absolute;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
-  background-color: aliceblue;
+    background-color: #100720;
     display: none;
-
-    position: sticky;
-    top:0%;
-    left: 0%;
-    right:0%;
-    bottom:0%;
+    // bottom:0%;
     margin: auto;
     // height:em;
     .inner{
      width:100%;
     //  border: $black;
      @include flex-column();
-    // align-items: center;
-    // justify-content: center;
     }
     .first {
         @include flex-row();
+        color: whitesmoke;
         // border-bottom:.1px solid black;
         span{
             @include flex-row();
@@ -319,7 +339,7 @@ $brown:.4px solid brown;
                margin:4px;
         }
         i{
-            font-size: 23px;
+            font-size: 19px;
             padding:7px;
             font-weight: bold;
             border-radius: 20%;
@@ -336,15 +356,18 @@ $brown:.4px solid brown;
         input{
             height:3em;
             width:80%;
-            font-size: 17px;
+            font-size: 14px;
             font-family: verdana;
             // background-color: rgb(141, 5, 5);
-            border-radius:30px;
+            border-radius:10px;
             border:none;
             // color:white;
             margin:4px;
             margin-left: 10px;
-            border:$brown
+            // border:$brown;
+            background-color: #1C0C5B;
+            border: none;
+           
         }
         .commonBases{
             // width:90%;
@@ -465,6 +488,26 @@ $brown:.4px solid brown;
                 }
         }
 }
+
+@media (max-width:356px) {
+    .swapChooseTokenPopup{
+        .commonBases{
+            .common{
+                width:17em;
+                .indiv{
+                    width:6em;
+                    margin:2px;
+                    img{
+                        width:1.7em;
+                        height:1.7em;
+                        // border:$brown
+                    }
+                }
+            }
+        }
+    }
+}
+
 .connectWallet{
     @include flex-column();
     border:1px solid rgb(255, 254, 254);
@@ -472,21 +515,17 @@ $brown:.4px solid brown;
     border-radius: 20px;
     padding:2px;
     padding-bottom: 20px;
-    position: sticky;
-    top:0%;
-    left: 0%;
-    right:0%;
-    bottom:10%;
-    margin: auto;
-//     top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-  background-color: aliceblue;
+    position: absolute;
+    margin:auto;
+  background-color: #100720;
     display: none;
     .first {
         @include flex-row();
         border-bottom:.1px solid black;
         margin-bottom: 15px;
+        font-family: verdana;
+        text-shadow:0 0 1px #FFC23C;
+          color:white;
         span{
             @include flex-row();
             justify-content: space-around;
@@ -520,7 +559,9 @@ $brown:.4px solid brown;
             width:25em;
             flex-wrap: wrap;
             a{
-                color:brown
+                font-family: verdana;
+                text-shadow:0 0 1px #FFC23C;
+                  color:white;
             }
         .indiv{
             // display: block;;
@@ -531,10 +572,11 @@ $brown:.4px solid brown;
             justify-content: space-between;
             margin:3px;
             border-radius: 10px;
-            background-color: rgba(0, 0, 255, 0.205);
+            background-color: #1C0C5B;
             padding:6px;
             cursor: pointer;
             width:11em;
+            border: none;
             img{
                 width:2.5em;
                 height:2.5em;
@@ -555,6 +597,20 @@ $brown:.4px solid brown;
         }
     }
         
+}
+@media (max-width:375px) {
+   .connectWallet 
+   .indivWallets {
+        width:19em;
+        // border:2px solid rgb(245, 11, 11);
+        // align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        .indiv{
+            width:80%;
+            margin-left: 30px;
+        }
+    }
 }
 
 // liquiditySection
@@ -631,7 +687,7 @@ $brown:.4px solid brown;
                 border:none;
                 color:white;
                 margin-left: 10px;
-                border:$brown
+                // border:$brown
             }
             i{@include spanNormal();
                 font-size: 18px;

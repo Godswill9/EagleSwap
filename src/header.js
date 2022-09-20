@@ -17,7 +17,7 @@ export default function Header() {
   const [namee6, setName6] = useState("none");
   const [namee7, setName7] = useState("none");
   const [navBar, setnavBar] = useState("0px");
-  const [ConnectWallet, setConnectWallet]=useState("none")
+  const [ConnectWalletHead, setConnectWalletHead]=useState("none")
   const [wrapper, setWrapper]= useState("none")
 
   const handleNav = () => {
@@ -32,16 +32,17 @@ export default function Header() {
       setName7("none");
     } else if (navBar === "32em") {
       setnavBar("0px");
+      closePopup();
     }
   };
 
-  const handleConnectWallet=()=>{
-    setConnectWallet("flex")
+  const handleConnectWalletHead=()=>{
+    setConnectWalletHead("flex")
     setWrapper("flex")
  }
  const closePopup=()=>{
   setWrapper("none")
-  setConnectWallet("none")
+  setConnectWalletHead("none")
 }
 
   const click1 = () => {
@@ -133,7 +134,8 @@ export default function Header() {
     }
   };
 
-  return (
+  return ( 
+    <div className="all">
     <div className="Header">
       <div className="logo">
         <a href="/">
@@ -467,7 +469,7 @@ export default function Header() {
             <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
             {/* <i style={{"fontSize":"17px"}} style={{"fontSize":"17px"}} class="fa fa-arrow-circle-right icon" aria-hidden="true"></i> */}
           </div>
-          <button onClick={handleConnectWallet}>Connect</button>
+          <button onClick={handleConnectWalletHead}>Connect</button>
         </div>
       </div> 
       <div className="mobileView">
@@ -856,14 +858,14 @@ export default function Header() {
             <i style={{"fontSize":"17px"}} class="bi bi-gear"></i>
             <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
           </div>
-          <button onClick={handleConnectWallet}>Connect</button>
+          <button onClick={handleConnectWalletHead}>Connect</button>
         </div>
       </div>
 
-      <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
-      <div className='connectWallet' style={{"display":ConnectWallet}}>
+      {/* <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div> */}
+      <div className='connectWallet' style={{"display":ConnectWalletHead}}>
 <div className='first'>
-       <span  style={{"color":"brown"}}>Connect to a wallet</span>
+       <span>Connect to a wallet</span>
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
@@ -879,6 +881,7 @@ export default function Header() {
    })}
 </div>
 </div>
+    </div>
     </div>
   );
 }
