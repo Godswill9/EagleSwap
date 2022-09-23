@@ -15,9 +15,11 @@ export default function Header() {
 
   // })
   // const[footer, setFooter]=useState("")
-  if(Cookies.get()===""){
-    Cookies.set("theme", "dark")
-  }
+  useEffect(()=>{
+    if(Cookies.get().theme===""){
+        Cookies.set("theme", "dark")
+      }
+},[])
   const toggle1 = useRef();
   const toggle2 = useRef();
   const toggle3 = useRef();

@@ -12,9 +12,11 @@ export default function Home() {
     const sliderIndiv= useRef()
     // const [theme, setTheme]=useState("dark")
     var bgColor={}
-    if(Cookies.get()===""){
-        Cookies.set("theme", "dark")
-      }
+    useEffect(()=>{
+        if(Cookies.get().theme===""){
+            Cookies.set("theme", "dark")
+          }
+    },[])
 
     const nameTheme=Cookies.get()
     const theme=nameTheme.theme
@@ -105,7 +107,7 @@ export default function Home() {
             "color":"rgb(59, 59, 59)"
         }
       }
-      else if(nameTheme.theme==="dark"){
+      else if(nameTheme.theme!=="bright"){
         var sliderText={
             color:"",
             "textShadow": "",

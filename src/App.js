@@ -8,6 +8,8 @@ import PoolsEarnBaby from "./pages/poolsEarnBaby";
 import PoolsEarnAlt from "./pages/poolsAlt";
 import FarmsEarnBABY from "./pages/farmsEarnBABY";
 import FarmsEarnAlt from "./pages/farmsEarnALT";
+import { useEffect } from "react";
+import Cookies from "js-cookie";
 
 
 
