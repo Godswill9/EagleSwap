@@ -12,6 +12,10 @@ export default function Home() {
     const sliderIndiv= useRef()
     // const [theme, setTheme]=useState("dark")
     var bgColor={}
+    if(Cookies.get()===""){
+        Cookies.set("theme", "dark")
+      }
+
     const nameTheme=Cookies.get()
     const theme=nameTheme.theme
     // console.log(theme)
@@ -105,9 +109,7 @@ export default function Home() {
         var sliderText={
             color:"",
             "textShadow": "",
-            sup:{
-                color:""
-            }
+            
         }
         var justText={
             color:"",
@@ -384,7 +386,7 @@ export default function Home() {
                     <div className='title'>{item.head}</div>
                     <div className='detail'>
                         <h3>${item.amount}</h3>
-                        <span style={sliderText.sup}>+{item.percent}%</span>
+                        <span style={sliderText.sup||{}}>+{item.percent}%</span>
                     </div>
                 </div>
                 </div>
