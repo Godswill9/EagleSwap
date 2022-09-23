@@ -15,7 +15,9 @@ export default function Header() {
 
   // })
   // const[footer, setFooter]=useState("")
-
+  if(Cookies.get()===""){
+    Cookies.set("theme", "dark")
+  }
   const toggle1 = useRef();
   const toggle2 = useRef();
   const toggle3 = useRef();
@@ -86,9 +88,9 @@ var bgColor={}
 // useEffect(()=>{
   const nameTheme=Cookies.get()
 
-  console.log(nameTheme.theme)
+  // console.log(nameTheme.theme)
   if(nameTheme.theme==="bright"){
-    console.log("rice")
+    // console.log("rice")
     // var bgColor={
     //   "backgroundColor":"#E8DFCA",
     //    "color":"rgb(39, 39, 39)"
@@ -155,7 +157,7 @@ var bgColor={}
 // })
 
 
-console.log(themeProp)
+// console.log(themeProp)
 
   const handleNav = () => {
     if (navBar === "0px") {
