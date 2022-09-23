@@ -454,6 +454,8 @@
     font-family:sans-serif;
     color:rgb(135, 201, 37);
     color:#49FF00;
+    color:rgb(0, 151, 0);
+    text-shadow:"none";
     font-weight: bold;
 }
 

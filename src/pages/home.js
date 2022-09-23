@@ -386,7 +386,7 @@ export default function Home() {
                     <div className='title'>{item.head}</div>
                     <div className='detail'>
                         <h3>${item.amount}</h3>
-                        <span style={sliderText.sup||{}}>+{item.percent}%</span>
+                        <span >+{item.percent}%</span>
                     </div>
                 </div>
                 </div>
@@ -407,7 +407,7 @@ export default function Home() {
                     <div className='title'>{item.head}</div>
                     <div className='detail'>
                         <h3>${item.amount}</h3>
-                        <span style={sliderText.sup||{}}>+{item.percent}%</span>
+                        <span >+{item.percent}%</span>
                     </div>
                 </div>
                 </div>
@@ -424,7 +424,7 @@ export default function Home() {
         <div className='title'>vlk</div>
         <div className='detail'>
             <h3>$0.044132</h3>
-            <span style={sliderText.sup||{}}>+35.00%</span>
+            <span >+35.00%</span>
         </div>
     </div>
     </div>
