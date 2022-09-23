@@ -5,6 +5,7 @@ import './Trade.css'
 import Warning from './Warning'
 import "./swap.css"
 import { useNavigate } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 export default function AddLiquidity() {
     const navigate=useNavigate()
@@ -15,8 +16,10 @@ export default function AddLiquidity() {
     const[selectedSwap, setSelectedSwap]=useState({
       img:"images/BTC.png",
       name:"BTC" 
-   })
+   }) 
    const audio=new Audio()
+   const nameTheme=Cookies.get()
+    const theme=nameTheme.theme
   
    const[selectedSwap2, setSelectedSwap2]=useState({
       img:"images/ETH.png",
@@ -44,6 +47,51 @@ export default function AddLiquidity() {
     }
     audio.src='/images/money.wav'
 
+    if(nameTheme.theme==="bright"){
+      // console.log("rice")
+      var bgColor={
+        "backgroundColor":"rgb(230, 208, 181)",
+        color:"rgb(83, 83, 83)"
+      }
+
+       var boxObj={
+          "color":"white",
+          "boxShadow": "0 7px 0px rgb(182, 153, 117)",
+            "border":"2px solid rgb(182, 153, 117)",
+            "backgroundColor":"rgb(226, 194, 154)",
+            display:"flex",
+            headText:{
+              color:"rgba(53, 37, 0, 0.966)",
+            },
+            button:{
+              backgroundColor:"rgb(192, 135, 30)",
+              color:"white"
+            } 
+      }
+    }
+    else if(nameTheme.theme==="dark"){
+      var bgColor={
+        "backgroundColor":"",
+        color:""
+      }
+
+       var boxObj={
+          "color":"",
+          "boxShadow": "",
+            "border":"",
+            "backgroundColor":"",
+            display:"flex",
+            headText:{
+              color:"",
+            },
+            button:{
+              backgroundColor:"",
+              color:""
+            } 
+      }
+  
+    }
+
 
   return (
     <div>
@@ -51,14 +99,14 @@ export default function AddLiquidity() {
 <header>
 <Header/>
 </header>
-<div className='bodySec'>
+<div className='bodySec' style={bgColor}>
 <div className='innerBodySec'>
 <div className='buttons' style={{"visibility":"hidden"}}>
     </div>
-         <div className='addLiquidity' style={{"display":"flex"}}>
+         <div className='addLiquidity' style={boxObj}>
      <div className='one'>
-       <i onClick={()=> navigate("/liquidity")} style={{"cursor":"pointer"}} class="bi bi-arrow-left-short"></i>
-       <span>AddLiquidity <i class="bi bi-question-circle"></i></span>
+       <i onClick={()=> navigate("/liquidity")} style={{...boxObj.headText,"cursor":"pointer"}} class="bi bi-arrow-left-short"></i>
+       <span style={boxObj.headText}>AddLiquidity <i style={boxObj.headText} class="bi bi-question-circle"></i></span>
      </div>
      <div className='two'>
      <div className='fromInput'>
@@ -90,38 +138,38 @@ export default function AddLiquidity() {
     </div>
      </div>
     <div className='pricesPoolShare'>
-      <span>PRICES AND POOL SHARE</span>
+      <span style={boxObj.headText}>PRICES AND POOL SHARE</span>
       <div className='vals'>
          <div className='indivvv'>
-            <span>0.0382171</span>
-            <span>USDT per EAGLE</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>0.0382171</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>USDT per EAGLE</span>
          </div>
          <div className='indivvv'>
-            <span>26.1663</span>
-            <span>EAGLE per USDT</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>26.1663</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>EAGLE per USDT</span>
          </div>
          <div className='indivvv'>
-            <span>2.65%</span>
-            <span>Share of Pool</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>2.65%</span>
+            <span style={{...boxObj.headText,fontWeight:"bold"}}>Share of Pool</span>
          </div>
       </div>
     </div>
-    <button onClick={handleConnectWallet}>Unlock Wallet</button>
+    <button style={boxObj.button} onClick={handleConnectWallet}>Unlock Wallet</button>
   </div>
 
     </div>
     
   <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
-  <div className='swapChooseTokenPopup' style={{"display":ChooseToken}}>
+  <div className='swapChooseTokenPopup' style={{...bgColor,"display":ChooseToken}}>
   <div className='inner'>
   <div className='first'>
-       <span>Select a token <i class="bi bi-question-circle"></i></span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input type="text" placeholder='Search name or paste address'></input>
+    <input style={{color: boxObj.color}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
-       <span>Common bases <i class="bi bi-question-circle"></i></span>
+       <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
@@ -137,7 +185,7 @@ export default function AddLiquidity() {
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span>{item.name}</span>
+          <span style={{color: boxObj.color}}>{item.name}</span>
        </div>
         )
       })}
@@ -145,7 +193,7 @@ export default function AddLiquidity() {
        </div>
        <div className='tokenName'>
           <div className='first'>
-              <span>Token name</span>
+              <span style={boxObj.headText}>Token name</span>
               <i class="bi bi-arrow-down"></i>
           </div>
           <div className='allTokens'>
@@ -179,16 +227,16 @@ export default function AddLiquidity() {
   </div>
 </div>
 
-  <div className='swapChooseTokenPopup' style={{"display":ChooseToken2}}>
+  <div className='swapChooseTokenPopup' style={{...bgColor,"display":ChooseToken2}}>
   <div className='inner'>
   <div className='first'>
-       <span>Select a token <i class="bi bi-question-circle"></i></span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input type="text" placeholder='Search name or paste address'></input>
+    <input  style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
-       <span>Common bases <i class="bi bi-question-circle"></i></span>
+       <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
@@ -204,7 +252,7 @@ export default function AddLiquidity() {
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span>{item.name}</span>
+          <span  style={{color:boxObj.color}}>{item.name}</span>
        </div>
         )
       })}
@@ -212,7 +260,7 @@ export default function AddLiquidity() {
        </div>
        <div className='tokenName'>
           <div className='first'>
-              <span>Token name</span>
+              <span style={boxObj.headText}>Token name</span>
               <i class="bi bi-arrow-down"></i>
           </div>
           <div className='allTokens'>

@@ -5,6 +5,7 @@ import './Trade.css'
 import Warning from './Warning'
 import "./swap.css"
 import { useNavigate } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 export default function LiquidityMain() {
     const navigate=useNavigate()
@@ -16,6 +17,15 @@ export default function LiquidityMain() {
   const [LiqSetting, setLiqSetting]=useState("none")
   const [LiqRecent, setLiqRecent]=useState("none")
   const [wrapper, setWrapper]= useState("none")
+   const [theme, setTheme]=useState("dark")
+    const nameTheme=Cookies.get()
+  //  useEffect(()=>{
+  //   if(!Cookies)return;
+  //   // setTheme(nameTheme)
+  //   console.log(nameTheme.theme)
+  //  },[])
+
+  // console.log(nameTheme.theme)
 
   const closePopup=()=>{
     setWrapper("none")
@@ -53,6 +63,46 @@ export default function LiquidityMain() {
 // const handlePlay=()=>{
 // audio.play()
 // }
+if(nameTheme.theme==="bright"){
+  // console.log("rice")
+  var bgColor={
+    "backgroundColor":"rgb(230, 208, 181)",
+    color:"rgb(83, 83, 83)"
+  }
+
+   var boxObj={
+      "color":"white",
+      "boxShadow": "0 7px 0px rgb(182, 153, 117)",
+        "border":"2px solid rgb(182, 153, 117)",
+        "backgroundColor":"rgb(226, 194, 154)",
+        headText:{
+          color:"rgba(53, 37, 0, 0.966)",
+        },
+        moreText:{
+          color:"rgba(54, 38, 0, 0.966)",
+        }
+  }
+}
+else if(nameTheme.theme==="dark"){
+      var bgColor={
+        "backgroundColor":"",
+        color:""
+      }
+    
+       var boxObj={
+          "color":"",
+          "boxShadow": "",
+            "border":"",
+            "backgroundColor":"",
+            headText:{
+              color:"",
+            },
+            moreText:{
+              color:"",
+            }
+      }
+
+}
 
 
   return (
@@ -61,9 +111,9 @@ export default function LiquidityMain() {
 <header>
 <Header/>
 </header>
-<div className='bodySec'>
+<div className='bodySec'style={bgColor}>
 <div className='innerBodySec'>
-    <div className='buttons'>
+    <div className='buttons' style={boxObj}>
     {SwapButton==="true"? <button onClick={handleSwitch1} className='btnSwap' style={activeButton}>Swap</button>:
         <button onClick={handleSwitch1} className='btnSwap'>Swap</button>
         }
@@ -74,29 +124,29 @@ export default function LiquidityMain() {
     <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
      <div className='swapSection'>
         <div className='liquidity' style={{"display":"flex"}}>
-            <div className='mainSec'>
+            <div className='mainSec' style={boxObj}>
             <div className='one'>
-            <div className='exchange'>
-                <h3>Liquidity</h3>
+            <div className='exchange' style={boxObj.moreText}>
+                <h3 style={boxObj.headText}>Liquidity</h3>
                 <span>Add liquidity to receive LP tokens</span>
                 <button onClick={handleSwitchLiq} className='addLiq'>Add Liquidity</button>
             </div>
     <div className='icons'>
-        <i onClick={handleSwapSetting} class="fa fa-cog" aria-hidden="true"></i>
-        <i onClick={handleRecent} class="fa fa-history" aria-hidden="true"></i>
+        <i style={boxObj.headText} onClick={handleSwapSetting} class="fa fa-cog" aria-hidden="true"></i>
+        <i style={boxObj.headText} onClick={handleRecent} class="fa fa-history" aria-hidden="true"></i>
     </div>
     </div>
     <div className='twoo'>
     <div className='first'>
-        <span>Your Liquidity <i class="bi bi-question-circle"></i></span>
+        <span style={boxObj.moreText}>Your Liquidity <i class="bi bi-question-circle"></i></span>
     </div>
         <div className='secondd'>
         <div className='valss'></div>
-        <span>Connect to a wallet to view your liquidity.</span>
+        <span style={boxObj.moreText}>Connect to a wallet to view your liquidity.</span>
         </div>
         <div className='moreFooter'>
-        <span>Don't see a pool you joined? <a href="">Import it.</a></span>
-        <span>Or, if you staked your LP tokens in a farm, unstake them to see them here.</span>
+        <span style={boxObj.moreText}>Don't see a pool you joined? <a href="" style={boxObj.headText}>Import it.</a></span>
+        <span style={boxObj.moreText}>Or, if you staked your LP tokens in a farm, unstake them to see them here.</span>
         </div>
     </div>
     </div>
@@ -211,14 +261,14 @@ export default function LiquidityMain() {
   </div> */}
     </div>
     <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
-            <div className='swapPopupSettings' style={{"display":LiqSetting}}>
+   <div className='swapPopupSettings' style={{...bgColor,"display":LiqSetting}}>
     <div className='first'>
-       <span>Settings</span>
+       <span style={boxObj.headText}>Settings</span>
        <i onClick={closePopup} class="bi bi-x"></i>
     </div>
     <div className='second'>
       <div className='innerSecond'>
-      <span>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
+      <span style={boxObj.headText}>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
       <div className='val'>
         <div className='percentages'>
           <span>0.1%</span>
@@ -234,10 +284,10 @@ export default function LiquidityMain() {
         Your transaction may be frontrun
       </p>
       <div className='transDeadline'>
-        <span>Transaction Deadline <i class="bi bi-question-circle"></i></span>
+        <span style={boxObj.headText}>Transaction Deadline <i class="bi bi-question-circle"></i></span>
         <div className='time'>
           <input type="number" placeholder='3'></input>
-          <span>Minutes</span>
+          <span style={boxObj.headText}>Minutes</span>
         </div>
         <p className='notice1'>
           Enter a valid deadline
@@ -246,13 +296,13 @@ export default function LiquidityMain() {
       </div>
     </div>
 </div>
-<div className='swapRecentPopup' style={{"display":LiqRecent}}>
+<div className='swapRecentPopup' style={{...bgColor,"display":LiqRecent}}>
     <div className='first'>
-       <span>Recent transactions</span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Recent transactions</span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
     <div className='detailss'>
-      <p className='err'>Please connect your wallet to view your recent 
+      <p className='err' style={boxObj.headText}>Please connect your wallet to view your recent 
       transactions</p>
       <button  onClick={closePopup}>Close</button>
     </div>

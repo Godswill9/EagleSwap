@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #100720;
+    /* background-color: #100720; */
 }
 a{
     text-decoration: none;
@@ -81,7 +81,7 @@ header{
 }
 .bodySec .buttons{
    /* border:1px solid black; */
-   margin-top: 13em;
+   margin-top: 10em;
    border-top-left-radius: 30px;
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
@@ -92,6 +92,7 @@ header{
    box-shadow: 0 3px 1px #916BBF;
    border: .2px solid #916BBF;
    background-color: #1C0C5B;
+   z-index: 2;
 }
 .bodySec .buttons button{
     padding:7px 15px 7px 15px;
@@ -100,7 +101,7 @@ header{
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     cursor: pointer;
-    background-color: #1C0C5B;
+    background-color: inherit;
     /* background-color: #3317a1; */
     /* background-color: #ffcc24; */
     font-weight: bold;
@@ -121,12 +122,17 @@ header{
 
 .bodySec .hidingEagle{
     /* border:.2px solid black; */
-    height: 23em;
-    width: 20em;
+    height: 37em;
+    width: 40em;
+    /* height: 23em;
+    width: 20em; */
     position: absolute;
-    left:19%;
-    top:40%;
+    left:3%;
+    top:18%;
+    /* left:19%;
+    top:40%; */
     opacity: 0.5;
+    z-index: 1;
 }
 .bodySec .swapSection{
     /* border:2px solid black; */
@@ -136,6 +142,7 @@ header{
     flex-direction: column;
     width:30em;
     z-index: 0;
+    z-index: 2;
     /* border-radius: 20px; */
 }
 .bodySec .swapSection .para1{

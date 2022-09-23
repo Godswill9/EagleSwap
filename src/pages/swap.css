@@ -9,6 +9,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.678);
+  z-index: 3;
 }
 
 .swapPopupSettings {
@@ -16,6 +17,7 @@
   margin-bottom: 5px;
   border-radius: 20px;
   position: absolute;
+  z-index: 3;
   margin: auto;
   background-color: #100720;
   display: none;
@@ -178,6 +180,7 @@
   margin: auto;
   display: none;
   background-color: #100720;
+  z-index: 3;
 }
 .swapRecentPopup .first {
   font-size: 14px;
@@ -272,6 +275,7 @@
   display: none;
   margin: auto;
   color: white;
+  z-index: 3;
 }
 .swapChooseTokenPopup .inner {
   width: 100%;
@@ -488,6 +492,7 @@
   margin: auto;
   background-color: #100720;
   display: none;
+  z-index: 3;
 }
 .connectWallet .first {
   display: flex;
@@ -598,6 +603,7 @@
   transform: translate(-50%, -50%);
   background-color: aliceblue;
   display: none;
+  z-index: 3;
 }
 .liquidityPopupSettings .first {
   font-size: 14px;
@@ -743,6 +749,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 3;
   transform: translate(-50%, -50%);
   background-color: aliceblue;
   display: none;

@@ -1,3 +1,4 @@
+import Cookies from 'js-cookie'
 import React, {useEffect, useRef, useState} from 'react'
 import Marquee from 'react-fast-marquee'
 import Header from '../header'
@@ -9,6 +10,170 @@ export default function Home() {
     const traders= useRef()
     const circles= useRef()
     const sliderIndiv= useRef()
+    // const [theme, setTheme]=useState("dark")
+    var bgColor={}
+    const nameTheme=Cookies.get()
+    const theme=nameTheme.theme
+    // console.log(theme)
+
+    if(nameTheme.theme==="bright"){
+        console.log("rice")
+        // var bgColor={
+        //   "backgroundColor":"#E8DFCA",
+        //    "color":"rgb(39, 39, 39)"
+        // }
+        var imgSrc="/images/mainLogo.jpg"
+        var sliderText={
+            color:"white",
+            "textShadow": "0 0px 2px black",
+            sup:{
+                color:"rgb(0, 151, 0)",
+                textShadow:"none"
+                // color:"rgb(0, 110, 33)"
+            },
+            yellow:{
+                color:"rgb(141, 66, 16)",
+                fontWeight:"bold"
+            }
+            
+        }
+        var justText={
+            color:"rgb(49, 42, 3)",
+            "textShadow": "0 0px 1px white",
+            extra:{
+                color:"rgb(255, 255, 43)"
+            },
+            button:{
+                border:"2px solid rgb(46, 168, 83)",
+                backgroundColor:"rgba(255, 255, 255, 0.418)",
+                color:"rgb(46, 168, 83)"
+            }
+        }
+        var textObj={
+            "color":"brown",
+            "boxShadow": "0 7px 2px rgb(182, 153, 117)",
+              "border":"2px solid rgb(182, 153, 117)",
+              "backgroundColor":"rgb(226, 194, 154)",
+        }
+        var innerBoxesHeaders="rgb(39, 39, 39)"
+        var innerTexts="rgb(59, 59, 59)"
+        var headerTexts="rgb(83, 83, 83)"
+        var header="rgb(230, 208, 181)"
+        var header2=" linear-gradient(rgb(119, 97, 68), rgb(230, 208, 181))"
+        // var innerBoxes="rgb(226, 194, 154)"
+        // var innerBoxesShadow="0 7px 0px rgb(182, 153, 117)"
+        var boxObj={
+            "color":"brown",
+            "boxShadow": "0 7px 0px rgb(182, 153, 117)",
+              "border":"2px solid rgb(182, 153, 117)",
+              "backgroundColor":"rgb(226, 194, 154)",
+              greenText:{
+                color:"green"
+              }
+        }
+        // var innerBoxesHeaders=""
+        var innerBoxesTexts={
+            "color":"white",
+            "textShadow":"0 0 1px black",
+            icon:{
+                "color":"brown",
+                // border:".6px solid brown"
+            },
+            icon1:{
+                "color":"brown",
+                border:".6px solid brown"
+            },
+            button:{
+                "color":"brown",
+                border:".6px solid brown"
+            },
+            brise:{
+                "color":"black",
+                "textShadow":"0 0 1px white"
+                // border:".6px solid brown"
+            },
+        }
+        var footer={
+            background:"rgba(0, 0, 0, 0.459)"
+        }
+        var buttons={
+            "borderColor":"rgb(59, 59, 59)",
+            "color":"rgb(59, 59, 59)"
+        }
+      }
+      else if(nameTheme.theme==="dark"){
+        var sliderText={
+            color:"",
+            "textShadow": "",
+            sup:{
+                color:""
+            }
+        }
+        var justText={
+            color:"",
+            "textShadow": "",
+            extra:{
+                color:""
+            },
+            button:{
+                border:"",
+                backgroundColor:"",
+                color:""
+            }
+        }
+        var textObj={
+            "color":"",
+            "boxShadow": "",
+              "border":"",
+              "backgroundColor":"",
+        }
+        var innerBoxesHeaders=""
+        var innerTexts=""
+        var headerTexts=""
+        var header=""
+        var header2=""
+        var bg=""
+        // var innerBoxes="rgb(226, 194, 154)"
+        // var innerBoxesShadow="0 7px 0px rgb(182, 153, 117)"
+        var boxObj={
+            "color":"",
+            "boxShadow": "",
+              "border":"",
+              "backgroundColor":"",
+              greenText:{
+                color:""
+              }
+        }
+        // var innerBoxesHeaders=""
+        var innerBoxesTexts={
+            "color":"",
+            "textShadow":"",
+            icon:{
+                "color":"",
+                // border:".6px solid "
+            },
+            icon1:{
+                "color":"",
+                border:" "
+            },
+            button:{
+                "color":"",
+                border:""
+            },
+            brise:{
+                "color":"",
+                "textShadow":""
+                // border:".6px solid brown"
+            },
+        }
+        var footer={
+            background:""
+        }
+        var buttons={
+            "borderColor":"",
+            "color":""
+        }
+      }
 
     useEffect(()=>{
     let val=100
@@ -103,11 +268,11 @@ export default function Home() {
   return (
 <div>
 <Header/>
-<div className='homeContainer'>
-<div className='homeInner'>
-<div className='section1'>
-    <div className='sectionInner'>
-    <div className='secA'>
+<div className='homeContainer' style={{"backgroundColor":header, "color":headerTexts}}>
+<div className='homeInner' style={{"background":header, "color":headerTexts}}>
+<div className='section1' style={{"background":header2, "color":headerTexts}}>
+    <div className='sectionInner' style={{"background":header2, "color":headerTexts}}>
+    <div className='secA' >
 <h1>An <span>Eagle Protocol</span> on <span className='brise'>brise Chain</span> that Goes Beyond AMM, NFT, and GamePad.
 </h1>
 {/* <div className="box">
@@ -121,9 +286,9 @@ export default function Home() {
     </div>
 </div> */}
 </div>
-<div className='secB'>
+<div className='secB' style={{backgroundColor:"black",borderRadius:"50%"}}>
 {/* <img src='images/eagle1-removebg-preview.png'></img> */}
-<img src='/images/mainLogo-removebg-preview.png'></img>
+<img style={{borderRadius:"50%"}} src={'/images/newLogo-removebg-preview.png'}></img>
 </div>
     </div>
 </div>
@@ -200,14 +365,14 @@ export default function Home() {
     <a href='#'><span></span>All market <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 </div>
 </div> */}
-<div className='section3'>
+<div className='section3' style={textObj}>
 <div className="one">
-<h1>Trending</h1>
-<span>Check what's trending in crypto</span>
+<h1 style={justText}>Trending</h1>
+<span style={justText}>Check what's trending in crypto</span>
 </div>
 <div className='two_trending'>
 <div className='topGainers'>
-<div className='head'>Top Gainers</div>
+<div className='head' style={justText}>Top Gainers</div>
     <div className='values' ref={gainers}>
         { section3Obj.map((item, i)=>{
             let val=100
@@ -219,7 +384,7 @@ export default function Home() {
                     <div className='title'>{item.head}</div>
                     <div className='detail'>
                         <h3>${item.amount}</h3>
-                        <span>+{item.percent}%</span>
+                        <span style={sliderText.sup}>+{item.percent}%</span>
                     </div>
                 </div>
                 </div>
@@ -228,7 +393,7 @@ export default function Home() {
     </div>
 </div>
 <div className='topTradingVolume'>
-<div className='head'>Top Traders</div>
+<div className='head' style={justText}>Top Traders</div>
 <div className='values' ref={traders}>
         { section3Obj2.map((item, i)=>{
             let val=100
@@ -240,7 +405,7 @@ export default function Home() {
                     <div className='title'>{item.head}</div>
                     <div className='detail'>
                         <h3>${item.amount}</h3>
-                        <span>+{item.percent}%</span>
+                        <span style={sliderText.sup}>+{item.percent}%</span>
                     </div>
                 </div>
                 </div>
@@ -249,7 +414,7 @@ export default function Home() {
     </div>
 </div>
 <div className='promoted'>
-<div className='head'>Top Promoted</div>
+<div className='head' style={justText}>Top Promoted</div>
     <div className='values'>
     <div className='value_indiv'>
     <img src='images/BNB.png'></img>
@@ -257,7 +422,7 @@ export default function Home() {
         <div className='title'>vlk</div>
         <div className='detail'>
             <h3>$0.044132</h3>
-            <span>+35.00%</span>
+            <span style={sliderText.sup}>+35.00%</span>
         </div>
     </div>
     </div>
@@ -265,13 +430,13 @@ export default function Home() {
 </div>
 </div>
 <div className='seemore'>
-    <a href='#'><span>See more</span></a>
+    <a href='#'><span style={justText}>See more</span></a>
 </div>
 </div> 
 
+ 
 
-
-<div className='SliderSection'>
+<div className='SliderSection' style={{"display":"none"}}>
     <div className='slide' ref={sliderIndiv}>
     {
     slider.map((item, index)=>{
@@ -292,88 +457,88 @@ export default function Home() {
 </div>
 {/* earn baby token in pools*/}
 <div className='section_farms'>
-<h2>Earn EAGLE & Tokens in Farms and Pools</h2>
+<h2 style={justText}>Earn EAGLE & Tokens in Farms and Pools</h2>
 <div className='cont'>
-    <div className='indivv'>
+    <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4>Earn EAGLE</h4>
-            <span>EAGLE-USDT LP</span>
+            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span>APR</span>
-            <h4>% + %</h4>
+            <span style={sliderText.yellow}>APR</span>
+            <h4 style={boxObj.greenText}>% + %</h4>
         </div>
-        <button>Stake</button>
+        <button style={justText.button}>Stake</button>
     </div>
-    <div className='indivv'>
+    <div className='indivv' style={boxObj}>
         <img src='images/BTC.png'></img>
         <div className='two'>
-            <h4>Earn EAGLE</h4>
-            <span>EAGLE-USDT LP</span>
+            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span>APR</span>
-            <h4>% + %</h4>
+            <span style={sliderText.yellow}>APR</span>
+            <h4 style={boxObj.greenText}>% + %</h4>
         </div>
-        <button>Stake</button>
+        <button style={justText.button}>Stake</button>
     </div>
-    <div className='indivv'>
+    <div className='indivv' style={boxObj}>
         <img src='images/ETH.png'></img>
         <div className='two'>
-            <h4>Earn EAGLE</h4>
-            <span>EAGLE-USDT LP</span>
+            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span>APR</span>
-            <h4>% + %</h4>
+            <span style={sliderText.yellow}>APR</span>
+            <h4 style={boxObj.greenText}>% + %</h4>
         </div>
-        <button>Stake</button>
+        <button style={justText.button}>Stake</button>
     </div>
-    <div className='indivv'>
+    <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4>Earn EAGLE</h4>
-            <span>EAGLE-USDT LP</span>
+            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span>APR</span>
-            <h4>% + %</h4>
+            <span style={sliderText.yellow}>APR</span>
+            <h4 style={boxObj.greenText}>% + %</h4>
         </div>
-        <button>Stake</button>
+        <button style={justText.button}>Stake</button>
     </div>
 </div>
 </div>
 <div className='game_community'>
     <div className='gameInner'>
     <div className='each'>
-        <h2>GamePad</h2>
-        <div className='inner'>
+        <h2 style={justText}>GamePad</h2>
+        <div className='inner' style={boxObj}>
             <img src='/images/bitgert3.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
-                <p>Eagle Protocol GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
+                <p style={{...justText, textShadow:"none"}}>Eagle Protocol GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
                         Farms, Pools, NFT, Marketplace, etc.
                 </p>
                 {/* <p></p> */}
-                <button>Learn more</button>
+                <button style={innerBoxesTexts.button}>Learn more</button>
         </div>
     </div>
 </div>
     <div className='each'>
-        <h2>Join Community</h2>
-        <div className='inner'>
+        <h2 style={justText}>Join Community</h2>
+        <div className='inner' style={boxObj}>
             <img src='/images/bitgert4.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
-                <p>Join our vibrant community of game players and NFT enthusiasts and learn
+                <p style={{...justText, textShadow:"none"}}>Join our vibrant community of game players and NFT enthusiasts and learn
                      all the latest tips and tricks.
                 </p>
-                <div className='icons'>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-telegram" aria-hidden="true"></i>
-                <i class="fa fa-reddit" aria-hidden="true"></i>
+                <div className='icons' style={innerBoxesTexts.icon1} >
+                <i style={innerBoxesTexts.icon} class="fa fa-facebook" aria-hidden="true"></i>
+                <i style={innerBoxesTexts.icon} class="fa fa-twitter" aria-hidden="true"></i>
+                <i style={innerBoxesTexts.icon} class="fa fa-telegram" aria-hidden="true"></i>
+                <i style={innerBoxesTexts.icon} class="fa fa-reddit" aria-hidden="true"></i>
                 </div>
         </div>
         </div>
@@ -382,62 +547,62 @@ export default function Home() {
 </div>
 <div className='Discover'>
     <div className='one'>
-        <h1>NFT Market</h1>
-        <span>View all</span>
+        <h1 style={justText}>NFT Market</h1>
+        <a href="#"><span style={justText}>View all</span></a>
     </div>
     <div className='two'>
-      <div className='inner'>
+      <div className='inner' style={boxObj}>
       <img src='/images/nft.jpg'></img>
         <div className='more1'>
-            <span>Eagle NFT</span>
-            <h2>Eagle 01</h2>
+            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <h2 style={innerBoxesTexts}>Eagle 01</h2>
         </div>
         <div className='more2'>
-            <span>Price</span>
+            <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
-                <h2>BRISE</h2>
-                <span>=$</span>
+                <h2 style={innerBoxesTexts.brise}>BRISE</h2>
+                <span style={innerBoxesTexts.brise}>=$</span>
             </div>
         </div>
       </div>
-      <div className='inner'>
+      <div className='inner' style={boxObj}>
       <img src='/images/nft2.jpg'></img>
         <div className='more1'>
-            <span>Eagle NFT</span>
-            <h2>EAGLE 02</h2>
+            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <h2 style={innerBoxesTexts}>EAGLE 02</h2>
         </div>
         <div className='more2'>
-            <span>Price</span>
+            <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
-                <h2>BRISE</h2>
-                <span>=$</span>
+                <h2 style={innerBoxesTexts.brise}>BRISE</h2>
+                <span style={innerBoxesTexts.brise}>=$</span>
             </div>
         </div>
       </div>
-      <div className='inner'>
+      <div className='inner' style={boxObj}>
       <img src='/images/nft3.jpg'></img>
         <div className='more1'>
-            <span>Eagle NFT</span>
-            <h2>EAGLE 03</h2>
+            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <h2 style={innerBoxesTexts}>EAGLE 03</h2>
         </div>
         <div className='more2'>
-            <span>Price</span>
+            <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
-                <h2>BRISE</h2>
-                <span>=$</span>
+                <h2 style={innerBoxesTexts.brise}>BRISE</h2>
+                <span style={innerBoxesTexts.brise}>=$</span>
             </div>
         </div>
       </div>
-      <div className='inner'>
+      <div className='inner' style={boxObj}>
       <img src='/images/nft4.jpg'></img>
         <div className='more1'>
-            <span>Eagle NFT</span>
-            <h2>Eagle 04</h2>
+            <span style={{...justText, fontWeight:"bold", fontSize:"14px"}}>Eagle NFT</span>
+            <h2 style={innerBoxesTexts}>Eagle 04</h2>
         </div>
         <div className='more2'>
-            <span>Price</span>
-            <div className='moreInner'>
-                <h2>BRISE</h2>
+            <span style={innerBoxesTexts.brise}>Price</span>
+            <div className='moreInner' >
+                <h2 style={innerBoxesTexts.brise}>BRISE</h2>
                 <span>=$</span>
             </div>
         </div>
@@ -446,41 +611,41 @@ export default function Home() {
 </div>
 {/* why choose us? */}
 <div className='whyChooseUs'>
-    <h1>Why choose us?</h1>
+    <h1 style={justText}>Why choose us?</h1>
     <div className="reasons">
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle5-removebg-preview.png'></img>
-            <h3>Trade to earn</h3>
-            <p>The more you swap, the more you earn. Get free EAGLE as reward for almost every trade</p>
+            <h3 style={innerBoxesTexts.icon}>Trade to earn</h3>
+            <p style={{...justText, textShadow:"none"}}>The more you swap, the more you earn. Get free EAGLE as reward for almost every trade</p>
         </div>
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle5-removebg-preview.png'></img>
-            <h3>Stake to Earn</h3>
-            <p>Multiply your EAGLE with multiple choices. Stake in Pools, Farms, and Vaults to earn bountiful rewards with competitive APRs.</p>
+            <h3 style={innerBoxesTexts.icon}>Stake to Earn</h3>
+            <p style={{...justText, textShadow:"none"}}>Multiply your EAGLE with multiple choices. Stake in Pools, Farms, and Vaults to earn bountiful rewards with competitive APRs.</p>
         </div>
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle3-removebg-preview.png'></img>
-            <h3>Task to Earn</h3>
-            <p>Pick up your good luck. Win huge rewards by accomplishing simple tasks.</p>
+            <h3 style={innerBoxesTexts.icon}>Task to Earn</h3>
+            <p style={{...justText, textShadow:"none"}}>Pick up your good luck. Win huge rewards by accomplishing simple tasks.</p>
         </div>
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle3-removebg-preview.png'></img>
-            <h3>Smart Router</h3>
-            <p>Trade instantly by one click. Trade over 90% of BEP 20 Tokens with better slippages and lower fees.</p>
+            <h3 style={innerBoxesTexts.icon}>Smart Router</h3>
+            <p style={{...justText, textShadow:"none"}}>Trade instantly by one click. Trade over 90% of BEP 20 Tokens with better slippages and lower fees.</p>
         </div>
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle6-removebg-preview.png'></img>
-            <h3>NFT Market</h3>
-            <p>Meet with your NFT crush. Go crazy shopping for the hottest & newest NFTs with advanced shopping experience.</p>
+            <h3 style={innerBoxesTexts.icon}>NFT Market</h3>
+            <p style={{...justText, textShadow:"none"}}>Meet with your NFT crush. Go crazy shopping for the hottest & newest NFTs with advanced shopping experience.</p>
         </div>
-        <div className='indiv'>
+        <div className='indiv' style={boxObj}>
             <img src='images/eagle6-removebg-preview.png'></img>
-            <h3>One-Stop Metaverse</h3>
-            <p>Originate from DeFi, and go beyond MetaFi. A one-stop platform to meet all your needs from AMM, NFT, and GamePad, to Metaverse.</p>
+            <h3 style={innerBoxesTexts.icon}>One-Stop Metaverse</h3>
+            <p style={{...justText, textShadow:"none"}}>Originate from DeFi, and go beyond MetaFi. A one-stop platform to meet all your needs from AMM, NFT, and GamePad, to Metaverse.</p>
         </div>
     </div>
 </div>
-<div className='footer'>
+<div className='footer' style={footer}>
     <div className='first'>
             <div className='one'>
             <div className='secA'>

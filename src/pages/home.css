@@ -12,7 +12,7 @@
     /* edited */
     /* background:black;
     color: white; */
-} 
+}  
 .homeInner{
     /* border:2px solid black; */
     width:100%;
@@ -1310,7 +1310,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 10px;
+        /* font-size: 10px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1350,7 +1350,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 9px;
+        font-size: 10px;
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;

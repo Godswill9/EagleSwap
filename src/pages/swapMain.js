@@ -7,6 +7,8 @@ import "./swap.css"
 // import SwapMain from './swapMain'
 import LiquidityMain from './liquidityMain'
 import { HashRouter, Route, Routes, useNavigate } from 'react-router-dom'
+import Theme from '../theme'
+import Cookies from 'js-cookie'
 
 export default function SwapMain() {
  const[selectedSwap, setSelectedSwap]=useState({
@@ -17,7 +19,7 @@ export default function SwapMain() {
  const[selectedSwap2, setSelectedSwap2]=useState({
     img:"images/ETH.png",
     name:"ETH" 
- })
+ }) 
   useEffect(()=>{
     // console.log(selectedSwap)
   })
@@ -40,7 +42,8 @@ export default function SwapMain() {
     const [ChooseToken, setChooseToken]=useState("none")
     const [ChooseToken2, setChooseToken2]=useState("none")
     const [wrapper, setWrapper]= useState("none")
-   
+
+
     const handleSwitch1=()=>{
        if(SwapButton==="true") return;
        setSwapButton("true")
@@ -51,6 +54,8 @@ export default function SwapMain() {
        setSwapButton('false')
        navigate("/liquidity")
     }
+    const nameTheme=Cookies.get()
+    const theme=nameTheme.theme
   
     const handleRecent=()=>{
         setSwapRecent("flex")
@@ -90,6 +95,60 @@ audio.play();
 setSelectedSwap(selectedSwap2)
 setSelectedSwap2(selectedSwap)
 }
+if(nameTheme.theme==="bright"){
+        // console.log("rice")
+        var bgColor={
+          "backgroundColor":"rgb(230, 208, 181)",
+          color:"rgb(83, 83, 83)"
+        }
+        var button={
+          backgroundColor:"rgb(192, 135, 30)",
+          color:"white"
+        }
+
+         var boxObj={
+            "color":"white",
+            "boxShadow": "0 7px 0px rgb(182, 153, 117)",
+              "border":"2px solid rgb(182, 153, 117)",
+              "backgroundColor":"rgb(226, 194, 154)",
+              headText:{
+                color:"rgba(53, 37, 0, 0.966)",
+              },
+              moreText:{
+                color:"rgba(54, 38, 0, 0.966)",
+                main:{
+                  color:"rgba(189, 132, 0, 0.966)",
+                }
+              }
+        }
+      }
+      else if(nameTheme.theme==="dark"){
+        var bgColor={
+          "backgroundColor":"",
+          color:""
+        }
+        var button={
+          backgroundColor:"",
+          color:""
+        } 
+
+         var boxObj={
+            "color":"",
+            "boxShadow": "",
+              "border":"",
+              "backgroundColor":"",
+              headText:{
+                color:"",
+              },
+              moreText:{
+                color:"",
+                main:{
+                  color:"",
+                }
+              }
+        }
+    
+      }
 
   return (
     <div>
@@ -97,9 +156,9 @@ setSelectedSwap2(selectedSwap)
 <header>
 <Header/>
 </header>
-        <div className='bodySec'>
+        <div className='bodySec' style={bgColor}>
         <div className='innerBodySec'>
-<div className='buttons'>
+<div className='buttons' style={boxObj}>
 {SwapButton==="true"? <button onClick={handleSwitch1} className='btnSwap' style={activeButton}>Swap</button>:
     <button onClick={handleSwitch1} className='btnSwap'>Swap</button>
     }
@@ -107,28 +166,29 @@ setSelectedSwap2(selectedSwap)
 <button onClick={handleSwitch2} className='btnLiquidity'>Liquidity</button>
 }
 </div>
-<img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
+<img className='hidingEagle' src="/images/newLogo-removebg-preview.png"></img>
+{/* <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img> */}
 <div className='swapSection'>
 
-<p className='para1'>You can trade over <span>90%</span> of BRC 20 Tokens on EAGLE Protocol with better slippages,<br></br> 
+<p className='para1' style={boxObj.headText}>You can trade over <span>90%</span> of BRC 20 Tokens on EAGLE Protocol with better slippages,<br></br> 
 and Smart Router will choose the <span>best route</span> for you.
 </p>
 <div className='box'>
 <div className='first'>
-    <h3>Trade Mining Reward:</h3>
+    <h3>Trade Mining Reward: </h3>
     <h3>0.0000 EAGLE</h3>
 </div>
 <button>Withdraw</button>
 </div> 
-<div className='mainSec'style={{"display":"flex"}}>
+<div className='mainSec' style={boxObj}> 
 <div className='one'>
   <div className='exchange'>
-      <h3>Exchange</h3>
+      <h3 style={boxObj.headText}>Exchange</h3>
       <span>Trade tokens in an instant</span>
   </div>
   <div className='icons'>
-    <i onClick={handleSwapSetting} class="fa fa-cog" aria-hidden="true"></i>
-    <i onClick={handleRecent} class="fa fa-history" aria-hidden="true"></i>
+    <i style={boxObj.headText} onClick={handleSwapSetting} class="fa fa-cog" aria-hidden="true"></i>
+    <i style={boxObj.headText} onClick={handleRecent} class="fa fa-history" aria-hidden="true"></i>
   </div>
 </div>
 <div className='two'>
@@ -161,11 +221,11 @@ and Smart Router will choose the <span>best route</span> for you.
         </div>
       </div>
     </div>
-    <div className='summary'>
+    <div className='summary' style={boxObj.moreText}>
         <div className='first'>
         <div>Price</div>
         <div className='valuee'>
-            <div><span className='amt'>0.0447824 USDT</span> per EAGLE</div>
+            <div><span className='amt' style={boxObj.moreText.main}>0.0447824 USDT</span> per EAGLE</div>
             <i style={{"fontSize":"14px"}} class="bi bi-arrow-left-right"></i>
         </div>
         </div>
@@ -174,7 +234,7 @@ and Smart Router will choose the <span>best route</span> for you.
           <div>0.1%</div>
         </div>
     </div>
-    <button onClick={handleConnectWallet}>Unlock Wallet</button>
+    <button style={button} onClick={handleConnectWallet}>Unlock Wallet</button>
 </div> 
 </div>
 </div>
@@ -182,33 +242,33 @@ and Smart Router will choose the <span>best route</span> for you.
     <div onClick={closePopup} className="popupSection" style={{"display":wrapper}}></div>
 
 {/* settingsPopup */}
-<div className='swapPopupSettings' style={{"display":swapSetting}}>
+<div className='swapPopupSettings' style={{...bgColor,"display":swapSetting}}>
     <div className='first'>
-       <span>Settings</span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Settings</span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
     <div className='second'>
       <div className='innerSecond'>
-      <span>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
+      <span style={boxObj.headText}>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
       <div className='val'>
         <div className='percentages'>
-          <span>0.1%</span>
-          <span>0.5%</span>
-          <span>1%</span>
+          <span >0.1%</span>
+          <span >0.5%</span>
+          <span >1%</span>
         </div>
         <div className='inputSec'>
           <input type="number" placeholder='5%'></input>
-          <i class="bi bi-percent"></i>
+          <i style={boxObj.headText} class="bi bi-percent"></i>
         </div>
       </div>
       <p className='notice1'>
         Your transaction may be frontrun
       </p>
       <div className='transDeadline'>
-        <span>Transaction Deadline <i class="bi bi-question-circle"></i></span>
+        <span style={boxObj.headText}>Transaction Deadline <i class="bi bi-question-circle"></i></span>
         <div className='time'>
           <input type="number" placeholder='3'></input>
-          <span>Minutes</span>
+          <span style={boxObj.headText}>Minutes</span>
         </div>
         <p className='notice1'>
           Enter a valid deadline
@@ -219,53 +279,53 @@ and Smart Router will choose the <span>best route</span> for you.
 </div>
 
 {/* swapRecent popup */}
-<div className='swapRecentPopup' style={{"display":swapRecent}}>
+<div className='swapRecentPopup' style={{...bgColor,"display":swapRecent}}>
     <div className='first'>
-       <span>Recent transactions</span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Recent transactions</span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
     <div className='detailss'>
-      <p className='err'>Please connect your wallet to view your recent 
+      <p className='err' style={boxObj.headText}>Please connect your wallet to view your recent 
       transactions</p>
       <button onClick={closePopup}>Close</button>
     </div>
 </div>
 
 {/* chooseToken */}
-<div className='swapChooseTokenPopup' style={{"display":ChooseToken}}>
+<div className='swapChooseTokenPopup' style={{...bgColor,"display":ChooseToken}}>
   <div className='inner'>
   <div className='first'>
-       <span>Select a token <i class="bi bi-question-circle"></i></span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input type="text" placeholder='Search name or paste address'></input>
+    <input style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
-       <span>Common bases <i class="bi bi-question-circle"></i></span>
+       <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BTC</span>
+            <span style={{color: boxObj.color}}>BTC</span>
          </div>
          <div className='indiv'>
             <img src="images/ETH.png"></img>
-            <span>ETH</span>
+            <span style={{color: boxObj.color}}>ETH</span>
          </div>
          <div className='indiv'>
             <img src="images/BNB.png"></img>
-            <span>EAGLE</span>
+            <span style={{color: boxObj.color}}>EAGLE</span>
          </div>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>EAGLE</span>
+            <span style={{color: boxObj.color}}>EAGLE</span>
          </div>
        </div>
        </div>
        <div className='tokenName'>
           <div className='first'>
-              <span>Token name</span>
+              <span style={boxObj.headText}>Token name</span>
               <i class="bi bi-arrow-down"></i>
           </div>
           <div className='allTokens'>
@@ -290,40 +350,40 @@ and Smart Router will choose the <span>best route</span> for you.
 </div>
 
 {/* chooseToken2 */}
-<div className='swapChooseTokenPopup' style={{"display":ChooseToken2}}>
+<div className='swapChooseTokenPopup' style={{...bgColor,"display":ChooseToken2}}>
   <div className='inner'>
   <div className='first'>
-       <span>Select a token <i class="bi bi-question-circle"></i></span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input type="text" placeholder='Search name or paste address'></input>
+    <input style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
-       <span>Common bases <i class="bi bi-question-circle"></i></span>
+       <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>BTC</span>
+            <span style={{color:boxObj.color}}>BTC</span>
          </div>
          <div className='indiv'>
             <img src="images/ETH.png"></img>
-            <span>ETH</span>
+            <span style={{color:boxObj.color}}>ETH</span>
          </div>
          <div className='indiv'>
             <img src="images/BNB.png"></img>
-            <span>EAGLE</span>
+            <span style={{color:boxObj.color}}>EAGLE</span>
          </div>
          <div className='indiv'>
             <img src="images/BTC.png"></img>
-            <span>EAGLE</span>
+            <span style={{color:boxObj.color}}>EAGLE</span>
          </div>
        </div>
        </div>
        <div className='tokenName'>
           <div className='first'>
-              <span>Token name</span>
+              <span style={boxObj.headText}>Token name</span>
               <i class="bi bi-arrow-down"></i>
           </div>
           <div className='allTokens'>

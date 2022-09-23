@@ -1,9 +1,21 @@
+import Cookies from "js-cookie";
 import React, { useState, useRef, useEffect } from "react";
 import "./header.css";
+import Theme from "./theme";
 // import "./pages/swap.css"
 // import './pages/Trade.css'
 
 export default function Header() {
+  // const[header, setHeader]=useState("")
+  // const[bg, setbg]=useState("")
+  // const[innerBoxes, setinnerBoxes]=useState("")
+  // const[innerBoxesHeaders, setinnerBoxesHeaders]=useState("")
+  // const[innerBoxesTexts, setinnerBoxesTexts]=useState("")
+  // const[buttons, setbuttons]=useState({
+
+  // })
+  // const[footer, setFooter]=useState("")
+
   const toggle1 = useRef();
   const toggle2 = useRef();
   const toggle3 = useRef();
@@ -19,6 +31,131 @@ export default function Header() {
   const [navBar, setnavBar] = useState("0px");
   const [ConnectWalletHead, setConnectWalletHead]=useState("none")
   const [wrapper, setWrapper]= useState("none")
+  
+  const[themeDrop, setThemeDrop]=useState("false")
+  const [themeProp, setThemeProp]=useState("dark")
+
+  const [disable1, setDisable1]=useState("false")
+  const [disable2, setDisable2]=useState("false")
+
+  const drop={
+    height:"6em",
+    visibility:"visible"
+  }
+  const handleDropTheme=()=>{
+      if(themeDrop==="true"){
+        setThemeDrop("false")
+      }else if(themeDrop==="false"){
+        setThemeDrop("true")
+      }
+      setConnectWalletHead("none")
+  }
+// const handleThemeProp=()=>{
+//   if(themeProp==="bright")return;
+//   Cookies.set("theme", "bright")
+//   setThemeProp("bright")
+//   // window.location.reload();
+// }
+// const handleThemeProp2=()=>{
+//   if(themeProp==="dark")return;
+//   Cookies.set("theme", "dark")
+//   setThemeProp("dark")
+// } 
+
+const changeTheme=(val)=>{
+  Cookies.set("theme", val)
+  setThemeProp(val)
+  window.location.reload();
+}
+useEffect(()=>{
+  
+  if(setThemeProp==="bright"){
+      setDisable1("true")
+      setDisable2("false")
+      setThemeDrop("false")
+      
+  }
+  if(setThemeProp==="dark"){
+      setDisable2("true")
+      setDisable1("false")
+      setThemeDrop("false")
+  }
+},[])
+
+var bgColor={}
+// useEffect(()=>{
+  const nameTheme=Cookies.get()
+
+  console.log(nameTheme.theme)
+  if(nameTheme.theme==="bright"){
+    console.log("rice")
+    // var bgColor={
+    //   "backgroundColor":"#E8DFCA",
+    //    "color":"rgb(39, 39, 39)"
+    // }
+    var innerBoxesHeaders="rgb(39, 39, 39)"
+    var innerTexts="rgb(59, 59, 59)"
+    var headerTexts="rgb(83, 83, 83)"
+    var header="rgba(232, 223, 202, 0.705)"
+    var header2="#4d4026"
+    var bg=""
+    var innerBoxes=""
+    // var innerBoxesHeaders="" 
+    var innerBoxesTexts=""
+    var buttons={
+        "borderColor":"rgb(59, 59, 59)",
+        "color":"rgb(59, 59, 59)"
+    }
+    var justText={
+      color:"rgb(49, 42, 3)"
+    }
+      var bgColor={
+          "backgroundColor":"rgb(230, 208, 181)",
+          color:"rgb(83, 83, 83)"
+        }
+    var boxObj={
+      "color":"white",
+      "boxShadow": "0 7px 0px rgb(182, 153, 117)",
+        "border":"2px solid rgb(182, 153, 117)",
+        "backgroundColor":"rgb(226, 194, 154)",
+        headText:{
+          color:"rgba(53, 37, 0, 0.966)",
+        },
+        moreText:{
+          color:"rgba(54, 38, 0, 0.966)",
+          main:{
+            color:"rgba(189, 132, 0, 0.966)",
+          }
+        }
+  }
+  }
+  else if(nameTheme.theme==="dark"){
+      var bgColor={
+          // "backgroundColor":"blue"
+        }
+      
+        var innerBoxesHeaders=""
+        var boxObj={
+          "color":"",
+          "boxShadow": "",
+            "border":"",
+            "backgroundColor":"",
+            headText:{
+              color:"",
+            },
+            moreText:{
+              color:"",
+              main:{
+                color:"",
+              }
+            }
+      }
+
+  }
+// })
+
+
+console.log(themeProp)
 
   const handleNav = () => {
     if (navBar === "0px") {
@@ -33,12 +170,15 @@ export default function Header() {
     } else if (navBar === "32em") {
       setnavBar("0px");
       closePopup();
+      setThemeDrop("false")
+      
     }
   };
 
   const handleConnectWalletHead=()=>{
     setConnectWalletHead("flex")
     setWrapper("flex")
+     setThemeDrop("false")
  }
  const closePopup=()=>{
   setWrapper("none")
@@ -133,15 +273,18 @@ export default function Header() {
       setName7("none");
     }
   };
+  
 
   return ( 
     <div className="all">
-    <div className="Header">
+    <div className="Header" style={{"backgroundColor":header, "color":headerTexts}}>
       <div className="logo">
         <a href="/">
-          <img src="/images/mainLogo.jpg"></img>
+          <div style={{backgroundColor:"black",borderRadius:"50%", margin:"10px"}}>
+          <img style={{borderRadius:"50%", margin:"0px"}} src="/images/newLogo-removebg-preview.png"></img>
+          </div>
           <div className="lowerClass">
-            <h1>Eagle Protocol</h1>
+            <h1 style={{...justText, textShadow:"none"}}>Eagle Protocol</h1>
           </div>
         </a>
       </div>
@@ -151,12 +294,12 @@ export default function Header() {
             <div className="dropDownHead">
               <span>Trade</span>
             </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
                <a href="/Swap"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>Swap</h3>
-                    <span className="headSpan">Trade any tokens </span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Swap</h3>
+                    <span className="headSpan" style={{"color":headerTexts}} >Trade any tokens </span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -165,8 +308,8 @@ export default function Header() {
               <div className="inner">
               <a href="/liquidity"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>Liquidity</h3>
-                    <span className="headSpan">Share the trading fees</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Liquidity</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Share the trading fees</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -175,8 +318,8 @@ export default function Header() {
               <div className="inner">
               <a href="#"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>Perpetual</h3>
-                    <span className="headSpan">Trade with leverage</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Perpetual</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Trade with leverage</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -188,25 +331,26 @@ export default function Header() {
             <div className="dropDownHead">
               <span>Earn</span>
             </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>Farm</h3>
-                    <span className="headSpan">Stake EAGLE-LPs to earn</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Farm</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Stake EAGLE-LPs to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
                 <a href="/Farms_earnEAGLE">
-                    <span>
+                    <span style={{"color":innerTexts}}>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn EAGLE
+
                       {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                     </span>
                 </a>
                 <a href="/Farms_earnALT"> 
-                    <span>
+                    <span style={{"color":innerTexts}}>
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn Other Tokens
                       {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
@@ -218,21 +362,21 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>Pools</h3>
-                    <span className="headSpan">Stake tokens to earn</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Pools</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Stake tokens to earn</span>
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
                 <div className="subLinks">
                   <a href="/Pools_earnEAGLE">
-                  <span>
+                  <span style={{"color":innerTexts}}>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn EAGLE
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="/Pools_earnAlt">
-                  <span>
+                  <span style={{"color":innerTexts}}>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Earn Other Tokens
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
@@ -244,8 +388,8 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>Vault</h3>
-                    <span className="headSpan">Stake non-EAGLE LPs to earn</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Vault</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Stake non-EAGLE LPs to earn</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -257,13 +401,13 @@ export default function Header() {
             <div className="dropDownHead">
               <span>Fun</span>
           </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               {/* <div className="inner">
                 <a href="#">
                  <div className="innerHead">
                   <div className="oneInner">
-                    <h3>Lucky BABY</h3>
-                    <span className="headSpan">Be the lucky one</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Lucky BABY</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Be the lucky one</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -273,8 +417,9 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>Activities</h3>
-                    <span className="headSpan">Claim your rewards</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Activities</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Claim your rewards</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -284,8 +429,9 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>Playground</h3>
-                    <span className="headSpan">Play with EAGLE</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Playground</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Play with EAGLE</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -295,7 +441,7 @@ export default function Header() {
           </div>
           <div className="link_head">
             <div className="dropDownHead">
-              <a href="#"><span>Land</span></a>
+              <a href="#" style={{color:headerTexts}}><span>Land</span></a>
               {/* <span className='icon'><i style={{"fontSize":"17px"}} class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
             </div>
           </div>
@@ -304,12 +450,13 @@ export default function Header() {
               <span>NFT</span>
               {/* <span className='icon'><i style={{"fontSize":"17px"}} class="fa fa-arrow-circle-down" aria-hidden="true"></i></span> */}
             </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
-               <a href="/NFT"><div className="innerHead">
+               <a href="#"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>NFT Market</h3>
-                    <span className="headSpan">Trade the hottest & newest NFTs </span>
+                    <h3 style={{"color":innerBoxesHeaders}}>NFT Market</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon... </span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Trade the hottest & newest NFTs </span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -318,8 +465,9 @@ export default function Header() {
               <div className="inner">
                <a href="#"><div className="innerHead">
                   <div className="oneInner">
-                    <h3>My NFTs</h3>
-                    <span className="headSpan">Check & list your NFTs </span>
+                    <h3 style={{"color":innerBoxesHeaders}}>My NFTs</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon... </span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Check & list your NFTs </span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -328,28 +476,29 @@ export default function Header() {
               <div className="inner">
                 <div className="innerHeadd">
                   <div className="oneInner">
-                    <h3>NFT Stake</h3>
-                    <span className="headSpan">Stake NFT to earn</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>NFT Stake</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Stake NFT to earn</span> */}
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
-                <div className="subLinks">
+                <div className="subLinks" style={{display:"none"}}>
                   <a href="#">
-                  <span>
+                  <span style={{"color":innerTexts}}>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake EAGLE Protocol
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
-                  <span>
+                  <span style={{"color":innerTexts}}>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake Binance NFB
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
                   <a href="#">
-                  <span>
+                  <span style={{"color":innerTexts}}>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                     Stake NFT
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
@@ -363,98 +512,116 @@ export default function Header() {
             <div className="dropDownHead">
               <span>GamePad</span>
             </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>IFO</h3>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Buy new tokens initially offered</span> */}
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>INO</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Buy new NFTs initially offered </span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
-              <div className="inner">
+              {/* <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>swap</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Stake anything</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="link_head">
             <div className="dropDownHead">
               <span>Membership</span>
              </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>vEAGLE</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Earn more with membership</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>Club</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>coming soon...</span>
+                    {/* <span className="headSpan" style={{"color":headerTexts}}>Get a wealthy EAGLE and join the club</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
-              <div className="inner">
+              {/* <div className="inner">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3 style={{"color":innerBoxesHeaders}}>swap</h3>
+                    <span className="headSpan" style={{"color":headerTexts}}>Stake anything</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="link_head">
             <div className="dropDownHead ">
               <span style={{ paddingLeft: "20px" }}>More</span>
             </div>
-            <div className="dropDownBody">
+            <div className="dropDownBody"style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3 style={{"color":innerBoxesHeaders}}>Audit</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3 style={{"color":innerBoxesHeaders}}>Github</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
               <div className="inner">
+                <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3 style={{"color":innerBoxesHeaders}}>Docs</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -462,14 +629,14 @@ export default function Header() {
         <div className="link2">
           <div className="duo">
             <img src="/images/eaagle2-removebg-preview.png"></img>
-            <span>$0.037</span>
+            <span>$0.047</span>
           </div>
           <div className="iconss">
-            <i style={{"fontSize":"17px"}} class="bi bi-gear"></i>
+            <i style={{"fontSize":"17px","cursor":"pointer"}} onClick={handleDropTheme} class="bi bi-gear"></i>
             <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
             {/* <i style={{"fontSize":"17px"}} style={{"fontSize":"17px"}} class="fa fa-arrow-circle-right icon" aria-hidden="true"></i> */}
           </div>
-          <button onClick={handleConnectWalletHead}>Connect</button>
+          <button style={buttons} onClick={handleConnectWalletHead}>Connect</button>
         </div>
       </div> 
       <div className="mobileView">
@@ -483,10 +650,10 @@ export default function Header() {
           <i style={{"fontSize":"17px"}} class="fa fa-bars icon" aria-hidden="true" onClick={handleNav}></i>
         )}
       </div>
-      <div className="mobileContent" style={{ height: navBar }}>
+      <div className="mobileContent" style={{"backgroundColor":header, "color":innerBoxesHeaders, height:navBar}}>
         <div className="oneee">
           <div className="one cont">
-            <p onClick={click1}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click1}>
               Trade
               {namee === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -494,7 +661,7 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" ref={toggle1} style={{ display: namee }}>
+            <div className="drop" ref={toggle1} style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee }}>
               <div className="inner">
               <a href="/Swap"><div className="innerHead">
                   <div className="oneInner">
@@ -529,7 +696,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click2}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click2}>
               Earn
               {namee2 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -537,7 +704,7 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" ref={toggle2} style={{ display: namee2 }}>
+            <div className="drop" ref={toggle2} style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee2 }}>
               <div className="inner">
                 <a href="#">
                 <div className="innerHead">
@@ -557,7 +724,7 @@ export default function Header() {
                     </span>
                 </a>
                 <a href="/Farms_earnALT">
-                    <span>
+                    <span >
                       <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                       Earn Other Tokens
                       {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
@@ -606,7 +773,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click3}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click3}>
               Fun
               {namee3 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -614,7 +781,7 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" ref={toggle3} style={{ display: namee3 }}>
+            <div className="drop" ref={toggle3} style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee3 }}>
               {/* <div className="inner">
                 <a href="#">
                 <div className="innerHead">
@@ -631,7 +798,8 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Activities</h3>
-                    <span className="headSpan">Claim your rewards</span>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Claim your rewards</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -642,7 +810,8 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Playground</h3>
-                    <span className="headSpan">Play with EAGLE</span>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Play with EAGLE</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -651,7 +820,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click4}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click4}>
               NFT
               {namee4 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -659,13 +828,14 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" ref={toggle4} style={{ display: namee4 }}>
+            <div className="drop" ref={toggle4} style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee4 }}>
               <div className="inner">
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>NFT Market</h3>
-                    <span className="headSpan">Trade the hottest & newest NFTs</span>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Trade the hottest & newest NFTs</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -676,7 +846,8 @@ export default function Header() {
                     <div className="innerHead">
                   <div className="oneInner">
                     <h3>My NFTs</h3>
-                    <span className="headSpan">Check & list your NFTs</span>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Check & list your NFTs</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -686,15 +857,16 @@ export default function Header() {
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>NFT Stake</h3>
-                    <span className="headSpan">Stake NFT to earn</span>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Stake NFT to earn</span> */}
                   </div>
                   {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                 </div>
-                <div className="subLinks">
+                <div className="subLinks" style={{display:"none"}}>
                   <a href="#">
                   <span>
                      <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
-                   Stake BabySwap NFB
+                   Stake EAGLE Protocol
                     {/* <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i> */}
                   </span>
                   </a>
@@ -717,7 +889,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click5}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click5}>
               Gamepad
               {namee5 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -725,13 +897,14 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" ref={toggle5} style={{ display: namee5 }}>
+            <div className="drop" ref={toggle5} style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee5 }}>
               <div className="inner">
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>IFO</h3>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Buy new tokens initially offered</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -741,19 +914,9 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
-                  </div>
-                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
-                </div>
-                </a>
-              </div>
-              <div className="inner">
-                <a href="#">
-                <div className="innerHead">
-                  <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>INO</h3>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Buy new NFTs initially offered</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -762,7 +925,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click6}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click6}>
               Membership
               {namee6 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -770,13 +933,14 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" style={{ display: namee6 }}>
+            <div className="drop" style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee6 }}>
               <div className="inner">
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>vEAGLE</h3>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Earn more with membership</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -786,19 +950,9 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
-                  </div>
-                  <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
-                </div>
-                </a>
-              </div>
-              <div className="inner">
-                <a href="#">
-                <div className="innerHead">
-                  <div className="oneInner">
-                    <h3>swap</h3>
-                    <span className="headSpan">Stake anything</span>
+                    <h3>Club</h3>
+                    <span className="headSpan">coming soon...</span>
+                    {/* <span className="headSpan">Get a wealthy EAGLE and join the club</span> */}
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -807,7 +961,7 @@ export default function Header() {
             </div>
           </div>
           <div className="one cont">
-            <p onClick={click7}>
+            <p style={{"color":innerBoxesHeaders}} onClick={click7}>
               More
               {namee7 === "none" ? (
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-down icon" aria-hidden="true"></i>
@@ -815,12 +969,12 @@ export default function Header() {
                 <i style={{"fontSize":"17px"}} class="fa fa-arrow-up icon" aria-hidden="true"></i>
               )}
             </p>
-            <div className="drop" style={{ display: namee7 }}>
+            <div className="drop" style={{"backgroundColor":header2, "color":innerBoxesHeaders, display: namee7 }}>
               <div className="inner">
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3>Audit</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -830,7 +984,7 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3>Github</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -840,7 +994,7 @@ export default function Header() {
                 <a href="#">
                 <div className="innerHead">
                   <div className="oneInner">
-                    <h3>swap</h3>
+                    <h3>Docs</h3>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
@@ -849,16 +1003,16 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="link2">
+        <div className="link2" style={{"backgroundColor":header, "color":innerBoxesHeaders}}>
           <div className="duo">
             <img src="/images/eaagle2-removebg-preview.png"></img>
             <span>$0.037</span> 
           </div>
           <div className="iconss">
-            <i style={{"fontSize":"17px"}} class="bi bi-gear"></i>
+            <i style={{"fontSize":"17px", "cursor":"pointer"}} onClick={handleDropTheme} class="bi bi-gear"></i>
             <i style={{"fontSize":"17px"}} class="bi bi-people-fill"></i>
           </div>
-          <button onClick={handleConnectWalletHead}>Connect</button>
+          <button style={buttons} onClick={handleConnectWalletHead}>Connect</button>
         </div>
       </div>
 
@@ -872,7 +1026,7 @@ export default function Header() {
    {wallets.map((item, i)=>{
      return(
       <a href={item.link}>
-      <div className='indiv'>
+      <div className='indiv' style={{ boxShadow:"none"}}>
         <span >{item.name}</span>
         <img src={item.img}></img>
       </div>
@@ -880,6 +1034,23 @@ export default function Header() {
      )
    })}
 </div>
+</div>
+{themeDrop==="true"? <div className="theme" style={drop}>
+  <span>Choose a theme</span>
+   <div className="second">
+     <button onClick={()=>changeTheme("bright")} >DAY</button>
+     <button onClick={()=>changeTheme("dark")} >NIGHT</button>
+   </div>
+</div>:
+<div className="theme">
+  <span>Choose a theme</span>
+   <div className="second">
+     {/* <button style={buttons} onClick={handleThemeProp}>DAY</button>
+     <button style={buttons} onClick={handleThemeProp2}>NIGHT</button> */}
+   </div>
+</div>}
+<div style={{"display":"none"}}>
+{/* <Theme themeType={themeProp}/> */}
 </div>
     </div>
     </div>
