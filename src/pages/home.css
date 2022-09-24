@@ -1064,7 +1064,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 12px;
+        /* font-size: 12px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1093,7 +1093,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 12px;
+        /* font-size: 12px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1122,7 +1122,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 14px;
+        /* font-size: 14px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1151,7 +1151,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 13px;
+        /* font-size: 13px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1180,7 +1180,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 13px;
+        /* font-size: 13px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1209,7 +1209,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 13px;
+        /* font-size: 13px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1238,7 +1238,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 12px;
+        /* font-size: 12px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1267,7 +1267,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 11.4px;
+        /* font-size: 11.4px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -2006,7 +2006,7 @@
         width:98%;
         /* border:2px solid yellow; */
         margin:3px;
-        /* color:#cfc4aac4 */
+        /* color:rgba(255, 255, 255, 0.541) */
     }
 }
 

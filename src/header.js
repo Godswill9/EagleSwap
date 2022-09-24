@@ -101,7 +101,7 @@ var bgColor={}
     var innerTexts="rgb(59, 59, 59)"
     var headerTexts="rgb(83, 83, 83)"
     // var header=""
-    var header="#cfc4aac4"
+    var header="rgba(255, 255, 255, 0.541)"
     // var header="rgba(232, 223, 202, 0.705)"
     var header2="#4d4026"
     var bg=""
@@ -324,7 +324,7 @@ var bgColor={}
     <div className="Header" style={{"backgroundColor":header, "color":headerTexts}}>
       <div className="logo">
         <a href="/">
-          <div style={{backgroundColor:"black",borderRadius:"50%", margin:"10px"}}>
+          <div style={{backgroundColor:"",borderRadius:"50%", margin:"10px"}}>
           <img style={{borderRadius:"50%", margin:"0px"}} src="/images/newLogo-removebg-preview.png"></img>
           </div>
           <div className="lowerClass">

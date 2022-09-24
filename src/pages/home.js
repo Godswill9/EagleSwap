@@ -313,7 +313,7 @@ export default function Home() {
     </div>
 </div> */}
 </div>
-<div className='secB' style={{background:"black",borderRadius:"50%"}}>
+<div className='secB' style={{background:"",borderRadius:"50%"}}>
 {/* <img src='images/eagle1-removebg-preview.png'></img> */}
 <img style={{borderRadius:"50%"}} src={'/images/newLogo-removebg-preview.png'}></img>
 </div>
