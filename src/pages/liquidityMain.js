@@ -66,20 +66,22 @@ export default function LiquidityMain() {
 if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
   // console.log("rice")
   var bgColor={
-    "backgroundColor":"rgb(230, 208, 181)",
+    // "backgroundColor":"rgb(230, 208, 181)",
+    "backgroundColor":"white",
     color:"rgb(83, 83, 83)"
   }
-
    var boxObj={
-      "color":"white",
-      "boxShadow": "0 7px 0px rgb(182, 153, 117)",
-        "border":"2px solid rgb(182, 153, 117)",
-        "backgroundColor":"rgb(226, 194, 154)",
+    "color":"white",
+    "boxShadow": "0 4px 0px #503b29",
+      "border":"1px solid #f3ebe5",
+      // "backgroundColor":"rgb(226, 194, 154)",
+      "backgroundColor":"#f3ebe5",
         headText:{
           color:"rgba(53, 37, 0, 0.966)",
         },
         moreText:{
           color:"rgba(54, 38, 0, 0.966)",
+        textShadow:"0 0 0 white"
         }
   }
 }
@@ -264,7 +266,7 @@ else if(nameTheme.theme==="dark"){
    <div className='swapPopupSettings' style={{...bgColor,"display":LiqSetting}}>
     <div className='first'>
        <span style={boxObj.headText}>Settings</span>
-       <i onClick={closePopup} class="bi bi-x"></i>
+       <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
     <div className='second'>
       <div className='innerSecond'>

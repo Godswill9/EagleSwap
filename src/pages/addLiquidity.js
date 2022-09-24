@@ -50,23 +50,34 @@ export default function AddLiquidity() {
     if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
       // console.log("rice")
       var bgColor={
-        "backgroundColor":"rgb(230, 208, 181)",
+        // "backgroundColor":"rgb(230, 208, 181)",
+        "backgroundColor":"white",
         color:"rgb(83, 83, 83)"
       }
 
        var boxObj={
-          "color":"white",
-          "boxShadow": "0 7px 0px rgb(182, 153, 117)",
-            "border":"2px solid rgb(182, 153, 117)",
-            "backgroundColor":"rgb(226, 194, 154)",
+        "color":"white",
+        "boxShadow": "0 4px 0px #503b29",
+          "border":"1px solid #f3ebe5",
+          // "backgroundColor":"rgb(226, 194, 154)",
+          "backgroundColor":"#f3ebe5",
             display:"flex",
             headText:{
               color:"rgba(53, 37, 0, 0.966)",
+              textShadow:"0 0 0 white"
+            },
+            moreText:{
+              color:"rgba(54, 38, 0, 0.966)",
+            textShadow:"0 0 0 white"
             },
             button:{
-              backgroundColor:"rgb(192, 135, 30)",
+              backgroundColor:"#ff8e24e1",
               color:"white"
             } 
+            // button:{
+            //   backgroundColor:"rgb(192, 135, 30)",
+            //   color:"white"
+            // } 
       }
     }
     else if(nameTheme.theme==="dark"){
@@ -110,7 +121,7 @@ export default function AddLiquidity() {
      </div>
      <div className='two'>
      <div className='fromInput'>
-      <span>Input</span>
+      <span style={boxObj.headText}>Input</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div className="heyy">
@@ -122,9 +133,9 @@ export default function AddLiquidity() {
         </div>
       </div>
     </div>
-      <span className='plus'>+</span>
+      <span style={boxObj.headText} className='plus'>+</span>
       <div className='fromInput'>
-      <span>Input</span>
+      <span style={boxObj.headText}>Input</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div className="heyy">

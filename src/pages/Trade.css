@@ -128,7 +128,7 @@ header{
     width: 20em; */
     position: absolute;
     left:3%;
-    top:25%;
+    top:32%;
     /* left:19%;
     top:40%; */
     opacity: 0.5;
@@ -237,12 +237,13 @@ header{
     font-weight: bold;
   text-shadow:0 0 .4px #faf7f0;
     color:rgb(114, 53, 255);
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 100;
-    font-family: verdana;
+    /* font-family: verdana; */
     padding:5px 3px 4px 5px;
     font-weight: 100;
-    font-family: verdana;
+    font-family: sans-serif;
+    font-weight:bold
     /* font-size: 14px; */
 }
 .mainSec .one .icons{
@@ -434,9 +435,9 @@ header{
     border-bottom-right-radius: 9px;
     border-bottom-left-radius: 9px;
     cursor: pointer;
-    background-color: #FFC23C;
+    background-color: #fcb419;
     border:none;
-    color:whitesmoke;
+    color:rgb(255, 255, 255);
 }
 
 @media (max-width:456px) {
