@@ -98,19 +98,24 @@ setSelectedSwap2(selectedSwap)
 if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         // console.log("rice")
         var bgColor={
-          "backgroundColor":"rgb(230, 208, 181)",
+          // "backgroundColor":"rgb(230, 208, 181)",
+          "backgroundColor":"white",
           color:"rgb(83, 83, 83)"
         }
         var button={
-          backgroundColor:"rgb(192, 135, 30)",
+          backgroundColor:"#ff8e24e1",
           color:"white"
         }
-
+        var mainText={
+          color:"#503b29",
+          boxShadow:"0 0 0 white"
+        }
          var boxObj={
             "color":"white",
-            "boxShadow": "0 7px 0px rgb(182, 153, 117)",
-              "border":"2px solid rgb(182, 153, 117)",
-              "backgroundColor":"rgb(226, 194, 154)",
+            "boxShadow": "0 4px 0px #503b29",
+              "border":"1px solid #f3ebe5",
+              // "backgroundColor":"rgb(226, 194, 154)",
+              "backgroundColor":"#f3ebe5",
               headText:{
                 color:"rgba(53, 37, 0, 0.966)",
               },
@@ -118,6 +123,7 @@ if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
                 color:"rgba(54, 38, 0, 0.966)",
                 main:{
                   color:"rgba(189, 132, 0, 0.966)",
+                  textShadow:"0 0 0 white"
                 }
               }
         }
@@ -166,8 +172,8 @@ if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
 <button onClick={handleSwitch2} className='btnLiquidity'>Liquidity</button>
 }
 </div>
-<img className='hidingEagle' src="/images/newLogo-removebg-preview.png"></img>
-{/* <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img> */}
+{/* <img className='hidingEagle' src="/images/newLogo-removebg-preview.png"></img> */}
+<img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
 <div className='swapSection'>
 
 <p className='para1' style={boxObj.headText}>You can trade over <span>90%</span> of BRC 20 Tokens on EAGLE Protocol with better slippages,<br></br> 
@@ -193,7 +199,7 @@ and Smart Router will choose the <span>best route</span> for you.
 </div>
 <div className='two'>
     <div className='fromInput'>
-      <span>From</span>
+      <span style={mainText}>From</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div onClick={handleChooseToken} className="heyy">
@@ -209,7 +215,7 @@ and Smart Router will choose the <span>best route</span> for you.
       <button onClick={handlePlay}><i style={{"fontSize":"16px"}} class="bi bi-arrow-down-up"></i></button>
     </div>
     <div className='toInput'>
-    <span>To</span>
+    <span style={mainText}>To</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div onClick={handleChooseToken2} className="heyy">

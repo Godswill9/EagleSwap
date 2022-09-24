@@ -122,13 +122,13 @@ header{
 
 .bodySec .hidingEagle{
     /* border:.2px solid black; */
-    height: 37em;
-    width: 40em;
+    height: 30em;
+    width: 33em;
     /* height: 23em;
     width: 20em; */
     position: absolute;
     left:3%;
-    top:18%;
+    top:25%;
     /* left:19%;
     top:40%; */
     opacity: 0.5;
