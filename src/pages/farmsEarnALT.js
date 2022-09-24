@@ -18,7 +18,7 @@ export default function FarmsEarnAlt(){
     const [displayMode, setDisplay]=useState("flex")
     const [displayMode2, setDisplay2]=useState("none")
 
-    if(nameTheme.theme==="bright"){
+    if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         // console.log("rice")
         var bgColor={
           "backgroundColor":"rgb(230, 208, 181)",

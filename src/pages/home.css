@@ -69,7 +69,7 @@
 
 .section1 .secA h1 span{
     color:rgb(218, 204, 12);
-    font-size: 36px;
+    /* font-size: 36px; */
    color: orange
     /* font-family: monospace */
 }
@@ -135,7 +135,7 @@
     }
     .section1 .secA h1 span{
         /* color:orange; */
-        font-size: 28px;
+        /* font-size: 28px; */
     }
     .section1 .box{
         width:20em
@@ -186,7 +186,7 @@
     }
     .section1 .secA h1 span{
         color:orange;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .section1 .box{
         width:16em
@@ -1999,7 +1999,8 @@
     .footer .first{
         width:98%;
         /* border:2px solid yellow; */
-        margin:3px
+        margin:3px;
+        color:#a19991b2
     }
 }
 

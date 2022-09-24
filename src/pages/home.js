@@ -22,7 +22,7 @@ export default function Home() {
     const theme=nameTheme.theme
     // console.log(theme)
 
-    if(nameTheme.theme==="bright"){
+    if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         console.log("rice")
         // var bgColor={
         //   "backgroundColor":"#E8DFCA",
@@ -44,7 +44,8 @@ export default function Home() {
             
         }
         var justText={
-            color:"rgb(49, 42, 3)",
+            // color:"rgb(49, 42, 3)",
+            color:"#503b29",
             "textShadow": "0 0px 1px white",
             extra:{
                 color:"rgb(255, 255, 43)"
@@ -59,28 +60,46 @@ export default function Home() {
             "color":"brown",
             "boxShadow": "0 7px 2px rgb(182, 153, 117)",
               "border":"2px solid rgb(182, 153, 117)",
-              "backgroundColor":"rgb(226, 194, 154)",
+            //   "boxShadow":"0 3px 5px #a18f7e",
+            //   "backgroundColor":"white",
+            //    "boxShadow": "0 0px 10px #a18f7eb2",
+               "boxShadow": "0 0px 10px #503b293b",
+              "border":".3px solid #503b293b",
+            "backgroundColor":"#f3ebe5"
+            //   "backgroundColor":"rgb(226, 194, 154)",
         }
         var innerBoxesHeaders="rgb(39, 39, 39)"
         var innerTexts="rgb(59, 59, 59)"
-        var headerTexts="rgb(83, 83, 83)"
-        var header="rgb(230, 208, 181)"
-        var header2=" linear-gradient(rgb(119, 97, 68), rgb(230, 208, 181))"
+        var headerTexts="brown"
+        // var headerTexts="rgb(83, 83, 83)"
+        // var header="rgb(230, 208, 181)"
+        var header="white"
+        var header2=" linear-gradient(#a18f7eb2, #a18f7eb2, white)"
+        var header2=" linear-gradient(#a18f7eb2, #a18f7eb2, white)"
+        var header3="#503b29"
+        var header3Extra="#503b29"
+        var header4="transparent"
+        // var header2=" linear-gradient(#a18f7e, #a18f7e, white)"
+        // var header2=" linear-gradient(#a18f7e, #a18f7e, white)"
+        // var header2=" linear-gradient(rgb(119, 97, 68), rgb(230, 208, 181))"
         // var innerBoxes="rgb(226, 194, 154)"
         // var innerBoxesShadow="0 7px 0px rgb(182, 153, 117)"
         var boxObj={
             "color":"brown",
-            "boxShadow": "0 7px 0px rgb(182, 153, 117)",
-              "border":"2px solid rgb(182, 153, 117)",
-              "backgroundColor":"rgb(226, 194, 154)",
+            "boxShadow": "0 7px 10px #503b293b",
+              "border":".3px solid #503b293b",
+            //   "backgroundColor":"#a79661",
+            //   "backgroundColor":"rgb(226, 194, 154)",
+              "backgroundColor":"#f3ebe5",
+            //   "backgroundColor":"whitesmoke",
               greenText:{
                 color:"green"
               }
         }
         // var innerBoxesHeaders=""
         var innerBoxesTexts={
-            "color":"white",
-            "textShadow":"0 0 1px black",
+            "color":"#503b29",
+            // "textShadow":"0 0 1px black",
             icon:{
                 "color":"brown",
                 // border:".6px solid brown"
@@ -94,20 +113,24 @@ export default function Home() {
                 border:".6px solid brown"
             },
             brise:{
-                "color":"black",
+                "color":"#503b29",
                 "textShadow":"0 0 1px white"
                 // border:".6px solid brown"
             },
         }
         var footer={
-            background:"rgba(0, 0, 0, 0.459)"
+            background:"#503b29c9",
+            footerInner:{
+                boxShadow:"0 4px 0 #866244"
+            }
+            // background:"rgba(0, 0, 0, 0.459)"
         }
         var buttons={
             "borderColor":"rgb(59, 59, 59)",
             "color":"rgb(59, 59, 59)"
         }
       }
-      else if(nameTheme.theme!=="bright"){
+      else if(nameTheme.theme==="dark"){
         var sliderText={
             color:"",
             "textShadow": "",
@@ -275,9 +298,9 @@ export default function Home() {
 <div className='homeContainer' style={{"backgroundColor":header, "color":headerTexts}}>
 <div className='homeInner' style={{"background":header, "color":headerTexts}}>
 <div className='section1' style={{"background":header2, "color":headerTexts}}>
-    <div className='sectionInner' style={{"background":header2, "color":headerTexts}}>
+    <div className='sectionInner' style={{"background":header4, "color":headerTexts}}>
     <div className='secA' >
-<h1>An <span>Eagle Protocol</span> on <span className='brise'>brise Chain</span> that Goes Beyond AMM, NFT, and GamePad.
+<h1 style={{"color":header3, textShadow:"none"}}>An <span style={{color:header3Extra}}>Eagle Protocol</span> on <span className='brise' style={{color:header3Extra}}>brise Chain</span> that Goes Beyond AMM, NFT, and GamePad.
 </h1>
 {/* <div className="box">
     <div className='boxInner'> 
@@ -290,7 +313,7 @@ export default function Home() {
     </div>
 </div> */}
 </div>
-<div className='secB' style={{backgroundColor:"black",borderRadius:"50%"}}>
+<div className='secB' style={{background:"black",borderRadius:"50%"}}>
 {/* <img src='images/eagle1-removebg-preview.png'></img> */}
 <img style={{borderRadius:"50%"}} src={'/images/newLogo-removebg-preview.png'}></img>
 </div>
@@ -466,48 +489,48 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <h4 style={justText}>Earn EAGLE</h4>
             <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span style={sliderText.yellow}>APR</span>
-            <h4 style={boxObj.greenText}>% + %</h4>
+            <h4 style={justText}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/BTC.png'></img>
         <div className='two'>
-            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <h4 style={justText}>Earn EAGLE</h4>
             <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span style={sliderText.yellow}>APR</span>
-            <h4 style={boxObj.greenText}>% + %</h4>
+            <h4 style={justText}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/ETH.png'></img>
         <div className='two'>
-            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <h4 style={justText}>Earn EAGLE</h4>
             <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span style={sliderText.yellow}>APR</span>
-            <h4 style={boxObj.greenText}>% + %</h4>
+            <h4 style={justText}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={boxObj.greenText}>Earn EAGLE</h4>
+            <h4 style={justText}>Earn EAGLE</h4>
             <span style={sliderText.yellow}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
             <span style={sliderText.yellow}>APR</span>
-            <h4 style={boxObj.greenText}>% + %</h4>
+            <h4 style={justText}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
     </div>
@@ -518,7 +541,7 @@ export default function Home() {
     <div className='each'>
         <h2 style={justText}>GamePad</h2>
         <div className='inner' style={boxObj}>
-            <img src='/images/bitgert3.jpg'></img>
+            <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/gamePad.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
                 <p style={{...justText, textShadow:"none"}}>Eagle Protocol GamePad will provide a series of gaming pre-launch support, such as IGO (Initial Gaming Assets Offerings),
@@ -532,7 +555,7 @@ export default function Home() {
     <div className='each'>
         <h2 style={justText}>Join Community</h2>
         <div className='inner' style={boxObj}>
-            <img src='/images/bitgert4.jpg'></img>
+        <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/community.jpg'></img>
             {/* <img src=''></img> */}
             <div className='more'>
                 <p style={{...justText, textShadow:"none"}}>Join our vibrant community of game players and NFT enthusiasts and learn
@@ -556,12 +579,12 @@ export default function Home() {
     </div>
     <div className='two'>
       <div className='inner' style={boxObj}>
-      <img src='/images/nft.jpg'></img>
+      <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/nft.jpg'></img>
         <div className='more1'>
-            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <span style={{...justText, fontWeight:"bold"}}>Eagle NFT</span>
             <h2 style={innerBoxesTexts}>Eagle 01</h2>
         </div>
-        <div className='more2'>
+        <div className='more2' style={{borderTop:` .5px solid ${innerBoxesTexts.brise.color}`}}>
             <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
                 <h2 style={innerBoxesTexts.brise}>BRISE</h2>
@@ -570,12 +593,12 @@ export default function Home() {
         </div>
       </div>
       <div className='inner' style={boxObj}>
-      <img src='/images/nft2.jpg'></img>
+      <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/nft2.jpg'></img>
         <div className='more1'>
-            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <span style={{...justText, fontWeight:"bold"}}>Eagle NFT</span>
             <h2 style={innerBoxesTexts}>EAGLE 02</h2>
         </div>
-        <div className='more2'>
+        <div className='more2' style={{borderTop:` .5px solid ${innerBoxesTexts.brise.color}`}}>
             <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
                 <h2 style={innerBoxesTexts.brise}>BRISE</h2>
@@ -584,12 +607,12 @@ export default function Home() {
         </div>
       </div>
       <div className='inner' style={boxObj}>
-      <img src='/images/nft3.jpg'></img>
+      <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/nft3.jpg'></img>
         <div className='more1'>
-            <span style={{...justText, fontWeight:"bold", fontSize:"16px"}}>Eagle NFT</span>
+            <span style={{...justText, fontWeight:"bold"}}>Eagle NFT</span>
             <h2 style={innerBoxesTexts}>EAGLE 03</h2>
         </div>
-        <div className='more2'>
+        <div className='more2' style={{borderTop:` .5px solid ${innerBoxesTexts.brise.color}`}}>
             <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner'>
                 <h2 style={innerBoxesTexts.brise}>BRISE</h2>
@@ -598,16 +621,16 @@ export default function Home() {
         </div>
       </div>
       <div className='inner' style={boxObj}>
-      <img src='/images/nft4.jpg'></img>
+      <img style={{border:` .5px solid ${innerBoxesTexts.brise.color}`}} src='/images/nft4.jpg'></img>
         <div className='more1'>
-            <span style={{...justText, fontWeight:"bold", fontSize:"14px"}}>Eagle NFT</span>
+            <span style={{...justText, fontWeight:"bold"}}>Eagle NFT</span>
             <h2 style={innerBoxesTexts}>Eagle 04</h2>
         </div>
-        <div className='more2'>
+        <div className='more2' style={{borderTop:` .5px solid ${innerBoxesTexts.brise.color}`}}>
             <span style={innerBoxesTexts.brise}>Price</span>
             <div className='moreInner' >
                 <h2 style={innerBoxesTexts.brise}>BRISE</h2>
-                <span>=$</span>
+                <span style={innerBoxesTexts.brise}>=$</span>
             </div>
         </div>
       </div>
@@ -650,7 +673,7 @@ export default function Home() {
     </div>
 </div>
 <div className='footer' style={footer}>
-    <div className='first'>
+    <div className='first' style={footer.footerInner}>
             <div className='one'>
             <div className='secA'>
                 <img src='images/eagle5-removebg-preview.png'></img>

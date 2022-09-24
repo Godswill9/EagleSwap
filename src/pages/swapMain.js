@@ -95,7 +95,7 @@ audio.play();
 setSelectedSwap(selectedSwap2)
 setSelectedSwap2(selectedSwap)
 }
-if(nameTheme.theme==="bright"){
+if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         // console.log("rice")
         var bgColor={
           "backgroundColor":"rgb(230, 208, 181)",

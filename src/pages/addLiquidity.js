@@ -47,7 +47,7 @@ export default function AddLiquidity() {
     }
     audio.src='/images/money.wav'
 
-    if(nameTheme.theme==="bright"){
+    if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
       // console.log("rice")
       var bgColor={
         "backgroundColor":"rgb(230, 208, 181)",

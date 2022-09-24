@@ -91,16 +91,18 @@ var bgColor={}
   const nameTheme=Cookies.get()
 
   // console.log(nameTheme.theme)
-  if(nameTheme.theme==="bright"){
+  if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
     // console.log("rice")
-    // var bgColor={
-    //   "backgroundColor":"#E8DFCA",
-    //    "color":"rgb(39, 39, 39)"
-    // }
+    var bgColor={
+      "backgroundColor":"#E8DFCA",
+       "color":"rgb(39, 39, 39)"
+    }
     var innerBoxesHeaders="rgb(39, 39, 39)"
     var innerTexts="rgb(59, 59, 59)"
     var headerTexts="rgb(83, 83, 83)"
-    var header="rgba(232, 223, 202, 0.705)"
+    // var header=""
+    var header="white"
+    // var header="rgba(232, 223, 202, 0.705)"
     var header2="#4d4026"
     var bg=""
     var innerBoxes=""
@@ -132,6 +134,44 @@ var bgColor={}
           }
         }
   }
+
+  //   var innerBoxesHeaders=""
+  //   var innerTexts=""
+  //   var headerTexts=""
+  //   var header=""
+  //   // var header="rgba(232, 223, 202, 0.705)"
+  //   var header2=""
+  //   var bg=""
+  //   var innerBoxes=""
+  //   // var innerBoxesHeaders="" 
+  //   var innerBoxesTexts=""
+  //   var buttons={
+  //       "borderColor":"",
+  //       "color":""
+  //   }
+  //   var justText={
+  //     color:""
+  //   }
+  //     var bgColor={
+  //         "backgroundColor":"",
+  //         color:""
+  //       }
+  //   var boxObj={
+  //     "color":"white",
+  //     "boxShadow": "",
+  //       "border":"",
+  //       "backgroundColor":"",
+  //       headText:{
+  //         color:"",
+  //       },
+  //       moreText:{
+  //         color:"",
+  //         main:{
+  //           color:"",
+  //         }
+  //       }
+  // }
+
   }
   else if(nameTheme.theme==="dark"){
       var bgColor={
@@ -768,7 +808,7 @@ var bgColor={}
                 <div className="innerHead">
                   <div className="oneInner">
                     <h3>Vault</h3>
-                    <span className="headSpan">Stake non-BABY LPs to earn</span>
+                    <span className="headSpan">Stake non-EAGLE LPs to earn</span>
                   </div>
                   <i style={{"fontSize":"17px"}} class="bi bi-arrow-right-short"></i>
                 </div>
