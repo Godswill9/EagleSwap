@@ -1540,6 +1540,11 @@
 .whyChooseUs .reasons .indiv p{
     color:#E0DDAA;
 }
+.whyChooseUs .reasons .indiv h3{
+    /* border:.4px solid black; */
+    width:100%;
+    text-align: center;
+}
 @media (max-width:885px) {
     .whyChooseUs{
         width:95%;
@@ -2006,7 +2011,7 @@
         width:98%;
         /* border:2px solid yellow; */
         margin:3px;
-        /* color:rgba(255, 255, 255, 0.541) */
+        /* color:#5f46318a */
     }
 }
 
