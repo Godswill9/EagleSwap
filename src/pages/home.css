@@ -1561,7 +1561,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
     .whyChooseUs .reasons .indiv{
         width:70%;
@@ -1580,7 +1580,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
     .whyChooseUs .reasons .indiv{
         /* width:70%; */
