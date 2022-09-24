@@ -1035,7 +1035,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 12px;
+        font-size: 14px;
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1267,7 +1267,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 11px;
+        font-size: 11.4px;
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1352,7 +1352,7 @@
     }
     .game_community .each .inner .more p{
         padding:5px;
-        font-size: 10px;
+        /* font-size: 12px; */
         font-family:verdana;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1568,6 +1568,12 @@
         /* height:11em */
     }
 }
+@media (max-width:512px) {
+    .whyChooseUs .reasons .indiv{
+        width:93%;
+        /* height:13.5em */
+    }
+}
 @media (max-width:375px) {
     .whyChooseUs .reasons{
         /* border:2px solid black; */
@@ -1577,7 +1583,7 @@
         align-items: center;
     }
     .whyChooseUs .reasons .indiv{
-        width:70%;
+        /* width:70%; */
         /* height:13.5em */
     }
 }
@@ -1655,7 +1661,7 @@
 }
 .footer .first .one .secA .more span{
     padding:5px;
-    font-size: 12px;
+    font-size: 14px;
     font-family:sans-serif;
     color: #FFD23C;;
     font-weight: 700;
@@ -1719,7 +1725,7 @@
 }
 .footer .first .two .indivvv span{
     padding:6px;
-    font-size: 11px;
+    font-size: 14px;
     font-family:verdana;
     text-shadow:0 0 1px #CFE8A9;
     color:white;
@@ -1811,7 +1817,7 @@
 @media (max-width:851px) {
     .footer .first .one .secA .more span{
         padding:5px;
-        font-size: 10px;
+        font-size: 13px;
         font-family:sans-serif;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1832,7 +1838,7 @@
     }
     .footer .first .two .indivvv span{
         padding:6px;
-        font-size: 9px;
+        font-size: 12px;
         font-family:verdana;
         /* color: #412f21;; */
         font-weight: 500;
@@ -1940,7 +1946,7 @@
 @media (max-width:373px) {
     .footer .first .one .secA .more span{
         padding:5px;
-        font-size: 9px;
+        font-size: 11px;
         font-family:sans-serif;
         /* color: #5f4631;; */
         font-weight: 700;
@@ -1961,7 +1967,7 @@
     }
     .footer .first .two .indivvv span{
         padding:6px;
-        font-size: 9px;
+        font-size: 11px;
         font-family:verdana;
         /* color: #412f21;; */
         font-weight: 500;
@@ -2000,7 +2006,7 @@
         width:98%;
         /* border:2px solid yellow; */
         margin:3px;
-        color:#a19991b2
+        /* color:#cfc4aac4 */
     }
 }
 

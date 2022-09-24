@@ -690,7 +690,7 @@ export default function Home() {
             <div className='two'>
             <div className='indivvv'>
                 <span>Max supply</span>
-                {/* <h5>1,000,000,000</h5> */}
+                <h5>1,000,000,000</h5>
             </div>
             <div className='indivvv'>
                 <span>Circulating Supply</span>
