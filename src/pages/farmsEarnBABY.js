@@ -21,22 +21,37 @@ export default function FarmsEarnBABY(){
     if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         // console.log("rice")
         var bgColor={
-          "backgroundColor":"rgb(230, 208, 181)",
+          // "backgroundColor":"rgb(230, 208, 181)",
+          "backgroundColor":"white",
           color:"rgb(83, 83, 83)"
         }
+        var contIndiv={
+           borderColor:"#c2afa1",
+           backgroundColor:"#f3ebe5",
+          //  margin:"1px 0 7px 0"
+        }
         var button={
-          backgroundColor:"rgb(192, 135, 30)",
+          backgroundColor:"#ff8e24e1",
           color:"white"
-        } 
+        }
        var backgroundColor="rgb(226, 194, 154)"
        var boxShadow="0 3px 0px rgb(182, 153, 117)"
        var border="2px solid rgb(182, 153, 117)"
        var color="rgb(192, 135, 30)"
+      //  var color="rgb(192, 135, 30)"
+       var boxObjExtra={
+        "color":"rgba(44, 40, 31, 0.966)",
+        "boxShadow": "0 4px 0px #503b29",
+          "border":"1px solid #f3ebe5",
+          // "backgroundColor":"rgb(226, 194, 154)",
+          "backgroundColor":"#c2afa1",
+       }
         var boxObj={
-            "color":"rgba(53, 37, 0, 0.966)",
-            "boxShadow": "0 4px 0px rgb(182, 153, 117)",
-              "border":"2px solid rgb(182, 153, 117)",
-              "backgroundColor":"rgb(226, 194, 154)",
+          "color":"rgba(44, 40, 31, 0.966)",
+          "boxShadow": "0 4px 0px #503b29",
+            "border":"1px solid #f3ebe5",
+            // "backgroundColor":"rgb(226, 194, 154)",
+            "backgroundColor":"#f3ebe5",
               headText:{
                 color:"rgba(90, 63, 0, 0.966)",
               },
@@ -72,6 +87,18 @@ export default function FarmsEarnBABY(){
          var boxShadow=""
          var border=""
          var color=""
+         var contIndiv={
+          border:"",
+          backgroundColor:"",
+          margin:""
+       }
+         var boxObjExtra={
+          "color":"",
+          "boxShadow": "",
+            "border":"",
+            // "backgroundColor":"rgb(226, 194, 154)",
+            "backgroundColor":"",
+         }
           var boxObj={
               "color":"",
               "boxShadow": "",
@@ -181,31 +208,32 @@ export default function FarmsEarnBABY(){
             <div className='pool1'>
         <div className="innerPool">
             <div className='imgg'>
-               <img src="/images/Farm.png"></img>
+               {/* <img src="/images/Farm.png"></img> */}
+               <div className='text'>FARMS SECTION</div>
             </div>
         <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>
             <div className='buttonss' >
-            {displayMode==="flex"?<button style={buttonStyle} onClick={handleView}><i class="bi bi-grid"></i></button>:<button onClick={handleView}><i class="bi bi-grid"></i></button>}
-            {displayMode2==="block"?<button style={buttonStyle} onClick={handleView2}><i class="bi bi-list"></i></button>:<button onClick={handleView2}><i class="bi bi-list"></i></button>}
+            {displayMode==="flex"?<button style={{...buttonStyle}} onClick={handleView}><i style={{fontWeight:"bold"}} class="bi bi-grid"></i></button>:<button style={{ background:boxObjExtra.backgroundColor, border:`.2px solid ${button.color}`}} onClick={handleView}><i style={{fontWeight:"bold"}} class="bi bi-grid"></i></button>}
+            {displayMode2==="block"?<button style={{...buttonStyle}} onClick={handleView2}><i style={{fontWeight:"bold"}} class="bi bi-list"></i></button>:<button style={{ background:boxObjExtra.backgroundColor, border:`.2px solid ${button.color}`}} onClick={handleView2}><i style={{fontWeight:"bold"}} class="bi bi-list"></i></button>}
             </div>
             <div className='alll'>
             <div className='switchStaked'>
             <input type="checkbox"></input>
-            <div className='ball'></div>
+            <span className='stk' style={boxObj.headText}>Staked Only</span>
+            {/* <div className='ball'></div> */}
             </div>
-            <span className='stk'>Staked Only</span>
             </div>
             </div>
-            <div className="switchTwo" style={boxObj}>
+            <div className="switchTwo" style={boxObjExtra}>
             {live==="true"?<button onClick={handleLive} style={activeButton}>Live</button>:<button onClick={handleLive}>Live</button>}
             {live==="false"?<button onClick={handleLive2} style={activeButton}>Finished</button>:<button onClick={handleLive2}>Finished</button>}
             </div>
             </div>
             <div className='headtwo'>
             <div className='sortOne'>
-            <span style={boxObj.headText}>Sort by</span>
+            <span style={{...boxObj.headText, fontWeight:"bold"}}>Sort by</span>
             <div className="dropdown" style={{...boxObj,boxShadow:"none"}}>  
                <div className='first' onClick={()=>{
                if(height==="0px")setHeight("14em")
@@ -215,23 +243,23 @@ export default function FarmsEarnBABY(){
                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                </div>
                <div className='more' style={{...boxObj,height:height, boxShadow:"none"}}>
-                <div onClick={()=>{selected("Hot")}}>Hot</div>
-                <div onClick={()=>{selected("APR")}}>APR</div>
-                <div onClick={()=>{selected("Multiplier")}}>Multiplier</div>
-                <div onClick={()=>{selected("Earned")}}>Earned</div>
-                <div onClick={()=>{selected("Liquidity")}}>Liquidity</div>
+                <div style={{fontWeight:"bold"}} onClick={()=>{selected("Hot")}}>Hot</div>
+                <div style={{fontWeight:"bold"}} onClick={()=>{selected("APR")}}>APR</div>
+                <div style={{fontWeight:"bold"}} onClick={()=>{selected("Multiplier")}}>Multiplier</div>
+                <div style={{fontWeight:"bold"}} onClick={()=>{selected("Earned")}}>Earned</div>
+                <div style={{fontWeight:"bold"}} onClick={()=>{selected("Liquidity")}}>Liquidity</div>
             </div>
             </div>
             </div>
             <div className='sortOne' >
-            <span style={boxObj.headText}>Search</span>
+            <span style={{...boxObj.headText, fontWeight:"bold"}}>Search</span>
              <input type="search" style={{...boxObj,boxShadow:"none"}} placeholder="Search Farms"></input>
             </div>
             </div>
             </div>
             </div>
             <div className='sectionn3'>
-                <div className='switch' style={boxObj}>
+                <div className='switch' style={boxObjExtra}>
                 {SwapButton ==="true"? <button onClick={handleSwitch1} style={activeButton}>Earn EAGLE</button>:<button onClick={handleSwitch1}>Earn EAGLE</button>}
                {SwapButton ==="false"? <button onClick={handleSwitch2} style={activeButton}>Earn ALT</button>:<button onClick={handleSwitch2}>Earn ALT</button>}
                 </div> 
@@ -281,17 +309,17 @@ export default function FarmsEarnBABY(){
                         </div>
                         <div className="toggle">
                         <hr></hr>
-                            <span  style={{color:"brown"}} onClick={()=>toggle(i)}>Details <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+                            <span  style={{color:"brown", fontWeight:"bold"}} onClick={()=>toggle(i)}>Details <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
                             </div>
                             {answer===i?
                             <div className="six" style={{"display":"flex"}}>
                             <div className='sec'>
                                 <h5 style={boxObj.moreText}>Total Liquidity:</h5>
-                                <h5>${item.liquidity}</h5>
+                                <h5 style={boxObj.moreText}>${item.liquidity}</h5>
                             </div>
                             <div className='links'>
-                                <a href="#"  style={{color:"white"}}>Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                                <a href="#"  style={{color:"white"}}>View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#"  style={boxObj.moreText}>Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#"  style={boxObj.moreText}>View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                             </div>
                         </div>:
                         <div className="six" style={{"display":"none"}}>
@@ -316,7 +344,7 @@ export default function FarmsEarnBABY(){
                    {farmsArr.map((item, index)=>{
                       return(
                 // <div className='block'>
-                    <div className='indiv' style={boxObj} key={index}>
+                    <div className='indiv' style={contIndiv} key={index}>
                         <div className='mainn' >
                         <div className='one'>
                             <img  src={item.img}></img>

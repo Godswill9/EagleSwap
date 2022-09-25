@@ -81,7 +81,8 @@ if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
         },
         moreText:{
           color:"rgba(54, 38, 0, 0.966)",
-        textShadow:"0 0 0 white"
+        textShadow:"0 0 0 white",
+        fontWeight:"bold"
         }
   }
 }

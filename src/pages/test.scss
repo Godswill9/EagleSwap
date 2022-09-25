@@ -120,13 +120,15 @@ $brown:.4px solid brown;
         // border:.3px solid black
     }
     .pool1 .innerPool{
-        width:90%;
+        width:99%;
         border:$black;
         display: flex;
         flex-direction: column;
         align-items:center ;
         justify-content: center;
-        padding: 10px;
+        // padding: 10px;
+        margin-top:20px;
+        // border: 1px solid black;
 
     }
     .pool1 .innerPool{
@@ -156,6 +158,7 @@ $brown:.4px solid brown;
         align-items: center;
         justify-content: space-between;
         border:$black;
+        // padding-top: 3em;
     }
     .sectionn2 .headtwo{
         display:  flex;
@@ -195,7 +198,8 @@ $brown:.4px solid brown;
         margin:10px
     }
     span{
-        @include span1()
+        @include span1();
+        //  background-color: #c2afa1;
     }
     .dropdown{
         border: $brown;
@@ -231,6 +235,7 @@ $brown:.4px solid brown;
     justify-content: space-between;
     border:$black;
     width:90%;
+    width:99%;
     margin:3px;
     margin-top: .5em;
 }
@@ -421,7 +426,7 @@ cursor: pointer;}
 // secondStyling
 .sectionn4{
     .innerLine{
-        border:.7px solid black;
+        // border:.7px solid black;
         width: 92%;;
         border-radius: 10px;
         padding:2px;
@@ -615,12 +620,13 @@ cursor: pointer;}
     // border:.4px solid black;
     display: flex;
     width:90%;
+    width:99%;
     flex-wrap: wrap;
      .indiv{
         @include flex-column();
         width:23em;
         border-radius: 20px;
-        margin:15px;
+        margin:10px;
         box-shadow: 0 3px 1px #916BBF;
   border: .2px solid #916BBF;
   background-color: #1C0C5B;
@@ -693,9 +699,9 @@ cursor: pointer;}
                 .innerrr{
                     @include flex-column();
 
-                  h4{@include spanNormal()};
+                  h4{@include spanNormal(); font-weight: bold};
                   span{@include spanNormal();
-                font-size:10px}
+                font-size:10px; font-weight: bold}
                 }
                 button{@include button();
                 padding:10px;
@@ -719,6 +725,7 @@ cursor: pointer;}
             text-shadow:0 0 1px #FFC23C;
     color:white;
     font-weight: bold;
+    font-size: 15px
 
         }
         .fivee{
@@ -779,7 +786,8 @@ cursor: pointer;}
                 a{
                     text-decoration:none;
                     @include spanNormal();
-                    color:orange
+                    color:orange;
+                    // color:rgb(139, 139, 139)
                 }
             }
         }
@@ -789,7 +797,7 @@ cursor: pointer;}
 
 
 .poolsLineContainer{
-    border:.4px solid black;
+    // border:.4px solid black;
     display:flex;
     width:99%;
     flex-direction: column;
@@ -998,8 +1006,11 @@ cursor: pointer;}
 
 .poolsCont{
     .switchStaked{
-    //     // border:.4px solid black;
-        margin: 1px 1px 1px 8px;
+        // border:.4px solid black;
+        margin: 10px 1px 1px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     //     position: relative;
     //     margin-top: 10px;
     //     background-color: rgb(59, 10, 10);
@@ -1019,8 +1030,8 @@ cursor: pointer;}
     //     }
     }
     .switchStaked input{
-        width:2.4em;
-        height:2.4em;
+        width:1.5em;
+        height:1.5em;
         // appearance: none;
         cursor:pointer;
 //         -webkit-appearance: none;
@@ -1038,6 +1049,8 @@ cursor: pointer;}
     margin: none;
     font-weight: 800;
     font-size: 11px;
+    color:white;
+    // color:rgb(233, 233, 233)
 }
 .switchTwo{
     margin:1px 1px 1px 20px;
@@ -1088,6 +1101,7 @@ cursor: pointer;}
        }
        .more div:hover{
         background-color: rgb(34, 34, 92);
+        color:white
        }
     }
     // .dropdown:hover > .more{
@@ -1099,6 +1113,7 @@ cursor: pointer;}
     height: 6em;
     
 }
+
 .headOne .buttonss{
     button{
         width:2em;
@@ -1570,13 +1585,14 @@ cursor: pointer;}
 .poolsCont{
     .pool1 .innerPool{
         .sectionn2{
-            .stk{color:#926505; padding:3px}
+            .stk{ padding:3px}
             .headOne{
                 .switchTwo{
                     box-shadow: 0 3px 1px #916BBF;
                     border: .2px solid #916BBF;
                     // background-color: #3c1bc4;
                     background-color: #1C0C5B;
+                    // background-color: #916BBF;
                     background-color: inherit;
                     button{
                         background-color: inherit;
@@ -1588,6 +1604,7 @@ cursor: pointer;}
   border: .2px solid #916BBF;
   background-color: #1C0C5B;
   background-color: inherit;
+  background-color: #916BBF;
 //   background-color: #0b0524;
                     }
                 }
@@ -1674,6 +1691,13 @@ cursor: pointer;}
 }
 @media (max-width:400px) {
     .poolsBoxContInner{
-            width:99%;
+            width:100%;
+            margin:8px 1px 5px 1px;
+            // border:.4px solid black;
+            .indiv{ 
+                width:100%;
+                margin:8px 1px 5px 1px 
+                
+            }
         }
 }

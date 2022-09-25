@@ -29,13 +29,13 @@
   padding: 10px;
 }
 .poolsCont .pool1 .innerPool {
-  width: 90%;
+  width: 99%;
   border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  margin-top: 20px;
 }
 .poolsCont .pool1 .innerPool img {
   border: none;
@@ -152,6 +152,7 @@
   justify-content: space-between;
   border: none;
   width: 90%;
+  width: 99%;
   margin: 3px;
   margin-top: 0.5em;
 }
@@ -453,7 +454,6 @@
 }
 
 .sectionn4 .innerLine {
-  border: 0.7px solid black;
   width: 92%;
   border-radius: 10px;
   padding: 2px;
@@ -703,6 +703,7 @@
 .poolsBoxContInner {
   display: flex;
   width: 90%;
+  width: 99%;
   flex-wrap: wrap;
 }
 .poolsBoxContInner .indiv {
@@ -710,7 +711,7 @@
   flex-direction: column;
   width: 23em;
   border-radius: 20px;
-  margin: 15px;
+  margin: 10px;
   box-shadow: 0 3px 1px #916BBF;
   border: 0.2px solid #916BBF;
   background-color: #1C0C5B;
@@ -825,6 +826,7 @@
   padding: 5px 3px 4px 5px;
   font-weight: 100;
   font-family: verdana;
+  font-weight: bold;
 }
 .poolsBoxContInner .indiv .three .pair .innerrr span {
   font-size: 14px;
@@ -834,6 +836,7 @@
   font-weight: 100;
   font-family: verdana;
   font-size: 10px;
+  font-weight: bold;
 }
 .poolsBoxContInner .indiv .three .pair button {
   padding: 7px 15px 7px 15px;
@@ -866,6 +869,7 @@
   text-shadow: 0 0 1px #FFC23C;
   color: white;
   font-weight: bold;
+  font-size: 15px;
 }
 .poolsBoxContInner .indiv .four span {
   font-size: 14px;
@@ -987,7 +991,6 @@
 }
 
 .poolsLineContainer {
-  border: 0.4px solid black;
   display: flex;
   width: 99%;
   flex-direction: column;
@@ -1286,11 +1289,14 @@
 }
 
 .poolsCont .switchStaked {
-  margin: 1px 1px 1px 8px;
+  margin: 10px 1px 1px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .poolsCont .switchStaked input {
-  width: 2.4em;
-  height: 2.4em;
+  width: 1.5em;
+  height: 1.5em;
   cursor: pointer;
 }
 
@@ -1305,6 +1311,7 @@
   margin: none;
   font-weight: 800;
   font-size: 11px;
+  color: white;
 }
 
 .switchTwo {
@@ -1364,6 +1371,7 @@
 }
 .headtwo .dropdown .more div:hover {
   background-color: rgb(34, 34, 92);
+  color: white;
 }
 
 .pool1 .innerPool .sectionn2 {
@@ -1760,7 +1768,6 @@
   }
 }
 .poolsCont .pool1 .innerPool .sectionn2 .stk {
-  color: #926505;
   padding: 3px;
 }
 .poolsCont .pool1 .innerPool .sectionn2 .headOne .switchTwo {
@@ -1776,6 +1783,7 @@
   border: 0.2px solid #916BBF;
   background-color: #1C0C5B;
   background-color: inherit;
+  background-color: #916BBF;
 }
 .poolsCont .pool1 .innerPool .sectionn2 .headtwo .dropdown {
   background-color: #1C0C5B;
@@ -1839,6 +1847,11 @@
 }
 @media (max-width: 400px) {
   .poolsBoxContInner {
-    width: 99%;
+    width: 100%;
+    margin: 8px 1px 5px 1px;
+  }
+  .poolsBoxContInner .indiv {
+    width: 100%;
+    margin: 8px 1px 5px 1px;
   }
 }/*# sourceMappingURL=test.css.map */

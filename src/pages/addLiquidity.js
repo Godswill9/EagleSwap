@@ -70,6 +70,10 @@ export default function AddLiquidity() {
               color:"rgba(54, 38, 0, 0.966)",
             textShadow:"0 0 0 white"
             },
+            moreTextWhite:{
+              color:"white",
+            textShadow:"0 0 1px white"
+            }, 
             button:{
               backgroundColor:"#ff8e24e1",
               color:"white"
@@ -152,16 +156,16 @@ export default function AddLiquidity() {
       <span style={boxObj.headText}>PRICES AND POOL SHARE</span>
       <div className='vals'>
          <div className='indivvv'>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>0.0382171</span>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>USDT per EAGLE</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>0.0382171</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>USDT per EAGLE</span>
          </div>
          <div className='indivvv'>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>26.1663</span>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>EAGLE per USDT</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>26.1663</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>EAGLE per USDT</span>
          </div>
          <div className='indivvv'>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>2.65%</span>
-            <span style={{...boxObj.headText,fontWeight:"bold"}}>Share of Pool</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>2.65%</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>Share of Pool</span>
          </div>
       </div>
     </div>
