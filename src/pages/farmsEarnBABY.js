@@ -57,6 +57,7 @@ export default function FarmsEarnBABY(){
               },
               moreText:{
                 color:"rgba(44, 40, 31, 0.966)",
+                textShadow:"none",
                 button:{
                    border:".3px solid rgb(194, 126, 0)",
                    color:"rgb(194, 126, 0)"

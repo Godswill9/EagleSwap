@@ -193,14 +193,11 @@
 }
 
 .sectionn4 .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   border: none;
-  width: 90%;
+  width: 99%;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  display: flex;
 }
 .sectionn4 .indiv {
   width: 23em;
@@ -702,8 +699,7 @@
 
 .poolsBoxContInner {
   display: flex;
-  width: 90%;
-  width: 99%;
+  width: 95%;
   flex-wrap: wrap;
 }
 .poolsBoxContInner .indiv {
@@ -713,7 +709,7 @@
   border-radius: 20px;
   margin: 10px;
   box-shadow: 0 3px 1px #916BBF;
-  border: 0.2px solid #916BBF;
+  border: 3px solid #916BBF;
   background-color: #1C0C5B;
 }
 .poolsBoxContInner .indiv .onee {
@@ -1758,13 +1754,13 @@
 }
 
 @media (max-width: 425px) {
-  .sectionn4 .indiv {
-    width: 21em;
+  .sectionn4 {
+    padding: 1px;
+    width: 100%;
   }
-}
-@media (max-width: 384px) {
   .sectionn4 .indiv {
-    width: 17.7em;
+    width: 98%;
+    margin: 10px 1px 10px 1px;
   }
 }
 .poolsCont .pool1 .innerPool .sectionn2 .stk {

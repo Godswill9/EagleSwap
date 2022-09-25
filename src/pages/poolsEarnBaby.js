@@ -310,7 +310,7 @@ export default function PoolsEarnBaby(){
                     </div>
                     <div className="six" onClick={()=>{toggle(i)}}>
                         <div className='more'></div>
-                            <span style={{...boxObj.headText, color:'brown',textShadow:"none"}}>Details <i class="bi bi-chevron-down"></i></span>
+                            <span style={{...boxObj.headText, width:"100%", textAlign:"center", fontWeight:"bold", color:'brown',textShadow:"none"}}>Details <i class="bi bi-chevron-down"></i></span>
                     </div>
                     {answer === i?
                     <div className="sevenn" style={{"display":"flex"}}>
@@ -513,6 +513,69 @@ var poolsArray=[
         APY:"0",
         available:"0",
         extra:"10",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
+    },
+    {
+        img:"/images/BNB.png",
+        smallHeader:"manual staking",
+        largeHeader:"Auto EAGLE",
+        profit:"0.000",
+        APY:"0",
+        available:"0",
+        extra:"2",
     },
     {
         img:"/images/BNB.png",

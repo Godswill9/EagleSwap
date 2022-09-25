@@ -263,12 +263,14 @@ $brown:.4px solid brown;
 }
 .sectionn4{
     .inner{
-        @include flex-row();
+        // @include flex-row();
         border:$black;
-        width:90%;
+        width:99%;
         // border: 2px solid black;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        display: flex;
+
     }
     .indiv{
         // border:$black;
@@ -619,8 +621,8 @@ cursor: pointer;}
 .poolsBoxContInner{
     // border:.4px solid black;
     display: flex;
-    width:90%;
-    width:99%;
+    // width:90%;
+    width:95%;
     flex-wrap: wrap;
      .indiv{
         @include flex-column();
@@ -628,10 +630,11 @@ cursor: pointer;}
         border-radius: 20px;
         margin:10px;
         box-shadow: 0 3px 1px #916BBF;
-  border: .2px solid #916BBF;
+  border: 3px solid #916BBF;
   background-color: #1C0C5B;
         .onee{
             @include flex-row();
+            // background-color: #916BBF;
             border-bottom:.2px solid #916BBF;;
             .pair{
                 h3{@include spanNormal();
@@ -1568,19 +1571,22 @@ cursor: pointer;}
 
 @media (max-width:425px) {
     .sectionn4{
+        padding:1px;
+        width:100%;
         .indiv{
             // border:.5px solid black;
-            width:21em;
+            width:98%;
+            margin:10px 1px 10px 1px
         }
     }
 }
-@media (max-width:384px) {
-    .sectionn4{
-        .indiv{
-            width:17.7em;
-        }
-    }
-}
+// @media (max-width:384px) {
+//     .sectionn4{
+//         .indiv{
+//             width:17.7em;
+//         }
+//     }
+// }
 
 .poolsCont{
     .pool1 .innerPool{
