@@ -494,12 +494,12 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
-            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
         {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
@@ -507,12 +507,12 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/BTC.png'></img>
         <div className='two'>
-            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
-            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
         {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
@@ -520,12 +520,12 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/ETH.png'></img>
         <div className='two'>
-            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
-            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
         {/* <button onClick={()=>{redirectt('/Pools_earnEAGLE')}} style={justText.button}>Stake</button> */}
@@ -533,12 +533,12 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
-            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"14px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
         {/* <button onClick={()=>{redirectt('/Pools_earnEAGLE')}} style={justText.button}>Stake</button> */}
