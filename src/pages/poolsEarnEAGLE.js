@@ -7,7 +7,7 @@ import "./test.css"
 import Warning from './Warning'
 
 
-export default function PoolsEarnBaby(){
+export default function PoolsEarnEAGLE(){
     const nameTheme=Cookies.get()
     const theme=nameTheme.theme
     const navigate=useNavigate()
@@ -88,7 +88,8 @@ export default function PoolsEarnBaby(){
                 },
                 button2:{
                    backgroundColor:"rgb(194, 126, 0)",
-                   color:"white"
+                   color:"white",
+                   colorr2:"#4d422b"
                 },
                 cont:{
                    border:".4px solid rgba(90, 63, 0, 0.966)",
@@ -135,7 +136,8 @@ export default function PoolsEarnBaby(){
                   },
                   button2:{
                      backgroundColor:"",
-                     color:""
+                     color:"",
+                     color2:""
                   },
                   main:{
                     color:"rgb(139, 139, 139)",
@@ -215,10 +217,10 @@ export default function PoolsEarnBaby(){
         <div className='poolsCont'  style={bgColor}>
             <div className='pool1'>
         <div className="innerPool">
-        <div className='imgg'>
+        {/* <div className='imgg' style={{"visibility":"hidden"}}> */}
         {/* <img src="/images/NewPool_Banner.png"></img> */}
-        <div className='text'>POOLS SECTION</div>
-            </div>
+        {/* <div style={{color:boxObj.moreText.button2.colorr2, border:`.2px solid ${boxObj.moreText.button2.colorr2}`, boxShadow:`0 3px 1px ${boxObj.moreText.button2.colorr2}`}} className='text'>POOLS: Earn EAGLE</div>
+            </div> */}
         <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>
@@ -295,7 +297,7 @@ export default function PoolsEarnBaby(){
                         <div className="pair" >
                             <div className="innerrr" style={orange}>
                                 <h4 style={orange}>{item.available}</h4>
-                            <span style={{orange}}>~ $0</span>
+                            <span style={orange}>~ $0</span>
                             </div>
                         <button style={button}>Get EAGLE</button>
                         </div>
@@ -310,7 +312,7 @@ export default function PoolsEarnBaby(){
                     </div>
                     <div className="six" onClick={()=>{toggle(i)}}>
                         <div className='more'></div>
-                            <span style={{...boxObj.headText, width:"100%", textAlign:"center", fontWeight:"bold", color:'brown',textShadow:"none"}}>Details <i class="bi bi-chevron-down"></i></span>
+                            <span style={{...boxObj.headText, width:"100%", textAlign:"center", fontWeight:"bold", color:'brown',textShadow:"none"}}>Details <i style={{...boxObj.moreText,color:"brown",fontWeight:"bold",fontSize:"15px"}}  class="bi bi-chevron-down"></i></span>
                     </div>
                     {answer === i?
                     <div className="sevenn" style={{"display":"flex"}}>
@@ -442,60 +444,16 @@ export default function PoolsEarnBaby(){
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
+{wallets.map((item, i)=>{
+     return(
+      <a href={item.link} key={i}>
+      <div className='indiv' style={{ boxShadow:"none"}}>
+        <span >{item.name}</span>
+        <img src={item.img}></img>
       </div>
     </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
+     )
+   })}
       
 </div>
 </div>
@@ -523,68 +481,39 @@ var poolsArray=[
         available:"0",
         extra:"2",
     },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
-    {
-        img:"/images/BNB.png",
-        smallHeader:"manual staking",
-        largeHeader:"Auto EAGLE",
-        profit:"0.000",
-        APY:"0",
-        available:"0",
-        extra:"2",
-    },
    
+   
+]
+
+var wallets=[
+  {
+    name:"Metamask",
+    link:"#",
+    img:"/images/metaMask.png",
+},
+{
+    name:"Coinbase",
+    link:"#",
+    img:"/images/coinBase.png",
+},
+{
+    name:"Trustwallet",
+    link:"#",
+    img:"/images/trustWallet-removebg-preview.png",
+},
+{
+    name:"BNB Connect",
+    link:"#",
+    img:"/images/bnbConnect-removebg-preview.png",
+},
+{
+    name:"SafePal",
+    link:"#",
+    img:"/images/safepal-removebg-preview.png",
+},
+{
+    name:"walletConnect",
+    link:"#",
+    img:"/images/walletConnect-removebg-preview.png",
+},
 ]

@@ -101,7 +101,7 @@ var bgColor={}
     var innerTexts="rgb(59, 59, 59)"
     var headerTexts="rgb(83, 83, 83)"
     // var header=""
-    var header="#e6d9cde1"
+    var header="#e6d9cde1" 
     // var header="rgba(232, 223, 202, 0.705)"
     var header2="#4d4026"
     var bg=""
@@ -1069,7 +1069,7 @@ var bgColor={}
 <div className='indivWallets'>
    {wallets.map((item, i)=>{
      return(
-      <a href={item.link}>
+      <a href={item.link} key={i}>
       <div className='indiv' style={{ boxShadow:"none"}}>
         <span >{item.name}</span>
         <img src={item.img}></img>
@@ -1104,28 +1104,33 @@ var bgColor={}
 
 var wallets=[
   {
-    img:"images/metaMask.png",
     name:"Metamask",
-    link:"#"
-  },
-  {
-    img:"images/metaMask.png",
-    name:"Metamask",
-    link:"#"
-  },
-  {
-    img:"images/metaMask.png",
-    name:"Metamask",
-    link:"#"
-  },
-  {
-    img:"images/metaMask.png",
-    name:"Metamask",
-    link:"#"
-  },
-  {
-    img:"images/metaMask.png",
-    name:"Metamask",
-    link:"#"
-  },
+    link:"#",
+    img:"/images/metaMask.png",
+},
+{
+    name:"Coinbase",
+    link:"#",
+    img:"/images/coinBase.png",
+},
+{
+    name:"Trustwallet",
+    link:"#",
+    img:"/images/trustWallet-removebg-preview.png",
+},
+{
+    name:"BNB Connect",
+    link:"#",
+    img:"/images/bnbConnect-removebg-preview.png",
+},
+{
+    name:"SafePal",
+    link:"#",
+    img:"/images/safepal-removebg-preview.png",
+},
+{
+    name:"walletConnect",
+    link:"#",
+    img:"/images/walletConnect-removebg-preview.png",
+},
 ]

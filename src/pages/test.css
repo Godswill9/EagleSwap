@@ -1850,4 +1850,21 @@
     width: 100%;
     margin: 8px 1px 5px 1px;
   }
+}
+.innerPool .imgg {
+  border: 2px solid black;
+  width: 100%;
+  margin: 5em 1px 0px 1px;
+  box-shadow: 0 3px 1px #916BBF;
+  border: 0.2px solid #916BBF;
+  background-color: inherit;
+}
+.innerPool .imgg .text {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 20px;
+  color: #916BBF;
 }/*# sourceMappingURL=test.css.map */

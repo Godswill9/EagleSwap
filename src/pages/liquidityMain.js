@@ -141,11 +141,12 @@ else if(nameTheme.theme==="dark"){
     </div>
     <div className='twoo'>
     <div className='first'>
-        <span style={boxObj.moreText}>Your Liquidity <i class="bi bi-question-circle"></i></span>
+        <span style={boxObj.moreText}>Your Liquidity</span>
+        {/* <span style={boxObj.moreText}>Your Liquidity <i class="bi bi-question-circle"></i></span> */}
     </div>
         <div className='secondd'>
         <div className='valss'></div>
-        <span style={boxObj.moreText}>Connect to a wallet to view your liquidity.</span>
+        <span style={{...boxObj.moreText,"fontSize":"17px"}}>Connect to a wallet to view your liquidity.</span>
         </div>
         <div className='moreFooter'>
         <span style={boxObj.moreText}>Don't see a pool you joined? <a href="" style={boxObj.headText}>Import it.</a></span>

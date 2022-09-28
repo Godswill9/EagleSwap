@@ -1,11 +1,13 @@
 import Cookies from 'js-cookie'
 import React, {useEffect, useRef, useState} from 'react'
 import Marquee from 'react-fast-marquee'
+import { useNavigate } from 'react-router-dom'
 import Header from '../header'
 import "./home.css"
 import "./swap.css"
 
 export default function Home() {
+    const redirectt=useNavigate()
     const gainers= useRef()
     const traders= useRef()
     const circles= useRef()
@@ -66,6 +68,7 @@ export default function Home() {
                "boxShadow": "0 0px 10px #503b293b",
               "border":".3px solid #503b293b",
             "backgroundColor":"#f3ebe5"
+            // "backgroundColor":"white"
             //   "backgroundColor":"rgb(226, 194, 154)",
         }
         var innerBoxesHeaders="rgb(39, 39, 39)"
@@ -74,8 +77,9 @@ export default function Home() {
         // var headerTexts="rgb(83, 83, 83)"
         // var header="rgb(230, 208, 181)"
         var header="white"
+        // var header2=" linear-gradient(#a18f7eb2, #a18f7eb2, white)"
         var header2=" linear-gradient(#a18f7eb2, #a18f7eb2, white)"
-        var header2=" linear-gradient(#a18f7eb2, #a18f7eb2, white)"
+        // var header2="#a18f7eb2"
         var header3="#503b29"
         var header3Extra="#503b29"
         var header4="transparent"
@@ -86,11 +90,13 @@ export default function Home() {
         // var innerBoxesShadow="0 7px 0px rgb(182, 153, 117)"
         var boxObj={
             "color":"brown",
-            "boxShadow": "0 7px 10px #503b293b",
+            // "boxShadow": "0 7px 10px #503b293b",
+            "boxShadow": "0 0px 10px #503b293b",
               "border":".3px solid #503b293b",
             //   "backgroundColor":"#a79661",
             //   "backgroundColor":"rgb(226, 194, 154)",
               "backgroundColor":"#f3ebe5",
+            //   "backgroundColor":"white",
             //   "backgroundColor":"whitesmoke",
               greenText:{
                 color:"green"
@@ -320,82 +326,10 @@ export default function Home() {
     </div>
 </div>
 {/* announcement section */}
-<div className='announcement'>
-    <div className='innerr'>
-        <Marquee speed={100} gradient={false}>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bigert.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/brise.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bitgert2.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bitgert3.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bitgert4.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bitgert5.jpg"></img></a>
-            </div>
-            <div className='announceIndiv'>
-             <a href='#'><img src="/images/bitgert6.jpg"></img></a>
-            </div>
-        </Marquee>
-    </div>
-</div>
-{/* <div className='section2'>
-<div className='iconDivs'>
-<img src="images/BNB.png"></img>
-<div className="name_Value">
-    <div className='oneVal'>
-        <span>Baby</span>
-        <span>0.63%</span>
-    </div>
-    <h3>$0.05</h3>
-</div>
-</div>
-<div className='iconDivs'>
-<img src="images/BTC.png"></img>
-<div className="name_Value">
-    <div className='oneVal'>
-        <span>Baby</span>
-        <span>0.63%</span>
-    </div>
-    <h3>$0.05</h3>
-</div>
-</div>
-<div className='iconDivs'>
-<img src="images/ETH.png"></img>
-<div className="name_Value">
-    <div className='oneVal'>
-        <span>Baby</span>
-        <span>0.63%</span>
-    </div>
-    <h3>$0.05</h3>
-</div>
-</div>
-<div className='iconDivs'>
-<img src="images/eaagle2-removebg-preview.png"></img>
-<div className="name_Value">
-    <div className='oneVal'>
-        <span>Baby</span>
-        <span>0.63%</span>
-    </div>
-    <h3>$0.05</h3>
-</div>
-</div>
-<div className='linkk'>
-    <a href='#'><span></span>All market <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-</div>
-</div> */}
 <div className='section3' style={textObj}>
 <div className="one">
 <h1 style={justText}>Trending</h1>
-<span style={justText}>Check what's trending in crypto</span>
+<span style={{...justText,"fontSize":"15px"}}>Check what's trending in crypto</span>
 </div>
 <div className='two_trending'>
 <div className='topGainers'>
@@ -460,8 +394,79 @@ export default function Home() {
     <a href='#'><span style={justText}>See more</span></a>
 </div>
 </div> 
+{/* <div className='section2'>
+<div className='iconDivs'>
+<img src="images/BNB.png"></img>
+<div className="name_Value">
+    <div className='oneVal'>
+        <span>Baby</span>
+        <span>0.63%</span>
+    </div>
+    <h3>$0.05</h3>
+</div>
+</div>
+<div className='iconDivs'>
+<img src="images/BTC.png"></img>
+<div className="name_Value">
+    <div className='oneVal'>
+        <span>Baby</span>
+        <span>0.63%</span>
+    </div>
+    <h3>$0.05</h3>
+</div>
+</div>
+<div className='iconDivs'>
+<img src="images/ETH.png"></img>
+<div className="name_Value">
+    <div className='oneVal'>
+        <span>Baby</span>
+        <span>0.63%</span>
+    </div>
+    <h3>$0.05</h3>
+</div>
+</div>
+<div className='iconDivs'>
+<img src="images/eaagle2-removebg-preview.png"></img>
+<div className="name_Value">
+    <div className='oneVal'>
+        <span>Baby</span>
+        <span>0.63%</span>
+    </div>
+    <h3>$0.05</h3>
+</div>
+</div>
+<div className='linkk'>
+    <a href='#'><span></span>All market <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+</div>
+</div> */}
+<div className='announcement'>
+    <div className='innerr'>
+        <Marquee speed={100} gradient={false}>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bigert.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/brise.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert2.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert3.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert4.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert5.jpg"></img></a>
+            </div>
+            <div className='announceIndiv'>
+             <a href='#'><img src="/images/bitgert6.jpg"></img></a>
+            </div>
+        </Marquee>
+    </div>
+</div>
 
- 
 
 <div className='SliderSection' style={{"display":"none"}}>
     <div className='slide' ref={sliderIndiv}>
@@ -489,50 +494,54 @@ export default function Home() {
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={justText}>Earn EAGLE</h4>
-            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={sliderText.yellow}>APR</span>
-            <h4 style={justText}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
+        {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/BTC.png'></img>
         <div className='two'>
-            <h4 style={justText}>Earn EAGLE</h4>
-            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={sliderText.yellow}>APR</span>
-            <h4 style={justText}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
+        {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/ETH.png'></img>
         <div className='two'>
-            <h4 style={justText}>Earn EAGLE</h4>
-            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={sliderText.yellow}>APR</span>
-            <h4 style={justText}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
+        {/* <button onClick={()=>{redirectt('/Pools_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
         <img src='images/BNB.png'></img>
         <div className='two'>
-            <h4 style={justText}>Earn EAGLE</h4>
-            <span style={sliderText.yellow}>EAGLE-USDT LP</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>Earn EAGLE</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>EAGLE-USDT LP</span>
         </div>
         <div className='three'>
-            <span style={sliderText.yellow}>APR</span>
-            <h4 style={justText}>% + %</h4>
+            <span style={{...sliderText.yellow,"fontSize":"16px"}}>APR</span>
+            <h4 style={{...justText, "fontSize":"17px"}}>% + %</h4>
         </div>
         <button style={justText.button}>Stake</button>
+        {/* <button onClick={()=>{redirectt('/Pools_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
 </div>
 </div>
@@ -641,35 +650,35 @@ export default function Home() {
     <h1 style={justText}>Why choose us?</h1>
     <div className="reasons">
         <div className='indiv' style={boxObj}>
-            <img src='images/eagle5-removebg-preview.png'></img>
+            <img src='/images/trade-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>Trade to earn</h3>
             <p style={{...justText, textShadow:"none"}}>The more you swap, the more you earn. Get free EAGLE as reward for almost every trade</p>
         </div>
         <div className='indiv' style={boxObj}>
-            <img src='images/eagle5-removebg-preview.png'></img>
+            <img src='/images/stake-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>Stake to Earn</h3>
             <p style={{...justText, textShadow:"none"}}>Multiply your EAGLE with multiple choices. Stake in Pools, Farms, and Vaults to earn bountiful rewards with competitive APRs.</p>
         </div>
         <div className='indiv' style={boxObj}>
-            <img src='images/eagle3-removebg-preview.png'></img>
+            <img src='/images/task-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>Task to Earn</h3>
             <p style={{...justText, textShadow:"none"}}>Pick up your good luck. Win huge rewards by accomplishing simple tasks.</p>
         </div>
         <div className='indiv' style={boxObj}>
             <img src='images/eagle3-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>Smart Router</h3>
-            <p style={{...justText, textShadow:"none"}}>Trade instantly by one click. Trade over 90% of BEP 20 Tokens with better slippages and lower fees.</p>
+            <p style={{...justText, textShadow:"none"}}>Trade instantly by one click. Trade over 90% of BRC 20 Tokens with better slippages and lower fees.</p>
         </div>
         <div className='indiv' style={boxObj}>
-            <img src='images/eagle6-removebg-preview.png'></img>
+            <img src='/images/download-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>NFT Market</h3>
             <p style={{...justText, textShadow:"none"}}>Meet with your NFT crush. Go crazy shopping for the hottest & newest NFTs with advanced shopping experience.</p>
         </div>
-        <div className='indiv' style={boxObj}>
+        {/* <div className='indiv' style={boxObj}>
             <img src='images/eagle6-removebg-preview.png'></img>
             <h3 style={innerBoxesTexts.icon}>One-Stop Metaverse</h3>
             <p style={{...justText, textShadow:"none"}}>Originate from DeFi, and go beyond MetaFi. A one-stop platform to meet all your needs from AMM, NFT, and GamePad, to Metaverse.</p>
-        </div>
+        </div> */}
     </div>
 </div>
 <div className='footer' style={footer}>
@@ -738,10 +747,10 @@ export default function Home() {
     <div className='third'>
         <h1>Community</h1>
         <div className='icons'>
-            <a href='#'><i class="bi bi-telegram"></i></a>
-            <a href='#'><i class="bi bi-facebook"></i></a>
-            <a href='#'><i class="bi bi-discord"></i></a>
-            <a href='#'><i class="bi bi-twitter"></i></a>
+            <a href='https://t.me/eagleprotocol'><i class="bi bi-telegram"></i></a>
+            <a href='eagleprotocoldex@gmail.com'><i class="bi bi-envelope-fill"></i></a>
+            <a href='https://discord.gg/enSh4TegqB'><i class="bi bi-discord"></i></a>
+            <a href='https://twitter.com/Eagleprotocol'><i class="bi bi-twitter"></i></a>
         </div>
     </div>
 </div>
@@ -755,61 +764,15 @@ export default function Home() {
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-      
+    {connectWallet.map((item, index)=>{
+        <a href={item.link} key={index}>
+        <div className='indiv'>
+        <span>{item.name}</span>
+        <img src={item.img}></img>
+        </div>
+        </a>
+    })}
+   
 </div>
 </div>
 </div>
@@ -888,4 +851,37 @@ var announcements=[
     "images/didOnline.png",
     "images/perpetual.png",
     "images/perpetual.png"
+]
+
+var connectWallet=[
+    {
+        name:"Metamask",
+        link:"",
+        img:"/images/metaMask.png",
+    },
+    {
+        name:"Coinbase",
+        link:"",
+        img:"/images/coinBase.png",
+    },
+    {
+        name:"Trustwallet",
+        link:"",
+        img:"/images/trustWallet-removebg-preview.png",
+    },
+    {
+        name:"BNB Connect",
+        link:"",
+        img:"/images/bnbConnect-removebg-preview.png",
+    },
+    {
+        name:"SafePal",
+        link:"",
+        img:"/images/safepal-removebg-preview.png",
+    },
+    {
+        name:"walletConnect",
+        link:"",
+        img:"/images/walletConnect-removebg-preview.png",
+    },
 ]

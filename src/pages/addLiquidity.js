@@ -125,7 +125,7 @@ export default function AddLiquidity() {
      </div>
      <div className='two'>
      <div className='fromInput'>
-      <span style={boxObj.headText}>Input</span>
+      <span style={{...boxObj.headText, "fontSize":"16px"}}>Input</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div className="heyy">
@@ -139,7 +139,7 @@ export default function AddLiquidity() {
     </div>
       <span style={boxObj.headText} className='plus'>+</span>
       <div className='fromInput'>
-      <span style={boxObj.headText}>Input</span>
+      <span style={{...boxObj.headText, "fontSize":"16px"}}>Input</span>
       <div className='more'>
         <input type="number" placeholder='0.0'></input>
         <div className="heyy">
@@ -156,16 +156,16 @@ export default function AddLiquidity() {
       <span style={boxObj.headText}>PRICES AND POOL SHARE</span>
       <div className='vals'>
          <div className='indivvv'>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>0.0382171</span>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>USDT per EAGLE</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold","fontSize":"16px"}}>0.0382171</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold", "fontSize":"16px"}}>USDT per EAGLE</span>
          </div>
          <div className='indivvv'>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>26.1663</span>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>EAGLE per USDT</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold", "fontSize":"16px"}}>26.1663</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold", "fontSize":"16px"}}>EAGLE per USDT</span>
          </div>
          <div className='indivvv'>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>2.65%</span>
-            <span style={{...boxObj.moreTextWhite,fontWeight:"bold"}}>Share of Pool</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold", "fontSize":"16px"}}>2.65%</span>
+            <span style={{...boxObj.moreTextWhite,fontWeight:"bold", "fontSize":"16px"}}>Share of Pool</span>
          </div>
       </div>
     </div>
@@ -181,7 +181,7 @@ export default function AddLiquidity() {
        <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
        <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input style={{color: boxObj.color}} type="text" placeholder='Search name or paste address'></input>
+    <input style={{background:boxObj.backgroundColor}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
        <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
@@ -200,7 +200,7 @@ export default function AddLiquidity() {
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span style={{color: boxObj.color}}>{item.name}</span>
+          <span style={{color: boxObj.color, fontWeight:"bold"}}>{item.name}</span>
        </div>
         )
       })}
@@ -233,7 +233,7 @@ export default function AddLiquidity() {
                   closePopup()
                 }}>
                 <img src={item.img}></img>
-                <span>{item.name} <span className='small'>{item.smallTitle}</span></span>
+                <span style={{fontWeight:"bold"}}>{item.name} <span className='small'>{item.smallTitle}</span></span>
               </div>
               )
             })}
@@ -248,7 +248,7 @@ export default function AddLiquidity() {
        <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
        <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input  style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
+    <input style={{background:boxObj.backgroundColor}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
        <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
@@ -267,7 +267,7 @@ export default function AddLiquidity() {
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span  style={{color:boxObj.color}}>{item.name}</span>
+          <span  style={{color:boxObj.color,fontWeight:"bold"}}>{item.name}</span>
        </div>
         )
       })}
@@ -299,7 +299,7 @@ export default function AddLiquidity() {
                   closePopup()
                 }}>
                 <img src={item.img}></img>
-                <span>{item.name} <span className='small'>{item.smallTitle}</span></span>
+                <span style={{fontWeight:"bold"}}>{item.name} <span className='small'>{item.smallTitle}</span></span>
               </div>
               ) 
             })}
@@ -314,60 +314,16 @@ export default function AddLiquidity() {
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
+{wallets.map((item, i)=>{
+     return(
+      <a href={item.link} key={i}>
+      <div className='indiv' style={{ boxShadow:"none"}}>
+        <span style={{fontWeight:"bold"}} >{item.name}</span>
+        <img src={item.img}></img>
       </div>
     </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src=""></img>
-      </div>
-    </a>
+     )
+   })}
       
 </div>
 </div>
@@ -379,60 +335,50 @@ export default function AddLiquidity() {
 var tokens=[
   {
     name:"BNB",
-    img:"images/BTC.png",
-    smallTitle:"binance"
-  },
-  {
-    name:"ETH",
     img:"images/BNB.png",
     smallTitle:"binance"
   },
   {
-    name:"BTC",
+    name:"ETH",
     img:"images/ETH.png",
     smallTitle:"binance"
   },
   {
-    name:"BNB",
+    name:"BTC",
     img:"images/BTC.png",
+    smallTitle:"binance"
+  },
+  {
+    name:"EAGLE",
+    img:"/images/eagle1-removebg-preview.png",
     smallTitle:"binance"
   },
 ]
 var tokens2=[
   {
     name:"BNB",
-    img:"images/BTC.png",
+    img:"images/BNB.png",
     smallTitle:"binance"
   },
   {
     name:"ETH",
-    img:"images/BNB.png",
+    img:"images/ETH.png",
     smallTitle:"binance"
   },
   {
     name:"BTC",
-    img:"images/ETH.png",
-    smallTitle:"binance"
-  },
-  {
-    name:"BNB",
     img:"images/BTC.png",
     smallTitle:"binance"
   },
   {
-    name:"Mars",
-    img:"images/BNB.png",
+    name:"EAGLE",
+    img:"/images/eagle1-removebg-preview.png",
     smallTitle:"binance"
   },
   {
-    name:"Doge",
-    img:"images/ETH.png",
-    smallTitle:"binance"
-  },
-  {
-    name:"CryptoTree",
-    img:"images/BTC.png",
-    smallTitle:"binance"
+    name:"BRISE",
+    img:"/images/brise.jpg",
+    smallTitle:"brise"
   },
 ]
 var commonBases=[
@@ -440,4 +386,37 @@ var commonBases=[
 ]
 var commonBases2=[
 
+]
+
+var wallets=[
+  {
+    name:"Metamask",
+    link:"#",
+    img:"/images/metaMask.png",
+},
+{
+    name:"Coinbase",
+    link:"#",
+    img:"/images/coinBase.png",
+},
+{
+    name:"Trustwallet",
+    link:"#",
+    img:"/images/trustWallet-removebg-preview.png",
+},
+{
+    name:"BNB Connect",
+    link:"#",
+    img:"/images/bnbConnect-removebg-preview.png",
+},
+{
+    name:"SafePal",
+    link:"#",
+    img:"/images/safepal-removebg-preview.png",
+},
+{
+    name:"walletConnect",
+    link:"#",
+    img:"/images/walletConnect-removebg-preview.png",
+},
 ]

@@ -8,7 +8,7 @@ import "./test.css"
 import Warning from './Warning' 
 
 
-export default function FarmsEarnBABY(){
+export default function FarmsEarnEAGLE(){
     const nameTheme=Cookies.get()
     const theme=nameTheme.theme
     const [live, setLive]=useState("true")
@@ -64,7 +64,8 @@ export default function FarmsEarnBABY(){
                 },
                 button2:{
                    backgroundColor:"rgb(194, 126, 0)",
-                   color:"white"
+                   color:"white",
+                   colorr2:"#4d422b"
                 },
                 cont:{
                    border:".4px solid rgba(90, 63, 0, 0.966)",
@@ -116,7 +117,8 @@ export default function FarmsEarnBABY(){
                   },
                   button2:{
                      backgroundColor:"",
-                     color:""
+                     color:"",
+                     color2:"",
                   },
                   cont:{
                      border:"",
@@ -200,7 +202,7 @@ export default function FarmsEarnBABY(){
 
 
     return( 
-    <div>
+    <div> 
          {/* <Warning/> */}
         <header>
            <Header/>
@@ -208,10 +210,10 @@ export default function FarmsEarnBABY(){
         <div className='poolsCont' style={bgColor}>
             <div className='pool1'>
         <div className="innerPool">
-            <div className='imgg'>
+        {/* <div className='imgg' style={{"visibility":"hidden"}}> */}
                {/* <img src="/images/Farm.png"></img> */}
-               <div className='text'>FARMS SECTION</div>
-            </div>
+               {/* <div style={{color:boxObj.moreText.button2.colorr2, border:`.2px solid ${boxObj.moreText.button2.colorr2}`, boxShadow:`0 3px 1px ${boxObj.moreText.button2.colorr2}`}} className='text'>FARMS Earn EAGLE</div>
+            </div> */}
         <div className="sectionn2">
         <div className="headOne">
             <div className='resBreak'>
@@ -282,7 +284,7 @@ export default function FarmsEarnBABY(){
                         <div className='two'>
                             <span style={boxObj.moreText}>APR:</span>
                             <div className='more'>
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-calculator"></i>
                             <h3 style={boxObj.moreText.main}>{item.APR}</h3>
                             </div>
                         </div>
@@ -310,7 +312,7 @@ export default function FarmsEarnBABY(){
                         </div>
                         <div className="toggle">
                         <hr></hr>
-                            <span  style={{color:"brown", fontWeight:"bold"}} onClick={()=>toggle(i)}>Details <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+                            <span  style={{color:"brown", fontWeight:"bold"}} onClick={()=>toggle(i)}>Details <i style={{...boxObj.moreText,color:"brown",fontWeight:"bold",fontSize:"15px"}}  class="bi bi-chevron-down"></i></span>
                             </div>
                             {answer===i?
                             <div className="six" style={{"display":"flex"}}>
@@ -319,8 +321,8 @@ export default function FarmsEarnBABY(){
                                 <h5 style={boxObj.moreText}>${item.liquidity}</h5>
                             </div>
                             <div className='links'>
-                                <a href="#"  style={boxObj.moreText}>Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                                <a href="#"  style={boxObj.moreText}>View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#"  style={boxObj.moreText}>Get BRISE-USDT LP <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
+                                <a href="#"  style={boxObj.moreText}>View Contract <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
                             </div>
                         </div>:
                         <div className="six" style={{"display":"none"}}>
@@ -329,8 +331,8 @@ export default function FarmsEarnBABY(){
                             <h5>${item.liquidity}</h5>
                         </div>
                         <div className='links'>
-                            <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                            <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            <a href="#">Get BRISE-USDT LP <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
+                            <a href="#">View Contract <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
                         </div>
                     </div>}
                     </div>
@@ -365,14 +367,14 @@ export default function FarmsEarnBABY(){
                             <h5 style={boxObj.moreText}>APR:</h5>
                             <div className='more'>
                             <h3 style={boxObj.moreText.main}>{item.APR}</h3>
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-calculator"></i>
                             </div>
                         </div>
                         <div className='four'>
                                 <h5 style={boxObj.moreText}>Liquidity:</h5>
                                 <div className='more'>
                                 <h3 style={boxObj.moreText.main}>${item.liquidity}</h3>
-                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                                 </div>
 
                         </div>
@@ -380,11 +382,11 @@ export default function FarmsEarnBABY(){
                         <h5 style={boxObj.moreText}> multiplier</h5>
                         <div className='more'>
                         <h3 style={boxObj.moreText.main}>{item.ups}</h3>
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                         </div>
                         </div>
                         <div className='detalss'>
-                        <h3  onClick={()=>toggle(index)} style={boxObj.moreText}>Details <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h3>
+                        <h3  style={{color:"brown", fontWeight:"bold"}} onClick={()=>toggle(index)}>Details <i style={{...boxObj.moreText,color:"brown",fontWeight:"bold",fontSize:"15px"}}  class="bi bi-chevron-down"></i></h3>
                         </div>
                         </div>
  {/* responsive */}
@@ -409,8 +411,8 @@ export default function FarmsEarnBABY(){
                             <button onClick={handleConnectWallet} style={boxObj.moreText.button2}>Unlock Wallet</button>
                         </div>
                         <div className='links' style={boxObj.moreText.cont}>
-                                <a href="#" style={boxObj.moreText.main}>Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                                <a href="#" style={boxObj.moreText.main}>View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#" style={boxObj.moreText.main}>Get BRISE-USDT LP <i style={{fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
+                                <a href="#" style={boxObj.moreText.main}>View Contract <i style={{fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
                             </div>
                         </div>
                         <div className='resExtra' style={{"borderTop":boxObj.moreText.cont.border}}>
@@ -425,7 +427,7 @@ export default function FarmsEarnBABY(){
                                 <h5 style={boxObj.headText}>Liquidity:</h5>
                                 <div className='more'>
                                 <h3 style={boxObj.moreText}>${item.liquidity}</h3>
-                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                                 </div>
 
                         </div>
@@ -433,7 +435,7 @@ export default function FarmsEarnBABY(){
                         <h5 style={boxObj.headText}> multiplier</h5>
                         <div className='more'>
                         <h3 style={boxObj.moreText}>{item.ups}</h3>
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        {/* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> */}
                         </div>
                         </div>
                         </div>
@@ -459,8 +461,8 @@ export default function FarmsEarnBABY(){
                             <button>Unlock Wallet</button>
                         </div>
                         <div className='links'>
-                                <a href="#">Get BRISE-USDT LP <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                                <a href="#">View Contract <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                <a href="#">Get BRISE-USDT LP <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
+                                <a href="#">View Contract <i style={{...boxObj.moreText,fontWeight:"bold",fontSize:"15px"}} class="bi bi-arrow-down-right-square"></i></a>
                             </div>
                         </div>}
                     {/* </div> */}
@@ -477,60 +479,16 @@ export default function FarmsEarnBABY(){
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
+{wallets.map((item, i)=>{
+     return(
+      <a href={item.link} key={i}>
+      <div className='indiv' style={{ boxShadow:"none"}}>
+        <span >{item.name}</span>
+        <img src={item.img}></img>
       </div>
     </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
+     )
+   })}
       
 </div>
 </div>
@@ -569,4 +527,37 @@ var farmsArr=[
         liquidity:"0"
     },
    
+]
+
+var wallets=[
+  {
+    name:"Metamask",
+    link:"#",
+    img:"/images/metaMask.png",
+},
+{
+    name:"Coinbase",
+    link:"#",
+    img:"/images/coinBase.png",
+},
+{
+    name:"Trustwallet",
+    link:"#",
+    img:"/images/trustWallet-removebg-preview.png",
+},
+{
+    name:"BNB Connect",
+    link:"#",
+    img:"/images/bnbConnect-removebg-preview.png",
+},
+{
+    name:"SafePal",
+    link:"#",
+    img:"/images/safepal-removebg-preview.png",
+},
+{
+    name:"walletConnect",
+    link:"#",
+    img:"/images/walletConnect-removebg-preview.png",
+},
 ]

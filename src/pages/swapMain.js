@@ -181,8 +181,8 @@ and Smart Router will choose the <span>best route</span> for you.
 </p>
 <div className='box'>
 <div className='first'>
-    <h3>Trade Mining Reward: </h3>
-    <h3>0.0000 EAGLE</h3>
+    <h3 style={{fontWeight:"bold"}}>Trade Mining Reward: </h3>
+    <h3 style={{fontWeight:"bold"}}>0.0000 EAGLE</h3>
 </div>
 <button>Withdraw</button>
 </div> 
@@ -229,15 +229,15 @@ and Smart Router will choose the <span>best route</span> for you.
     </div>
     <div className='summary' style={boxObj.moreText}>
         <div className='first'>
-        <div>Price</div>
+        <div style={{"fontSize":"15px"}}>Price</div>
         <div className='valuee'>
-            <div><span className='amt' style={boxObj.moreText.main}>0.0447824 USDT</span> per EAGLE</div>
+            <div style={{"fontSize":"14px"}}><span className='amt' style={{...boxObj.moreText.main,"fontSize":"16px"}}>0.0447824 USDT</span> per EAGLE</div>
             <i style={{"fontSize":"14px"}} class="bi bi-arrow-left-right"></i>
         </div>
         </div>
         <div className='second'>
-          <div>Slippage Tolerance</div>
-          <div>0.1%</div>
+          <div style={{"fontSize":"15px"}}>Slippage Tolerance</div>
+          <div style={{"fontSize":"15px"}}>0.1%</div>
         </div>
     </div>
     <button style={button} onClick={handleConnectWallet}>Unlock Wallet</button>
@@ -258,9 +258,9 @@ and Smart Router will choose the <span>best route</span> for you.
       <span style={boxObj.headText}>Slippage Tolerance <i class="bi bi-question-circle"></i></span>
       <div className='val'>
         <div className='percentages'>
-          <span >0.1%</span>
-          <span >0.5%</span>
-          <span >1%</span>
+          <span style={{"color":""}}>0.1%</span>
+          <span style={{"color":""}}>0.5%</span>
+          <span style={{"color":""}}>1%</span>
         </div>
         <div className='inputSec'>
           <input type="number" placeholder='5%'></input>
@@ -304,29 +304,29 @@ and Smart Router will choose the <span>best route</span> for you.
        <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
        <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
+    <input style={{background:boxObj.backgroundColor}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
        <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
-         <div className='indiv'>
-            <img src="images/BTC.png"></img>
-            <span style={{color: boxObj.color}}>BTC</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/ETH.png"></img>
-            <span style={{color: boxObj.color}}>ETH</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/BNB.png"></img>
-            <span style={{color: boxObj.color}}>EAGLE</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/BTC.png"></img>
-            <span style={{color: boxObj.color}}>EAGLE</span>
-         </div>
+    {commonBases.map((item, i)=>{
+        if(!item)return;
+        return(
+          <div className='indiv'onClick={(e)=>{
+            setSelectedSwap({
+              img:item.img,
+              name:item.name
+            })
+            audio.play();
+            closePopup()
+          }}>
+          <img src={item.img}></img>
+          <span style={{color: boxObj.color}}>{item.name}</span>
+       </div>
+        )
+      })}
        </div>
        </div>
        <div className='tokenName'>
@@ -338,6 +338,16 @@ and Smart Router will choose the <span>best route</span> for you.
             {tokens.map((item, i)=>{
               return(
                 <div className='indiv' key={i} onClick={(e)=>{
+                  var selectt={
+                    img:item.img,
+                    name:item.name
+                  }
+                  if(commonBases.includes(selectt))return;
+                  commonBases.push(selectt)
+                  if(commonBases.length>=5){
+                    commonBases.shift()
+                    // commonBases.push(selectt)
+                  }
                   setSelectedSwap({
                     img:item.img,
                     name:item.name
@@ -362,29 +372,29 @@ and Smart Router will choose the <span>best route</span> for you.
        <span style={boxObj.headText}>Select a token <i class="bi bi-question-circle"></i></span>
        <i style={boxObj.headText} onClick={closePopup} class="bi bi-x"></i>
     </div>
-    <input style={{color:boxObj.color}} type="text" placeholder='Search name or paste address'></input>
+    <input style={{background:boxObj.backgroundColor}} type="text" placeholder='Search name or paste address'></input>
     <div className='commonBases'>
     <div className='first'>
        <span style={boxObj.headText}>Common bases <i class="bi bi-question-circle"></i></span>
        {/* <i class="bi bi-x"></i> */}
     </div>
     <div className='common'>
-         <div className='indiv'>
-            <img src="images/BTC.png"></img>
-            <span style={{color:boxObj.color}}>BTC</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/ETH.png"></img>
-            <span style={{color:boxObj.color}}>ETH</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/BNB.png"></img>
-            <span style={{color:boxObj.color}}>EAGLE</span>
-         </div>
-         <div className='indiv'>
-            <img src="images/BTC.png"></img>
-            <span style={{color:boxObj.color}}>EAGLE</span>
-         </div>
+      {commonBases2.map((item, i)=>{
+        if(!item)return;
+        return(
+          <div className='indiv' onClick={(e)=>{
+            setSelectedSwap2({
+              img:item.img,
+              name:item.name
+            })
+            audio.play();
+            closePopup()
+          }}>
+          <img src={item.img}></img>
+          <span  style={{color:boxObj.color}}>{item.name}</span>
+       </div>
+        )
+      })}
        </div>
        </div>
        <div className='tokenName'>
@@ -396,6 +406,15 @@ and Smart Router will choose the <span>best route</span> for you.
             {tokens2.map((item, i)=>{
               return(
                 <div className='indiv' key={i} onClick={(e)=>{
+                  var selectt={
+                    img:item.img,
+                    name:item.name
+                  }
+                    commonBases2.push(selectt)
+                    if(commonBases2.length>=5){
+                      commonBases2.shift()
+                      // commonBases.push(selectt)
+                    }
                   setSelectedSwap2({
                     img:item.img,
                     name:item.name
@@ -419,60 +438,16 @@ and Smart Router will choose the <span>best route</span> for you.
        <i onClick={closePopup} class="bi bi-x"></i>
 </div>
 <div className='indivWallets'>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
+{wallets.map((item, i)=>{
+     return(
+      <a href={item.link}>
+      <div className='indiv' style={{ boxShadow:"none"}}>
+        <span >{item.name}</span>
+        <img src={item.img}></img>
       </div>
     </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Coin Base</span>
-        <img src="images/coinBase.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
-    <a href='#'>
-      <div className='indiv'>
-        <span>Metamask</span>
-        <img src="images/metaMask.png"></img>
-      </div>
-    </a>
+     )
+   })}
       
 </div>
 </div>
@@ -485,59 +460,89 @@ and Smart Router will choose the <span>best route</span> for you.
 var tokens=[
   {
     name:"BNB",
-    img:"images/BTC.png",
-    smallTitle:"binance"
-  },
-  {
-    name:"ETH",
     img:"images/BNB.png",
     smallTitle:"binance"
   },
   {
-    name:"BTC",
+    name:"ETH",
     img:"images/ETH.png",
     smallTitle:"binance"
   },
   {
-    name:"BNB",
+    name:"BTC",
     img:"images/BTC.png",
+    smallTitle:"binance"
+  },
+  {
+    name:"EAGLE",
+    img:"/images/eagle1-removebg-preview.png",
     smallTitle:"binance"
   },
 ]
 var tokens2=[
   {
     name:"BNB",
-    img:"images/BTC.png",
+    img:"images/BNB.png",
     smallTitle:"binance"
   },
   {
     name:"ETH",
-    img:"images/BNB.png",
+    img:"images/ETH.png",
     smallTitle:"binance"
   },
   {
     name:"BTC",
-    img:"images/ETH.png",
-    smallTitle:"binance"
-  },
-  {
-    name:"BNB",
     img:"images/BTC.png",
     smallTitle:"binance"
   },
   {
-    name:"Mars",
-    img:"images/BNB.png",
+    name:"EAGLE",
+    img:"/images/eagle1-removebg-preview.png",
     smallTitle:"binance"
   },
   {
-    name:"Doge",
-    img:"images/ETH.png",
-    smallTitle:"binance"
+    name:"BRISE",
+    img:"/images/brise.jpg",
+    smallTitle:"brise"
   },
+]
+
+var wallets=[
   {
-    name:"CryptoTree",
-    img:"images/BTC.png",
-    smallTitle:"binance"
-  },
+    name:"Metamask",
+    link:"#",
+    img:"/images/metaMask.png",
+},
+{
+    name:"Coinbase",
+    link:"#",
+    img:"/images/coinBase.png",
+},
+{
+    name:"Trustwallet",
+    link:"#",
+    img:"/images/trustWallet-removebg-preview.png",
+},
+{
+    name:"BNB Connect",
+    link:"#",
+    img:"/images/bnbConnect-removebg-preview.png",
+},
+{
+    name:"SafePal",
+    link:"#",
+    img:"/images/safepal-removebg-preview.png",
+},
+{
+    name:"walletConnect",
+    link:"#",
+    img:"/images/walletConnect-removebg-preview.png",
+},
+]
+
+var commonBases=[
+
+]
+var commonBases2=[
+
 ]
