@@ -323,7 +323,7 @@ and Smart Router will choose the <span>best route</span> for you.
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span style={{color: boxObj.color}}>{item.name}</span>
+          <span style={{color: boxObj.color, fontWeight:"bold"}}>{item.name}</span>
        </div>
         )
       })}
@@ -356,7 +356,7 @@ and Smart Router will choose the <span>best route</span> for you.
                   closePopup()
                 }}>
                 <img src={item.img}></img>
-                <span>{item.name} <span className='small'>{item.smallTitle}</span></span>
+                <span style={{fontWeight:"bold"}}>{item.name} <span className='small'>{item.smallTitle}</span></span>
               </div>
               )
             })}
@@ -391,7 +391,7 @@ and Smart Router will choose the <span>best route</span> for you.
             closePopup()
           }}>
           <img src={item.img}></img>
-          <span  style={{color:boxObj.color}}>{item.name}</span>
+          <span style={{color:boxObj.color,fontWeight:"bold"}}>{item.name}</span>
        </div>
         )
       })}
@@ -423,7 +423,7 @@ and Smart Router will choose the <span>best route</span> for you.
                   closePopup()
                 }}>
                 <img src={item.img}></img>
-                <span>{item.name} <span className='small'>{item.smallTitle}</span></span>
+                <span style={{fontWeight:"bold"}}>{item.name} <span className='small'>{item.smallTitle}</span></span>
               </div>
               )
             })}
@@ -442,7 +442,7 @@ and Smart Router will choose the <span>best route</span> for you.
      return(
       <a href={item.link}>
       <div className='indiv' style={{ boxShadow:"none"}}>
-        <span >{item.name}</span>
+        <span>{item.name}</span>
         <img src={item.img}></img>
       </div>
     </a>

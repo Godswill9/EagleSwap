@@ -686,12 +686,12 @@ var bgColor={}
       <div className="mobileView">
         {navBar === "32em" ? (
           <i
-            style={{"fontSize":"17px"}} class="fa fa-times icon"
+            style={{"fontSize":"20px"}} class="fa fa-times icon"
             aria-hidden="true"
             onClick={handleNav}
           ></i>
         ) : (
-          <i style={{"fontSize":"17px"}} class="fa fa-bars icon" aria-hidden="true" onClick={handleNav}></i>
+          <i style={{"fontSize":"20px"}} class="fa fa-bars icon" aria-hidden="true" onClick={handleNav}></i>
         )}
       </div>
       <div className="mobileContent" style={{"backgroundColor":header, "color":innerBoxesHeaders, height:navBar}}>

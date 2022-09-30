@@ -765,7 +765,7 @@ export default function Home() {
 </div>
 <div className='indivWallets'>
     {connectWallet.map((item, index)=>{
-        <a href={item.link} key={index}>
+        <a href={item.link} key={index} style={{fontWeight:"bold"}}>
         <div className='indiv'>
         <span>{item.name}</span>
         <img src={item.img}></img>

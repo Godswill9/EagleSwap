@@ -400,12 +400,12 @@ export default function PoolsEarnEAGLE(){
                         <div className='ddextra'>
                         <div className="two">
                         <span style={boxObj.headText}>Profit</span>
-                        <h3>{item.profit}</h3>
+                        <h3 >{item.profit}</h3>
                     </div>
                     <div className="sevenn">
                         <span style={boxObj.headText}>Total Staked</span>
                         <div className="det">
-                            <span>0 EAGLE</span>
+                            <span >0 EAGLE</span>
                             <a href="#" style={boxObj.headText}>View Contract <i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
