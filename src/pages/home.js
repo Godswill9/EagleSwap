@@ -492,7 +492,8 @@ export default function Home() {
 <h2 style={justText}>Earn EAGLE & Tokens in Farms and Pools</h2>
 <div className='cont'>
     <div className='indivv' style={boxObj}>
-        <img src='images/BNB.png'></img>
+        <img src={'/images/newLogo-removebg-preview.png'}></img>
+        {/* <img src='images/BNB.png'></img> */}
         <div className='two'>
             <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
             <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
@@ -505,10 +506,10 @@ export default function Home() {
         {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
-        <img src='images/BTC.png'></img>
+        <img src={'/images/newLogo-removebg-preview.png'}></img>
         <div className='two'>
             <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
-            <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
+            <span style={{...sliderText.yellow,"fontSize":"14px"}}>Stake EAGLE</span>
         </div>
         <div className='three'>
             <span style={{...sliderText.yellow,"fontSize":"14px"}}>APR</span>
@@ -518,7 +519,7 @@ export default function Home() {
         {/* <button onClick={()=>{redirectt('/Farms_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
-        <img src='images/ETH.png'></img>
+        <img src={'/images/newLogo-removebg-preview.png'}></img>
         <div className='two'>
             <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
             <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>
@@ -531,7 +532,7 @@ export default function Home() {
         {/* <button onClick={()=>{redirectt('/Pools_earnEAGLE')}} style={justText.button}>Stake</button> */}
     </div>
     <div className='indivv' style={boxObj}>
-        <img src='images/BNB.png'></img>
+        <img src={'/images/newLogo-removebg-preview.png'}></img>
         <div className='two'>
             <h4 style={{...justText, "fontSize":"14px"}}>Earn EAGLE</h4>
             <span style={{...sliderText.yellow,"fontSize":"14px"}}>EAGLE-USDT LP</span>

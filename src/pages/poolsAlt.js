@@ -465,7 +465,7 @@ export default function PoolsEarnAlt(){
 
 var poolsArray=[
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         smallHeader:"manual staking",
         largeHeader:"Auto EAGLE",
         profit:"0.000",

@@ -173,7 +173,7 @@ if(nameTheme.theme!=="dark" || nameTheme.theme==="bright"){
 }
 </div>
 {/* <img className='hidingEagle' src="/images/newLogo-removebg-preview.png"></img> */}
-<img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
+{/* <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img> */}
 <div className='swapSection'>
 
 <p className='para1' style={boxObj.headText}>You can trade over <span>90%</span> of BRC 20 Tokens on EAGLE Protocol with better slippages,<br></br> 

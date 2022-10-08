@@ -464,7 +464,7 @@ export default function PoolsEarnEAGLE(){
 
 var poolsArray=[
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         smallHeader:"Automatic restaking",
         largeHeader:"Auto EAGLE",
         profit:"0.000",
@@ -473,7 +473,7 @@ var poolsArray=[
         extra:"10",
     },
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         smallHeader:"manual staking",
         largeHeader:"Auto EAGLE",
         profit:"0.000",

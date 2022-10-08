@@ -124,7 +124,7 @@ else if(nameTheme.theme==="dark"){
     <button onClick={handleSwitch2} className='btnLiquidity'>Liquidity</button>
     }
     </div>
-    <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img>
+    {/* <img className='hidingEagle' src="/images/eagle1-removebg-preview.png"></img> */}
      <div className='swapSection'>
         <div className='liquidity' style={{"display":"flex"}}>
             <div className='mainSec' style={boxObj}>

@@ -499,14 +499,14 @@ export default function FarmsEarnAlt(){
 
 var farmsArr=[
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BRISE-EAGLE",
         APR:"%",
         ups:"50x",
         liquidity:"0"
     },
     {
-        img:"/images/ETH.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BRISE-USDT",
         APR:"%",
         ups:"50x",

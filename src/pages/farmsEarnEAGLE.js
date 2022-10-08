@@ -499,28 +499,28 @@ export default function FarmsEarnEAGLE(){
 
 var farmsArr=[
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BRISE-EAGLE",
         APR:"%",
         ups:"50x",
         liquidity:"0"
     },
     {
-        img:"/images/ETH.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BRISE-USDT",
         APR:"%",
         ups:"50x",
         liquidity:"0"
     },
     {
-        img:"/images/BNB.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BNC-USDT",
         APR:"%",
         ups:"50x",
         liquidity:"0"
     },
     {
-        img:"/images/BTC.png",
+        img:"/images/newLogo-removebg-preview.png",
         coin:"BNB-QSDT",
         APR:"%",
         ups:"90x",
