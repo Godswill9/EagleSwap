@@ -13,7 +13,7 @@ export default function NFT_Market() {
         <div className='nft_cont'>
             <div className='innerr'>
             <div className='sectionOne'>
-                <img src="/images/Market_banner.webp"></img>
+                <img src="/images/bitgert3.jpg"></img>
             </div>
             <div className='sectionTwo'>
               <div className='first'>
@@ -24,7 +24,7 @@ export default function NFT_Market() {
               <div className='innerr'>
               {hotCollections.map((items, index)=>{
                     return(
-                        <a href={items.link}>
+                        <a href={items.link} key={index}>
                 <div className='indiv'>
                 <img className='img1' src={items.bigImg}></img>
                     <div className='more'>
@@ -50,7 +50,7 @@ export default function NFT_Market() {
              <div className='innerr'>
                 {newestCollections.map((items, index)=>{
                     return(
-                        <a href={items.link}>
+                        <a href={items.link} key={index}>
                 <div className='indiv'>
                 <img className='img1' src={items.bigImg}></img>
                     <div className='more'>
@@ -90,7 +90,7 @@ export default function NFT_Market() {
                 <div className='content'>
                     {NFTs.map((items, index)=>{
                         return(
-                   <div className='inner'>
+                   <div className='inner' key={index}>
                     <img src={items.img}></img>
                     <div className='details'>
                     <div className='more1'>
@@ -121,162 +121,24 @@ export default function NFT_Market() {
 
 var NFTs=[
     {
-        img:"/images/didOnline.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
+        img:"/images/bitgert3.jpg",
+        name:"Eagle1",
+        header:"eagle",
+        mainAmount:"1 BRISE",
         amount2:"$145"
     },
-    {
-        img:"/images/perpetual.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/perpetual.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/Stake BFG earn BFG.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/didOnline.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/Stake BFG earn BFG.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/perpetual.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/didOnline.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/perpetual.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
-    {
-        img:"/images/Stake BFG earn BFG.png",
-        name:"Baby wonderland",
-        header:"Tiger",
-        mainAmount:"1 BNB",
-        amount2:"$145"
-    },
+    
 ]
 
 var hotCollections=[
     {
         link:"#",
-        bigImg:"/images/bwc_Banner.png",
+        bigImg:"/images/bitgert2.jpg",
         smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
+        text:"EAGLE2",
+        amount:"70.166 BRISE"
     },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/bwc_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/bwc_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
+    
    
 ]
 
@@ -284,86 +146,10 @@ var newestCollections=[
    
     {
         link:"#",
-        bigImg:"/images/bwc_Banner.png",
+        bigImg:"/images/bitgert4.jpg",
         smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
+        text:"EAGLE3",
+        amount:"70.166 BRISE"
     },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/bwc_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/bwc_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/TCY_Banner.png",
-        smallImg:"/images/BTC.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/Pancake_Banner.png",
-        smallImg:"/images/BNB.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
-    {
-        link:"#",
-        bigImg:"/images/BabyWonderland_Banner.png",
-        smallImg:"/images/ETH.png",
-        text:"BWC - Strange Seed",
-        amount:"70.166 BNB"
-    },
+   
 ]
